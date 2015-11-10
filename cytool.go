@@ -6,6 +6,13 @@ import (
 	"github.com/keiono/cyjs-util-go/converter"
 )
 
+// File formats
+const(
+	csv string = "csv"
+	tsv string = "tsv"
+	cx string = "cx"
+)
+
 func main() {
 	app := cli.NewApp()
 	app.Name = "cytool"
@@ -33,8 +40,18 @@ func main() {
 	}
 
 	app.Action = func(c *cli.Context) {
-		var source string = c.Args()[0]
-		var target string = c.Args()[1]
+		source := c.Args()[0]
+		target := c.Args()[1]
+
+
+		inFileFormat := c.String("format")
+
+		if inFileFormat != "" {
+    		println("Format:", c.String("format"))
+  		} else {
+    		println("CX format")
+			inFileFormat = cx
+  		}
 
 		runConversion(source, target)
 	}
