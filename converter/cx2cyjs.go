@@ -95,6 +95,9 @@ type Nodes struct {
 	NODES []Node
 }
 
+/**
+	Structure for Cytoscape.js Node
+ */
 type CyJSNode struct {
 	Data map[string]interface{} `json:"data"`
 
@@ -105,18 +108,22 @@ type CyJSNode struct {
 
 	Selected bool `json:"selected"`
 }
-}
+
 
 func decodeNodes(nodes []interface{}) {
 
 	nodeCount := len(nodes)
 
-
-
 	for i := 0; i < nodeCount; i++ {
 		node := nodes[i].(map[string]interface{})
 
-		newNode := Node{ID: node[id].(string), N: node[n].(string)}
+		// Create data
+		data := make(map[string]interface{})
+		data["id"] = node[id].(string)
+		data["name"] = node[n].(string)
+
+		newNode := CyJSNode{Data: data}
+
 		fmt.Println("Node: ", newNode)
 		jsonString, err := json.Marshal(newNode)
 		if err != nil {
@@ -144,9 +151,3 @@ func decodeNodeAttributes(attributes []interface{}) {
 		fmt.Println("")
 	}
 }
-
-
-
-
-
-
