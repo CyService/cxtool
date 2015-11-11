@@ -42,7 +42,6 @@ func (con Cx2Cyjs) Convert(sourceFileName, outputFileName string) {
 		if err != nil {
 			fmt.Println("ERR: ", err)
 		} else {
-			//			fmt.Println("Cytoscpae.js JSON Generated:")
 			fmt.Println(string(jsonString))
 		}
 	}
@@ -145,15 +144,15 @@ func decodeNodes(nodes []interface{}, cyjsNodes *[]CyJSNode) {
 
 		*cyjsNodes = append(*cyjsNodes, newNode)
 
-		jsonString, err := json.Marshal(newNode)
-
-		if err != nil {
-			fmt.Println("ERR: ", err)
-		} else {
-			log.Println(string(jsonString))
-		}
+//		jsonString, err := json.Marshal(newNode)
+//
+//		if err != nil {
+//			fmt.Println("ERR: ", err)
+//		} else {
+//			log.Println(string(jsonString))
+//		}
 	}
-	log.Println("Cur LEN = ", len(*cyjsNodes))
+//	log.Println("Cur LEN = ", len(*cyjsNodes))
 }
 
 func decodeEdges(edges []interface{}, cyjsEdges *[]CyJSEdge) {
@@ -173,15 +172,14 @@ func decodeEdges(edges []interface{}, cyjsEdges *[]CyJSEdge) {
 
 		*cyjsEdges = append(*cyjsEdges, newEdge)
 
-		jsonString, err := json.Marshal(newEdge)
-
-		if err != nil {
-			fmt.Println("ERR: ", err)
-		} else {
-			log.Println(string(jsonString))
-		}
+//		jsonString, err := json.Marshal(newEdge)
+//
+//		if err != nil {
+//			fmt.Println("ERR: ", err)
+//		} else {
+//			log.Println(string(jsonString))
+//		}
 	}
-	log.Println("Cur LEN = ", len(*cyjsEdges))
 }
 
 func decodeNodeAttributes(attributes []interface{}, values map[string]map[string]interface{}) {
@@ -205,12 +203,5 @@ func decodeNodeAttributes(attributes []interface{}, values map[string]map[string
 		attrMap[attributeName] = attr["v"]
 
 		values[pointer] = attrMap
-
-		jsonString, err := json.Marshal(values)
-		if err != nil {
-			fmt.Println("ERR: ", err)
-		} else {
-			log.Println("Node Attr: ", string(jsonString))
-		}
 	}
 }
