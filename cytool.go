@@ -47,9 +47,9 @@ func main() {
 		inFileFormat := c.String("format")
 
 		if inFileFormat != "" {
-    		println("Format:", c.String("format"))
+//    		println("Format:", c.String("format"))
   		} else {
-    		println("CX format")
+//    		println("CX format")
 			inFileFormat = cx
   		}
 
@@ -62,8 +62,8 @@ func main() {
 func runConversion(source, target string) {
 	var con converter.Converter
 
-	println("Source File: " + source)
-	println("Destination File: " + target)
+//	println("Source File: " + source)
+//	println("Destination File: " + target)
 
 
 	con = converter.Cx2Cyjs{}

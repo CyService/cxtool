@@ -13,104 +13,107 @@ type Cx2Cyjs struct {
 
 func (con Cx2Cyjs) Convert(sourceFileName, outputFileName string) {
 
-	println("CX Source file: " + sourceFileName)
-	println("Out File: " + outputFileName)
-
 	file, err := os.Open(sourceFileName)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
 	}
 
+	// Close input file at the end of this
 	defer file.Close()
-
 	cxDecoder := json.NewDecoder(file)
 
 	for {
 		var val []map[string]interface{}
-
 		err := cxDecoder.Decode(&val);
 
 		if err == io.EOF {
-			fmt.Println("Success.")
+			// Success!
 			break
 		} else if err != nil {
-			log.Println("Error!!!!!!!!!")
 			log.Println(err)
 			return
 		}
-		fmt.Println("Length = ", len(val))
-		decodeCx(val)
 
-		//		fmt.Println(val)
-	}
-}
+		// Convert into Cytoscape.js
+		cyjsNetwork := decodeCx(val)
 
-
-func decodeCx(val []map[string]interface{}) {
-
-	entryCount := len(val)
-
-	for i := 0; i < entryCount; i++ {
-
-		item := val[i]
-
-
-		for key, value := range item {
-			detectType(key, value)
+		jsonString, err := json.Marshal(cyjsNetwork)
+		if err != nil {
+			fmt.Println("ERR: ", err)
+		} else {
+			//			fmt.Println("Cytoscpae.js JSON Generated:")
+			fmt.Println(string(jsonString))
 		}
 	}
 }
 
-func detectType(tag string, value interface{}) {
+
+func decodeCx(val []map[string]interface{}) CyJS {
+
+	// Network Object
+	networkAttr := make(map[string]interface{})
+	networkAttr["name"] = "Network Name"
+
+	// Elements
+	var nodes []CyJSNode
+	var edges []CyJSEdge
+
+	// Basic Cytoscape.js object
+	cyjsNetwork := CyJS{Data: networkAttr}
+
+	entryCount := len(val)
+
+	// Iterate through the entire JSON
+	for i := 0; i < entryCount; i++ {
+		item := val[i]
+
+		for key, value := range item {
+			detectType(key, value, cyjsNetwork, &nodes, edges)
+		}
+	}
+
+	elements := Elements{Nodes: nodes, Edges:edges}
+
+	cyjsNetwork.Elements = elements
+
+	log.Println("Last len = ", len(nodes))
+
+	return cyjsNetwork
+}
+
+
+func detectType(tag string, value interface{}, cyjsNetwork CyJS,
+cyjsNodes *[]CyJSNode, cyjsEdges []CyJSEdge) {
 
 	switch tag {
 
+	case networkAttributes:
+		decodeNetworkAttributes(value.([]interface{}), cyjsNetwork)
 	case nodes:
-		decodeNodes(value.([]interface{}))
+		decodeNodes(value.([]interface{}), cyjsNodes)
 	case nodeAttributes:
 		decodeNodeAttributes(value.([]interface{}))
+
 	case edges:
-		fmt.Println(tag, ": ", value)
+		return
+	case edgeAttributes:
 	default:
-		fmt.Println(tag, ": Other. ", value)
+	}
+}
+
+func decodeNetworkAttributes(value []interface{}, cyjsNetwork CyJS) {
+
+	attrCount := len(value)
+	for i := 0; i < attrCount; i++ {
+		attr := value[i].(map[string]interface{})
+		key := attr["n"].(string)
+		cyjsNetwork.Data[key] = attr["v"]
 	}
 
 }
 
-
-type Node struct {
-    ID	string `json:"@id"`
-    N string `json:"n"`
-}
-
-type NodeAttr struct {
-	S string `json:"s"`
-	Po string `json:"po"`
-	N string `json:"n"`
-	V string `json:"v"`
-}
-
-type Nodes struct {
-	NODES []Node
-}
-
-/**
-	Structure for Cytoscape.js Node
- */
-type CyJSNode struct {
-	Data map[string]interface{} `json:"data"`
-
-	Position struct {
-		X float64 `json:"x"`
-		Y float64 `json:"y"`
-	} `json:"position"`
-
-	Selected bool `json:"selected"`
-}
-
-
-func decodeNodes(nodes []interface{}) {
+func decodeNodes(nodes []interface{}, cyjsNodes *[]CyJSNode) {
 
 	nodeCount := len(nodes)
 
@@ -118,21 +121,22 @@ func decodeNodes(nodes []interface{}) {
 		node := nodes[i].(map[string]interface{})
 
 		// Create data
-		data := make(map[string]interface{})
-		data["id"] = node[id].(string)
-		data["name"] = node[n].(string)
+		newNode := CyJSNode{}
+		newNode.Data = make(map[string]interface{})
+		newNode.Data["id"] = node[id].(string)
+		newNode.Data["name"] = node[n].(string)
 
-		newNode := CyJSNode{Data: data}
+		*cyjsNodes = append(*cyjsNodes, newNode)
 
-		fmt.Println("Node: ", newNode)
 		jsonString, err := json.Marshal(newNode)
+
 		if err != nil {
 			fmt.Println("ERR: ", err)
 		} else {
-			fmt.Println("Node3: ", string(jsonString))
+			log.Println(string(jsonString))
 		}
-
 	}
+	log.Println("Cur LEN = ", len(*cyjsNodes))
 }
 
 func decodeNodeAttributes(attributes []interface{}) {
@@ -140,14 +144,14 @@ func decodeNodeAttributes(attributes []interface{}) {
 	attrCount := len(attributes)
 
 	for i := 0; i < attrCount; i++ {
-		attr := attributes[i].(map[string]interface{})
+		//		attr := attributes[i].(map[string]interface{})
 
-		jsonString, err := json.Marshal(attr)
-		if err != nil {
-			fmt.Println("ERR: ", err)
-		} else {
-			fmt.Println("Node Attr: ", string(jsonString))
-		}
-		fmt.Println("")
+		//		jsonString, err := json.Marshal(attr)
+		//		if err != nil {
+		//			fmt.Println("ERR: ", err)
+		//		} else {
+		//			fmt.Println("Node Attr: ", string(jsonString))
+		//		}
+		//		fmt.Println("")
 	}
 }

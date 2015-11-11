@@ -15,3 +15,15 @@ const (
 	po string = "po"
 	v string = "v"
 )
+
+type Node struct {
+	ID	string `json:"@id"`
+	N string `json:"n"`
+}
+
+type NodeAttr struct {
+	S string `json:"s"`
+	Po string `json:"po"`
+	N string `json:"n"`
+	V string `json:"v"`
+}
