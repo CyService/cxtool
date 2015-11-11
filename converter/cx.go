@@ -12,6 +12,8 @@ const (
 	id string = "@id"
 	n string = "n"
 	s string = "s"
+	t string = "t"
+	i string = "i"
 	po string = "po"
 	v string = "v"
 )

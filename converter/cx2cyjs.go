@@ -59,6 +59,11 @@ func decodeCx(val []map[string]interface{}) CyJS {
 	var nodes []CyJSNode
 	var edges []CyJSEdge
 
+	// Temp storage for attributes
+	nodeAttrs := make(map[string]map[string]interface{})
+
+//	var edgeAttrs map[string]map[string]interface{}
+
 	// Basic Cytoscape.js object
 	cyjsNetwork := CyJS{Data: networkAttr}
 
@@ -69,7 +74,21 @@ func decodeCx(val []map[string]interface{}) CyJS {
 		item := val[i]
 
 		for key, value := range item {
-			detectType(key, value, cyjsNetwork, &nodes, edges)
+			detectType(key, value, cyjsNetwork, &nodes, &edges, &nodeAttrs)
+		}
+	}
+
+	// Assign attributes to nodes
+	nodeCount := len(nodes)
+	for i := 0; i < nodeCount; i++ {
+		nd := nodes[i]
+		nodeId := nd.Data["id"].(string)
+
+		val, exists := nodeAttrs[nodeId]
+		if exists {
+			for key, value := range val {
+				nd.Data[key] = value
+			}
 		}
 	}
 
@@ -78,13 +97,14 @@ func decodeCx(val []map[string]interface{}) CyJS {
 	cyjsNetwork.Elements = elements
 
 	log.Println("Last len = ", len(nodes))
+	log.Println("Last len2 = ", len(nodeAttrs))
 
 	return cyjsNetwork
 }
 
 
 func detectType(tag string, value interface{}, cyjsNetwork CyJS,
-cyjsNodes *[]CyJSNode, cyjsEdges []CyJSEdge) {
+cyjsNodes *[]CyJSNode, cyjsEdges *[]CyJSEdge, nodeAttrs *map[string]map[string]interface{}) {
 
 	switch tag {
 
@@ -92,25 +112,22 @@ cyjsNodes *[]CyJSNode, cyjsEdges []CyJSEdge) {
 		decodeNetworkAttributes(value.([]interface{}), cyjsNetwork)
 	case nodes:
 		decodeNodes(value.([]interface{}), cyjsNodes)
-	case nodeAttributes:
-		decodeNodeAttributes(value.([]interface{}))
-
 	case edges:
-		return
+		decodeEdges(value.([]interface{}), cyjsEdges)
+	case nodeAttributes:
+		decodeNodeAttributes(value.([]interface{}), *nodeAttrs)
 	case edgeAttributes:
 	default:
 	}
 }
 
 func decodeNetworkAttributes(value []interface{}, cyjsNetwork CyJS) {
-
 	attrCount := len(value)
 	for i := 0; i < attrCount; i++ {
 		attr := value[i].(map[string]interface{})
 		key := attr["n"].(string)
 		cyjsNetwork.Data[key] = attr["v"]
 	}
-
 }
 
 func decodeNodes(nodes []interface{}, cyjsNodes *[]CyJSNode) {
@@ -124,7 +141,7 @@ func decodeNodes(nodes []interface{}, cyjsNodes *[]CyJSNode) {
 		newNode := CyJSNode{}
 		newNode.Data = make(map[string]interface{})
 		newNode.Data["id"] = node[id].(string)
-		newNode.Data["name"] = node[n].(string)
+		newNode.Data["n"] = node[n].(string)
 
 		*cyjsNodes = append(*cyjsNodes, newNode)
 
@@ -139,19 +156,61 @@ func decodeNodes(nodes []interface{}, cyjsNodes *[]CyJSNode) {
 	log.Println("Cur LEN = ", len(*cyjsNodes))
 }
 
-func decodeNodeAttributes(attributes []interface{}) {
+func decodeEdges(edges []interface{}, cyjsEdges *[]CyJSEdge) {
+
+	edgeCount := len(edges)
+
+	for idx := 0; idx < edgeCount; idx++ {
+		edge := edges[idx].(map[string]interface{})
+
+		// Create data
+		newEdge := CyJSEdge{}
+		newEdge.Data = make(map[string]interface{})
+		newEdge.Data["id"] = edge[id].(string)
+		newEdge.Data["source"] = edge[s].(string)
+		newEdge.Data["target"] = edge[t].(string)
+		newEdge.Data["interaction"] = edge[i].(string)
+
+		*cyjsEdges = append(*cyjsEdges, newEdge)
+
+		jsonString, err := json.Marshal(newEdge)
+
+		if err != nil {
+			fmt.Println("ERR: ", err)
+		} else {
+			log.Println(string(jsonString))
+		}
+	}
+	log.Println("Cur LEN = ", len(*cyjsEdges))
+}
+
+func decodeNodeAttributes(attributes []interface{}, values map[string]map[string]interface{}) {
 
 	attrCount := len(attributes)
 
 	for i := 0; i < attrCount; i++ {
-		//		attr := attributes[i].(map[string]interface{})
+		attr := attributes[i].(map[string]interface{})
 
-		//		jsonString, err := json.Marshal(attr)
-		//		if err != nil {
-		//			fmt.Println("ERR: ", err)
-		//		} else {
-		//			fmt.Println("Node Attr: ", string(jsonString))
-		//		}
-		//		fmt.Println("")
+		// Extract pointer (key)
+		pointer := attr["po"].(string)
+
+		// Check the value already exists or not
+		attrMap, exist := values[pointer]
+
+		if !exist {
+			attrMap = make(map[string]interface{})
+		}
+
+		attributeName := attr["n"].(string)
+		attrMap[attributeName] = attr["v"]
+
+		values[pointer] = attrMap
+
+		jsonString, err := json.Marshal(values)
+		if err != nil {
+			fmt.Println("ERR: ", err)
+		} else {
+			log.Println("Node Attr: ", string(jsonString))
+		}
 	}
 }

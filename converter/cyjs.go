@@ -1,22 +1,24 @@
 package converter
 
+type Position struct {
+	X float64 `json:"x,omitempty"`
+	Y float64 `json:"y,omitempty"`
+}
+
 type CyJSNode struct {
 
 	Data     map[string]interface{} `json:"data"`
 
-	Position struct {
-				 X float64 `json:"x"`
-				 Y float64 `json:"y"`
-			 } `json:"position"`
+	Position Position `json:"position,omitempty"`
 
-	Selected bool `json:"selected"`
+	Selected bool `json:"selected,omitempty"`
 }
 
 type CyJSEdge struct {
 
-	Data	map[string]interface{} `json:"data"`
+	Data     map[string]interface{} `json:"data"`
 
-	Selected bool `json:"selected"`
+	Selected bool `json:"selected,omitempty"`
 }
 
 type Elements struct {
