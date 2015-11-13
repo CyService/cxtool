@@ -12,7 +12,7 @@ import (
 type Cx2Cyjs struct {
 }
 
-func (con Cx2Cyjs) Convert(sourceFileName, outputFileName string) {
+func (con Cx2Cyjs) Convert(sourceFileName string) {
 
 	file, err := os.Open(sourceFileName)
 	if err != nil {

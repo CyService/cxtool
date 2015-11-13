@@ -18,10 +18,9 @@ type Edge struct {
 	Source, Target string
 }
 
-func (con Csv2Cyjs) Convert(sourceFileName, outputFileName string) {
+func (con Csv2Cyjs) Convert(sourceFileName string) {
 
 	println("CSV Source file: " + sourceFileName)
-	println("Out File: " + outputFileName)
 	println(con.Delimiter)
 
 	file, err := os.Open(sourceFileName)

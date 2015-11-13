@@ -27,12 +27,6 @@ func main() {
 		},
 
 		cli.StringFlag{
-			Name: "target, t",
-			Value: "out.cyjs",
-			Usage: "Target file name (i.e., destination file name).",
-		},
-
-		cli.StringFlag{
 			Name: "format, f",
 			Value: "cx",
 			Usage: "Source file format.  Default is CX.",
@@ -41,32 +35,23 @@ func main() {
 
 	app.Action = func(c *cli.Context) {
 		source := c.Args()[0]
-		target := c.Args()[1]
 
 
 		inFileFormat := c.String("format")
 
-		if inFileFormat != "" {
-//    		println("Format:", c.String("format"))
-  		} else {
-//    		println("CX format")
+		if inFileFormat == "" {
 			inFileFormat = cx
   		}
 
-		runConversion(source, target)
+		runConversion(source)
 	}
 
 	app.Run(os.Args)
 }
 
-func runConversion(source, target string) {
+func runConversion(source string) {
 	var con converter.Converter
 
-//	println("Source File: " + source)
-//	println("Destination File: " + target)
-
-
 	con = converter.Cx2Cyjs{}
-
-	con.Convert(source, target)
+	con.Convert(source)
 }

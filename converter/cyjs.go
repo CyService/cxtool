@@ -1,8 +1,8 @@
 package converter
 
 type Position struct {
-	X float64 `json:"x,omitempty"`
-	Y float64 `json:"y,omitempty"`
+	X float64 `json:"x"`
+	Y float64 `json:"y"`
 }
 
 type CyJSNode struct {
