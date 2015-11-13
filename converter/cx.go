@@ -7,6 +7,7 @@ const (
 	networkAttributes string = "networkAttributes"
 	nodeAttributes string = "nodeAttributes"
 	edgeAttributes string = "edgeAttributes"
+	cartesianLayout string = "cartesianLayout"
 
 	// For nodes
 	id string = "@id"
