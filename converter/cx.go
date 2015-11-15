@@ -1,5 +1,7 @@
 package converter
 
+// Tags for CX
+
 const (
 	nodes string = "nodes"
 	edges string = "edges"
@@ -18,6 +20,7 @@ const (
 	po string = "po"
 	v string = "v"
 )
+
 
 type Node struct {
 	ID	string `json:"@id"`

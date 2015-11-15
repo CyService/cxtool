@@ -7,7 +7,6 @@ import (
 	"io"
 	"log"
 	"encoding/json"
-
 )
 
 type Csv2Cyjs struct {

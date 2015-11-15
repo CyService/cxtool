@@ -29,7 +29,7 @@ func main() {
 		cli.StringFlag{
 			Name: "format, f",
 			Value: "cx",
-			Usage: "Source file format.  Default is CX.",
+			Usage: "Source file format.  Default input file format is CX.",
 		},
 	}
 

@@ -1,5 +1,7 @@
 package converter
 
+// Basic Cytoscape.js network data structure.
+
 type Position struct {
 	X float64 `json:"x"`
 	Y float64 `json:"y"`
@@ -27,6 +29,7 @@ type Elements struct {
 }
 
 type CyJS struct {
+
 	Data     map[string]interface{} `json:"data"`
 
 	Elements Elements `json:"elements"`
