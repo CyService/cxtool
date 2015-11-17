@@ -6,10 +6,19 @@ import (
 	"encoding/json"
 	"log"
 	"io"
-	"runtime"
+	"bufio"
+	"runtime" // For debugging
+	"strconv"
 )
 
 type Cx2Cyjs struct {
+}
+
+func (con Cx2Cyjs) ConvertFromStdin() {
+	reader := bufio.NewReader(os.Stdin)
+	cxDecoder := json.NewDecoder(reader)
+	debug()
+	run(cxDecoder)
 }
 
 func (con Cx2Cyjs) Convert(sourceFileName string) {
@@ -25,6 +34,11 @@ func (con Cx2Cyjs) Convert(sourceFileName string) {
 	cxDecoder := json.NewDecoder(file)
 
 	debug()
+
+	run(cxDecoder)
+}
+
+func run(cxDecoder *json.Decoder) {
 
 	// Network Object
 	networkAttr := make(map[string]interface{})
@@ -141,7 +155,10 @@ layout *map[string]Position) {
 	switch tag {
 
 	case networkAttributes:
-		decodeNetworkAttributes(value.([]interface{}), cyjsNetwork)
+//		decodeNetworkAttributes(value.([]interface{}), cyjsNetwork)
+		netHandler := NetworkHandler{}
+		netAttr := netHandler.HandleAspect(value.([]interface{}))
+		cyjsNetwork.Data = netAttr
 	case nodes:
 		decodeNodes(value.([]interface{}), cyjsNetwork)
 	case edges:
@@ -160,7 +177,8 @@ func decodeLayout(entries []interface{}, layout map[string]Position) {
 	layoutCount := len(entries)
 	for i := 0; i < layoutCount; i++ {
 		entry := entries[i].(map[string]interface{})
-		key := entry["node"].(string)
+//		key := entry["node"].(string)
+		key := strconv.FormatInt(int64(entry["node"].(float64)), 10)
 		x := entry["x"].(float64)
 		y := entry["y"].(float64)
 		position := Position{X:x, Y:y}
@@ -189,8 +207,12 @@ func decodeNodes(nodes []interface{}, cyjsNetwork *CyJS) {
 		// Create data
 		newNode := CyJSNode{}
 		newNode.Data = make(map[string]interface{})
-		newNode.Data["id"] = node[id].(string)
-		newNode.Data["n"] = node[n].(string)
+		newNode.Data["id"] = strconv.FormatInt(int64(node[id].(float64)), 10)
+
+		name, exists := newNode.Data["n"]
+		if exists {
+			newNode.Data["n"] = name.(string)
+		}
 
 		*cyjsNodes = append(*cyjsNodes, newNode)
 	}
@@ -207,10 +229,16 @@ func decodeEdges(edges []interface{}, cyjsNetwork *CyJS) {
 		// Create data
 		newEdge := CyJSEdge{}
 		newEdge.Data = make(map[string]interface{})
-		newEdge.Data["id"] = edge[id].(string)
-		newEdge.Data["source"] = edge[s].(string)
-		newEdge.Data["target"] = edge[t].(string)
-		newEdge.Data["interaction"] = edge[i].(string)
+
+		// Required fields
+		newEdge.Data["id"] = strconv.FormatInt(int64(edge[id].(float64)), 10)
+		newEdge.Data["source"] = strconv.FormatInt(int64(edge[s].(float64)),10)
+		newEdge.Data["target"] = strconv.FormatInt(int64(edge[t].(float64)),10)
+
+		itr, exists := edge[i]
+		if exists {
+			newEdge.Data["interaction"] = itr.(string)
+		}
 
 		*cyjsEdges = append(*cyjsEdges, newEdge)
 	}
@@ -224,7 +252,8 @@ func decodeAttributes(attributes []interface{}, values map[string]map[string]int
 		attr := attributes[i].(map[string]interface{})
 
 		// Extract pointer (key)
-		pointer := attr["po"].(string)
+//		pointer := attr["po"].(string)
+		pointer := strconv.FormatInt(int64(attr["po"].(float64)), 10)
 
 		// Check the value already exists or not
 		attrMap, exist := values[pointer]

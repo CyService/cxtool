@@ -34,16 +34,20 @@ func main() {
 	}
 
 	app.Action = func(c *cli.Context) {
-		source := c.Args()[0]
-
+		commandLineArgs := c.Args()
 
 		inFileFormat := c.String("format")
-
 		if inFileFormat == "" {
 			inFileFormat = cx
-  		}
+		}
 
-		runConversion(source)
+		// Two cases: Run from file or piped text stream
+		if len(commandLineArgs) == 0 {
+			runConversionStream()
+		} else {
+			source := commandLineArgs[0]
+			runConversion(source)
+		}
 	}
 
 	app.Run(os.Args)
@@ -51,7 +55,12 @@ func main() {
 
 func runConversion(source string) {
 	var con converter.Converter
-
 	con = converter.Cx2Cyjs{}
 	con.Convert(source)
+}
+
+func runConversionStream() {
+	var con converter.Converter
+	con = converter.Cx2Cyjs{}
+	con.ConvertFromStdin()
 }
