@@ -1,4 +1,4 @@
-# CytoscapeJS <--> CX Format Converter
+# CX to Cytoscape.js Format Converter
 
 ## Introduction
 This is a command line tool to convert [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing) 
@@ -15,8 +15,11 @@ cxtool input_file
  
 The following command creates nicely formatted Cytoscape.js JSON. 
 
-```bash
+```
 cxtool input_file | jq .
+
+or use pipe for input
+cat network.cx | cxtool | jq .
 ```
 
 ### Options
