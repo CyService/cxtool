@@ -1,10 +1,5 @@
 package converter
 
-
-const (
-	VisualProperties string = "visualProperties"
-)
-
 type VisualProperty struct {
 
 	PropertiesOf string `json:"properties_of"`

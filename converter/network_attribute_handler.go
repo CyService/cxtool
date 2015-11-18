@@ -1,0 +1,21 @@
+package converter
+
+type NetworkAttributeHandler struct {
+}
+
+func (networkAttrHandler NetworkAttributeHandler) HandleAspect(aspect[]interface{}) map[string]interface{} {
+
+	// Find length of this aspects to be processed
+	attrCount := len(aspect)
+
+	// Result Map
+	attrMap := make(map[string]interface{})
+
+	for i := 0; i < attrCount; i++ {
+		attr := aspect[i].(map[string]interface{})
+		key := attr["n"].(string)
+		attrMap[key] = attr["v"]
+	}
+
+	return attrMap
+}

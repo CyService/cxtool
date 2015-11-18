@@ -3,13 +3,6 @@ package converter
 // Tags for CX
 
 const (
-	nodes string = "nodes"
-	edges string = "edges"
-
-	networkAttributes string = "networkAttributes"
-	nodeAttributes string = "nodeAttributes"
-	edgeAttributes string = "edgeAttributes"
-	cartesianLayout string = "cartesianLayout"
 
 	// For nodes
 	id string = "@id"

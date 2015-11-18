@@ -2,12 +2,13 @@ package converter
 
 type CyjsStyle struct {
 
-	Selectors []Section
+	Properties []SelectorEntry
 
 }
 
-type Section struct {
+type SelectorEntry struct {
 	
-	Selector string
-	CSS      map[string]interface{}
+	Selector string `json:"selector"`
+	CSS      map[string]interface{} `json:"css"`
+
 }
