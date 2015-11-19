@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	"github.com/codegangsta/cli"
-	"github.com/keiono/cyjs-util-go/converter"
+	"github.com/idekerlab/cxtool/converter"
 )
 
 // File formats
