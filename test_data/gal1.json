@@ -67445,7 +67445,7 @@
         "s": 5708,
         "po": 6050,
         "n": "interaction",
-        "v": "pp"
+"v": "pp"
       },
       {
         "s": 5708,
@@ -69549,7 +69549,7 @@
         "properties_of": "edges:default",
         "applies_to": 5708,
         "view": 5708,
-        "properties": {
+      "properties": {
           "EDGE_CURVED": "true",
           "EDGE_LABEL_COLOR": "#000000",
           "EDGE_LABEL_FONT_FACE": "SansSerif,plain,10",

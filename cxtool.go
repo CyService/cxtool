@@ -15,8 +15,8 @@ const(
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "cytool"
-	app.Usage = "Utility to convert Cytoscape.js JSON into many other formats."
+	app.Name = "cxtool"
+	app.Usage = "Utility to convert CX JSON into many other formats."
 	app.Version = "0.1.0"
 
 	app.Flags = []cli.Flag{

@@ -28,9 +28,12 @@ type Elements struct {
 	Edges []CyJSEdge `json:"edges"`
 }
 
+
 type CyJS struct {
 
 	Data     map[string]interface{} `json:"data"`
 
 	Elements Elements `json:"elements"`
+
+	Style []SelectorEntry `json:"style"`
 }
