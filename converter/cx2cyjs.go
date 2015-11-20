@@ -56,8 +56,6 @@ func initHandlers() map[string]CXAspectHandler {
 }
 
 func (con Cx2Cyjs) ConvertFromStdin() {
-	log.Println("Waiting input from STDIN...")
-
 	reader := bufio.NewReader(os.Stdin)
 	cxDecoder := json.NewDecoder(reader)
 	run(cxDecoder)
@@ -131,7 +129,7 @@ func run(cxDecoder *json.Decoder) {
 	cyjsNetwork := CyJS{Data: networkAttr, Elements: elements}
 
 	for {
-		t, err := cxDecoder.Token()
+		_, err := cxDecoder.Token()
 
 		if err == io.EOF {
 			break
@@ -140,7 +138,7 @@ func run(cxDecoder *json.Decoder) {
 			return
 		}
 
-		log.Println("CX Array found: ", t)
+		//log.Println("CX Array found: ", t)
 
 		// Decode entry one-by-one.
 		for cxDecoder.More() {
@@ -168,7 +166,7 @@ func run(cxDecoder *json.Decoder) {
 	} else {
 		fmt.Println(string(jsonString))
 	}
-	debug()
+	//debug()
 }
 
 func parseCxEntry(

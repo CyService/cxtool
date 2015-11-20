@@ -1,6 +1,11 @@
+/*
+	Basic settings for cxtool app.
+	(An utility to create new App settings)
+ */
 package appbuilder
 
 import (
+	"os"
 	"github.com/codegangsta/cli"
 	"github.com/idekerlab/cxtool/converter"
 )
@@ -18,9 +23,9 @@ func BuildApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = "cxtool"
 	app.Usage = "Utility for CX files."
-	app.Version = "0.2.0"
+	app.Version = "0.2.1"
 
-	app.Flags = []cli.Flag{
+	app.Flags = []cli.Flag {
 		cli.StringFlag{
 			Name:  "format, f",
 			Value: "cx",
@@ -40,13 +45,24 @@ func BuildApp() *cli.App {
 
 		// Two cases: Run from file or piped text stream
 		if len(commandLineArgs) == 0 {
-			con.ConvertFromStdin()
+
+			fi, err := os.Stdin.Stat()
+  			if err != nil {
+    			panic(err)
+  			}
+
+			if fi.Mode() & os.ModeNamedPipe == 0 {
+				// Show help menu if there is no input
+				cli.ShowAppHelp(c)
+  			} else {
+    			// No param.  Use Pipe
+				con.ConvertFromStdin()
+  			}
 		} else {
 			source := commandLineArgs[0]
 			con.Convert(source)
 		}
 	}
-
 	return app
 }
 
