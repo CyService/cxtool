@@ -3542,6 +3542,12 @@
         "s": 5708,
         "n": "publication",
         "v": "Integrated Genomic and Proteomic Analyses of a Systematically Perturbed Metabolic Network\nTrey Ideker, Vesteinn Thorsson, Jeffrey A. Ranish, Rowan Christmas, Jeremy Buhler, Jimmy K. Eng, Roger Bumgarner, David R. Goodlett, Ruedi Aebersold, and Leroy Hood\nScience 4 May 2001: 292 (5518), 929-934. [DOI:10.1126/science.292.5518.929]"
+      },
+      {
+        "s": 5708,
+        "n": "NumberColumn",
+        "v": 112.3,
+        "d": "float"
       }
     ]
   },

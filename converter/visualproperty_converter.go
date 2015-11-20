@@ -29,10 +29,9 @@ func (vpConverter VisualPropConverter) getCyjsPropertyValue(key string, value st
 
 func parseFont(value string) string {
 	entries := strings.Split(value, ",")
-	if len(entries) >=1 {
+	if len(entries) >= 1 {
 		return entries[0]
 	}
 
 	return value
 }
-

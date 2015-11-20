@@ -1,16 +1,16 @@
 package converter
 
 import (
-	"os"
-	"fmt"
-	"encoding/json"
-	"encoding/csv"
-	"log"
-	"io"
 	"bufio"
+	"bytes"
+	"encoding/csv"
+	"encoding/json"
+	"fmt"
+	"io"
+	"log"
+	"os"
 	"runtime" // For debugging
 	"strconv"
-	"bytes"
 )
 
 type ResourceReadError struct {
@@ -36,14 +36,12 @@ func initHandlers() map[string]CXAspectHandler {
 
 	handlers := make(map[string]CXAspectHandler)
 
-	log.Println("%%%%%%%%%%%%%%%%%%%%%%%%%")
-	log.Println(table)
-	log.Println(typeTable)
-	log.Println("%%%%%%%%%%%%%%%%%%%%%%%%%")
+	vpHandler := VisualStyleHandler{conversionTable: table, typeTable: typeTable}
 
-	vpHandler := VisualStyleHandler{conversionTable: table, typeTable:typeTable}
-	attrHandler := AttributeHandler{}
-	networkAttrHandler := NetworkAttributeHandler{}
+	decoder := TypeDecoder{}
+	attrHandler := AttributeHandler{typeDecoder:decoder}
+	networkAttrHandler := NetworkAttributeHandler{typeDecoder: decoder}
+
 	layoutHandler := LayoutHandler{}
 
 	// Attribute Handlers: Use one common handler for all
@@ -58,7 +56,6 @@ func initHandlers() map[string]CXAspectHandler {
 	return handlers
 }
 
-
 func (con Cx2Cyjs) ConvertFromStdin() {
 	log.Println("Waiting input from STDIN...")
 
@@ -66,7 +63,6 @@ func (con Cx2Cyjs) ConvertFromStdin() {
 	cxDecoder := json.NewDecoder(reader)
 	run(cxDecoder)
 }
-
 
 func (con Cx2Cyjs) Convert(sourceFileName string) {
 	file, err := os.Open(sourceFileName)
@@ -81,11 +77,10 @@ func (con Cx2Cyjs) Convert(sourceFileName string) {
 	run(cxDecoder)
 }
 
-
 func prepareConversionTable() (conversionMap map[string]string, typeMap map[string]string, resourceErr error) {
 	conversionTable, readErr := Asset("data/cx_to_cyjs_style.csv")
 	if readErr != nil {
-		return nil, nil, ResourceReadError{message:"Could not read resourcefile."}
+		return nil, nil, ResourceReadError{message: "Could not read resourcefile."}
 	}
 
 	table := make(map[string]string)
@@ -113,7 +108,6 @@ func prepareConversionTable() (conversionMap map[string]string, typeMap map[stri
 	return table, typeTable, nil
 }
 
-
 func run(cxDecoder *json.Decoder) {
 
 	// Initialize handlers
@@ -128,7 +122,7 @@ func run(cxDecoder *json.Decoder) {
 	layout := make(map[string]interface{})
 	vps := make(map[string]interface{})
 
-	elements := Elements{Nodes:nodes, Edges:edges}
+	elements := Elements{Nodes: nodes, Edges: edges}
 
 	// Temp storage for attributes
 	nodeAttrs := make(map[string]interface{})
@@ -178,15 +172,14 @@ func run(cxDecoder *json.Decoder) {
 	debug()
 }
 
-
 func parseCxEntry(
-handlers map[string]CXAspectHandler,
-entry map[string]interface{},
-cyjsNetwork *CyJS,
-nodeAttrs *map[string]interface{},
-edgeAttrs *map[string]interface{},
-layout *map[string]interface{},
-vps *map[string]interface{}) {
+	handlers map[string]CXAspectHandler,
+	entry map[string]interface{},
+	cyjsNetwork *CyJS,
+	nodeAttrs *map[string]interface{},
+	edgeAttrs *map[string]interface{},
+	layout *map[string]interface{},
+	vps *map[string]interface{}) {
 
 	for key, value := range entry {
 		detectType(handlers, key, value, cyjsNetwork,
@@ -195,17 +188,14 @@ vps *map[string]interface{}) {
 	}
 }
 
-
-
-
 func detectType(
-handlers map[string]CXAspectHandler,
-tag string, value interface{},
-cyjsNetwork *CyJS,
-nodeAttrs *map[string]interface{},
-edgeAttrs *map[string]interface{},
-layout *map[string]interface{},
-vps *map[string]interface{}) {
+	handlers map[string]CXAspectHandler,
+	tag string, value interface{},
+	cyjsNetwork *CyJS,
+	nodeAttrs *map[string]interface{},
+	edgeAttrs *map[string]interface{},
+	layout *map[string]interface{},
+	vps *map[string]interface{}) {
 
 	switch tag {
 
@@ -231,7 +221,6 @@ vps *map[string]interface{}) {
 	default:
 	}
 }
-
 
 func createNodes(nodes []interface{}, cyjsNetwork *CyJS) {
 	nodeCount := len(nodes)
@@ -279,8 +268,8 @@ func decodeEdges(edges []interface{}, cyjsNetwork *CyJS) {
 }
 
 func assignNodeAttr(
-nodes []CyJSNode,
-nodeAttrs map[string]interface{}, layout map[string]interface{}) {
+	nodes []CyJSNode,
+	nodeAttrs map[string]interface{}, layout map[string]interface{}) {
 
 	nodeCount := len(nodes)
 
@@ -305,8 +294,8 @@ nodeAttrs map[string]interface{}, layout map[string]interface{}) {
 }
 
 func assignEdgeAttr(
-edges []CyJSEdge,
-nodeAttrs map[string]interface{}) {
+	edges []CyJSEdge,
+	nodeAttrs map[string]interface{}) {
 
 	edgeCount := len(edges)
 	for i := 0; i < edgeCount; i++ {
@@ -326,7 +315,7 @@ func debug() {
 	log.Println("--------- Memory Stats ------------")
 	var mem runtime.MemStats
 	runtime.ReadMemStats(&mem)
-	log.Println(mem.Alloc / 1000, " kb")
+	log.Println(mem.Alloc/1000, " kb")
 	log.Println(mem.TotalAlloc / 1000)
 	log.Println(mem.HeapAlloc / 1000)
 	log.Println(mem.HeapSys / 1000)

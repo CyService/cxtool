@@ -1,16 +1,17 @@
 package main
 
 import (
-	"os"
 	"github.com/codegangsta/cli"
 	"github.com/idekerlab/cxtool/converter"
+	"os"
 )
 
 // File formats
-const(
-	csv string = "csv"
-	tsv string = "tsv"
-	cx string = "cx"
+const (
+	csv = "csv"
+	tsv = "tsv"
+	cx = "cx"
+	sif = "sif"
 )
 
 func main() {
@@ -21,13 +22,13 @@ func main() {
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
-			Name: "source, s",
+			Name:  "source, s",
 			Value: "source.cx",
 			Usage: "Source file to be converted.",
 		},
 
 		cli.StringFlag{
-			Name: "format, f",
+			Name:  "format, f",
 			Value: "cx",
 			Usage: "Source file format.  Default input file format is CX.",
 		},
@@ -41,26 +42,28 @@ func main() {
 			inFileFormat = cx
 		}
 
+		con := getCoverter(inFileFormat)
+
 		// Two cases: Run from file or piped text stream
 		if len(commandLineArgs) == 0 {
-			runConversionStream()
+			con.ConvertFromStdin()
 		} else {
 			source := commandLineArgs[0]
-			runConversion(source)
+			con.Convert(source)
 		}
 	}
 
 	app.Run(os.Args)
 }
 
-func runConversion(source string) {
-	var con converter.Converter
-	con = converter.Cx2Cyjs{}
-	con.Convert(source)
-}
-
-func runConversionStream() {
-	var con converter.Converter
-	con = converter.Cx2Cyjs{}
-	con.ConvertFromStdin()
+func getCoverter(format string) converter.Converter {
+	switch format{
+	case cx:
+		return converter.Cx2Cyjs{}
+	case sif:
+		return converter.Sif2Cx{Delimiter:' '}
+	default:
+		return converter.Cx2Cyjs{}
+	}
+	return nil
 }

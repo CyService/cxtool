@@ -8,8 +8,7 @@ type Position struct {
 }
 
 type CyJSNode struct {
-
-	Data     map[string]interface{} `json:"data"`
+	Data map[string]interface{} `json:"data"`
 
 	Position Position `json:"position,omitempty"`
 
@@ -17,8 +16,7 @@ type CyJSNode struct {
 }
 
 type CyJSEdge struct {
-
-	Data     map[string]interface{} `json:"data"`
+	Data map[string]interface{} `json:"data"`
 
 	Selected bool `json:"selected,omitempty"`
 }
@@ -28,10 +26,8 @@ type Elements struct {
 	Edges []CyJSEdge `json:"edges"`
 }
 
-
 type CyJS struct {
-
-	Data     map[string]interface{} `json:"data"`
+	Data map[string]interface{} `json:"data"`
 
 	Elements Elements `json:"elements"`
 

@@ -11,8 +11,8 @@ const (
 	edge string = "edge"
 
 	networkAttributes string = "networkAttributes"
-	nodeAttributes string = "nodeAttributes"
-	edgeAttributes string = "edgeAttributes"
+	nodeAttributes    string = "nodeAttributes"
+	edgeAttributes    string = "edgeAttributes"
 
 	cartesianLayout string = "cartesianLayout"
 

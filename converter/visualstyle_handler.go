@@ -1,25 +1,23 @@
 package converter
 
 const (
-	network string = "network"
-	cxNodes string = "nodes"
-	cxEdges string = "edges"
+	network      string = "network"
+	cxNodes      string = "nodes"
+	cxEdges      string = "edges"
 	nodesDefault string = "nodes:default"
 	edgesDefault string = "edges:default"
 )
 
 type VisualStyleHandler struct {
-
 	conversionTable map[string]string
 
-	typeTable       map[string]string
+	typeTable map[string]string
 }
-
 
 func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
 
 	// Type converter
-	vpConverter := VisualPropConverter{typeTable:vsHandler.typeTable}
+	vpConverter := VisualPropConverter{typeTable: vsHandler.typeTable}
 
 	vpCount := len(aspect)
 
@@ -58,8 +56,7 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 			if !exists {
 				continue
 			}
-			convertedValue := vpConverter.getCyjsPropertyValue(key, value.
-			(string))
+			convertedValue := vpConverter.getCyjsPropertyValue(key, value.(string))
 			css[cyjsTag] = convertedValue
 
 		}
