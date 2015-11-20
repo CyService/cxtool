@@ -28,15 +28,14 @@ func initHandlers() map[string]CXAspectHandler {
 
 	table, typeTable, conversionErr := prepareConversionTable()
 
-	if conversionErr == nil {
-		log.Println(table)
-	} else {
+	if conversionErr != nil {
 		return nil
 	}
 
 	handlers := make(map[string]CXAspectHandler)
 
-	vpHandler := VisualStyleHandler{conversionTable: table, typeTable: typeTable}
+	viusalMapingGenerator := VisualMappingGenerator{}
+	vpHandler := VisualStyleHandler{conversionTable: table, typeTable: typeTable, visualMappingGenerator:viusalMapingGenerator}
 
 	decoder := TypeDecoder{}
 	attrHandler := AttributeHandler{typeDecoder:decoder}

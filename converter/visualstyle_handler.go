@@ -12,6 +12,8 @@ type VisualStyleHandler struct {
 	conversionTable map[string]string
 
 	typeTable map[string]string
+
+	visualMappingGenerator VisualMappingGenerator
 }
 
 func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
@@ -62,6 +64,12 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 		}
 		entry.CSS = css
 
+		mappings, exists := vp[cx_mappings]
+		if exists {
+			// Parse mapping entries
+			vsHandler.createMappings(mappings.(map[string]interface{}), &entry)
+		}
+
 		// Save for later use
 		// This is necessary for
 		style[selectorTag] = entry
@@ -70,6 +78,23 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 	vpMap["style"] = selectors
 
 	return vpMap
+}
+
+func (vsHandler VisualStyleHandler) createMappings(mappings map[string]interface{}, entry *SelectorEntry) {
+
+
+	for vp, mapping := range mappings {
+
+		visualMapping := mapping.(map[string]interface{})
+		mappingType := visualMapping["type"].(string)
+		definition := visualMapping["definition"].(string)
+
+		switch mappingType {
+		case passthrough:
+			vsHandler.visualMappingGenerator.CreatePassthroughMapping(vp, definition, entry)
+		default:
+		}
+	}
 }
 
 func isValidProperty(propertyOf string) (tag string) {
