@@ -17,16 +17,10 @@ const (
 func BuildApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = "cxtool"
-	app.Usage = "Utility to convert CX JSON into many other formats."
-	app.Version = "0.1.0"
+	app.Usage = "Utility for CX files."
+	app.Version = "0.2.0"
 
 	app.Flags = []cli.Flag{
-		cli.StringFlag{
-			Name:  "source, s",
-			Value: "source.cx",
-			Usage: "Source file to be converted.",
-		},
-
 		cli.StringFlag{
 			Name:  "format, f",
 			Value: "cx",
