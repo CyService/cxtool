@@ -117,7 +117,6 @@ func printEdge(edge Edge) {
 		fmt.Println("error:", err)
 	}
 
-//	os.Stdout.Write(b)
 	fmt.Println(string(b[:]), ",")
 }
 
