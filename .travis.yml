@@ -1,0 +1,9 @@
+language: go
+
+go:
+    - 1.5
+    - tip
+
+install:
+    - go get -u github.com/jteeuwen/go-bindata/...
+    - go get github.com/codegangsta/cli
