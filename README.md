@@ -1,8 +1,10 @@
-# ___cxtool___: CX File Format Converter
+# ___cxtool___: CX File Utility
+
+[![Build Status](https://travis-ci.org/idekerlab/cxtool.svg?branch=master)](https://travis-ci.org/idekerlab/cxtool)
 
 ## Introduction
-This is a command line tool to convert [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing) 
-format into Cytoscape.js JSON and may others.
+This is a command line tool for [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing) 
+files.  Its main function is file conversion from/to SIF, Cytoscape.js JSON and may others.
 
 ## Status
 * 11/20/2015: Pre alpha.  Simply converts CX to basic Cytoscpae.js JSON.
@@ -15,12 +17,26 @@ format into Cytoscape.js JSON and may others.
 * ___To CX___
     * SIF (Simple Interaction Format)
     * Cytoscape.js (ONGOING)
+    * MITAB (TODO)
+    * GraphML (TODO)
 
 ## How to Use
 This is a small collection of tools to support round-trip for CX and 
 related documents.
  
 ### Basic Usage
+1. Show Help
+
+```
+cxtool -h
+```
+
+Or simply
+
+```
+cxtool
+```
+
 
 1. Convert CX file into Cytoscape.js
 
@@ -29,7 +45,7 @@ cxtool input_file
 ```
 
 We recommend to install [jq](https://stedolan.github.io/jq/) for generating human-friendly output.
- 
+
 The following command creates nicely formatted Cytoscape.js JSON. 
 
 ```bash
