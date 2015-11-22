@@ -17,6 +17,7 @@ import (
 )
 
 func main() {
+
 	// Create new cxtool app instance
 	app := builder.BuildApp()
 

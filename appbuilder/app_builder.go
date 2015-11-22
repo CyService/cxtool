@@ -10,29 +10,37 @@ import (
 	"github.com/idekerlab/cxtool/converter"
 )
 
-// File formats
-const (
-	csv = "csv"
-	tsv = "tsv"
-	cx = "cx"
-	sif = "sif"
-	cytoscapejs = "cyjs"
-)
 
 func BuildApp() *cli.App {
 	app := cli.NewApp()
-	app.Name = "cxtool"
-	app.Usage = "Utility for CX files."
-	app.Version = "0.2.1"
 
-	app.Flags = []cli.Flag {
+	basicSetup(app)
+	setFlags(app)
+	setAction(app)
+
+	return app
+}
+
+
+func basicSetup(app *cli.App) {
+	app.Name = Name
+	app.Usage = Usage
+	app.Version = Version
+}
+
+
+func setFlags(app *cli.App) {
+
+	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "format, f",
 			Value: "cx",
 			Usage: "Source file format.  Default input file format is CX.",
 		},
 	}
+}
 
+func setAction(app *cli.App) {
 	app.Action = func(c *cli.Context) {
 		commandLineArgs := c.Args()
 
@@ -41,32 +49,31 @@ func BuildApp() *cli.App {
 			inFileFormat = cx
 		}
 
-		con := getCoverter(inFileFormat)
+		con := getConverter(inFileFormat)
 
 		// Two cases: Run from file or piped text stream
 		if len(commandLineArgs) == 0 {
 
 			fi, err := os.Stdin.Stat()
-  			if err != nil {
-    			panic(err)
-  			}
+			if err != nil {
+				panic(err)
+			}
 
 			if fi.Mode() & os.ModeNamedPipe == 0 {
 				// Show help menu if there is no input
 				cli.ShowAppHelp(c)
-  			} else {
-    			// No param.  Use Pipe
+			} else {
+				// No param.  Use Pipe
 				con.ConvertFromStdin()
-  			}
+			}
 		} else {
 			source := commandLineArgs[0]
 			con.Convert(source)
 		}
 	}
-	return app
 }
 
-func getCoverter(format string) converter.Converter {
+func getConverter(format string) converter.Converter {
 	switch format{
 	case cx:
 		return converter.Cx2Cyjs{}
