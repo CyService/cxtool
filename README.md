@@ -1,6 +1,7 @@
 # ___cxtool___: CX File Utility
 
 [![Build Status](https://travis-ci.org/idekerlab/cxtool.svg?branch=master)](https://travis-ci.org/idekerlab/cxtool)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LISENSE)
 
 ## Introduction
 This is a command line tool for [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing) 

@@ -24,6 +24,27 @@ func (err ResourceReadError) Error() string {
 type Cx2Cyjs struct {
 }
 
+
+func (con Cx2Cyjs) ConvertFromStdin() {
+	reader := bufio.NewReader(os.Stdin)
+	cxDecoder := json.NewDecoder(reader)
+	run(cxDecoder)
+}
+
+func (con Cx2Cyjs) Convert(sourceFileName string) {
+	file, err := os.Open(sourceFileName)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+
+	// Close input file at the end of this
+	defer file.Close()
+	cxDecoder := json.NewDecoder(file)
+	run(cxDecoder)
+}
+
+
 func initHandlers() map[string]CXAspectHandler {
 
 	table, typeTable, conversionErr := prepareConversionTable()
@@ -53,25 +74,6 @@ func initHandlers() map[string]CXAspectHandler {
 	handlers[cartesianLayout] = layoutHandler
 
 	return handlers
-}
-
-func (con Cx2Cyjs) ConvertFromStdin() {
-	reader := bufio.NewReader(os.Stdin)
-	cxDecoder := json.NewDecoder(reader)
-	run(cxDecoder)
-}
-
-func (con Cx2Cyjs) Convert(sourceFileName string) {
-	file, err := os.Open(sourceFileName)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
-
-	// Close input file at the end of this
-	defer file.Close()
-	cxDecoder := json.NewDecoder(file)
-	run(cxDecoder)
 }
 
 func prepareConversionTable() (conversionMap map[string]string, typeMap map[string]string, resourceErr error) {
