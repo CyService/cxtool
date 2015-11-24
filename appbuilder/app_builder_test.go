@@ -12,11 +12,11 @@ import (
 	Main test cases to actually convert data
  */
 
-func TestGetCoverter(t *testing.T) {
+func TestGetConverter(t *testing.T) {
 
 	typeCx2Cyjs := reflect.TypeOf(converter.Cx2Cyjs{})
 
-	cv1 := getConverter(cx)
+	cv1 := getConverter(cx, cytoscapejs)
 
 	cv1Type := reflect.TypeOf(cv1)
 	if cv1Type != typeCx2Cyjs {
@@ -42,7 +42,7 @@ func TestHelp(t *testing.T) {
 
 
 func TestCx2Cyjs(t *testing.T) {
-	app := BuildApp()
-	testFileName := "../test_data/gal1.json"
-	app.Run([]string{Name, testFileName})
+//	app := BuildApp()
+//	testFileName := "../test_data/galcxStyle2.json"
+//	app.Run([]string{Name, testFileName})
 }

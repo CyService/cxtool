@@ -10,6 +10,10 @@ import (
 	"strings"
 )
 
+
+//
+// Read a CX file and generate SIF.
+//
 func TestCx2Sif(t *testing.T) {
 
 	output := new(bytes.Buffer)
@@ -18,7 +22,7 @@ func TestCx2Sif(t *testing.T) {
 
 	c2s := converter.Cx2Sif{W:csvWriter}
 
-	c2s.Convert("../test_data/gal1.json")
+	c2s.Convert("../test_data/galcxStyle2.json")
 
 	result := output.String()
 

@@ -156,17 +156,68 @@ vpName string, definition string, selectorType string) []SelectorEntry {
 	}
 	sort.Float64s(keys)
 
-	for _, k := range keys {
-		pt := points[k].(map[string]interface{})
-		ptStr := strconv.FormatFloat(k, 'E', -1, 64)
-		selectorStr := selectorType + "[" + colName[1] + " = " + ptStr + "]"
+	selectors = createContinuousPoints(points, keys, selectorType, colName[1], vpName)
 
-		newSelector := SelectorEntry{Selector:selectorStr, CSS:pt}
-		selectors = append(selectors, newSelector)
-	}
+//	for _, k := range keys {
+//		pt := points[k].(map[string]interface{})
+//		ptStr := strconv.FormatFloat(k, 'E', -1, 64)
+//		selectorStr := selectorType + "[" + colName[1] + " = " + ptStr + "]"
+//
+//		newSelector := SelectorEntry{Selector:selectorStr, CSS:pt}
+//		selectors = append(selectors, newSelector)
+//	}
 
 	return selectors
 }
+
+func createContinuousPoints(points map[float64]interface{},
+sortedKeys []float64,selectorType string, columnName string, vp string) []SelectorEntry {
+
+	// New selectors to be returned
+	var selectors []SelectorEntry
+
+	numPoints := len(points)
+
+	if numPoints == 0 {
+		return selectors
+	}
+
+
+	// Case 1: only one point
+	if numPoints == 1 {
+
+	} else if numPoints == 2 {
+		ov1 := sortedKeys[0]
+//		ov2 := sortedKeys[1]
+
+		leftPoint := points[ov1].(map[string]float64)
+//		rightPoint := points[ov2].(map[string]interface{})
+
+		ptStr1 := strconv.FormatFloat(ov1, 'E', -1, 64)
+//		ptStr2 := strconv.FormatFloat(ov2, 'E', -1, 64)
+
+		// Less than left point selector
+		selectorStr := selectorType + "[" + columnName + " < " + ptStr1 + "]"
+
+		// Uniform
+		css := make(map[string]interface{})
+		css[vp] = leftPoint["l"]
+
+		selector1 := SelectorEntry{Selector:selectorStr, CSS:css}
+		selectors = append(selectors, selector1)
+
+
+	} else {
+
+	}
+
+	// Case 2: two points
+
+	// Case 3: 3 and more points
+	return selectors
+}
+
+
 
 func isNumberType(colType string) bool {
 	switch colType{
