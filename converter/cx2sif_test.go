@@ -3,13 +3,34 @@ package converter_test
 
 import (
 	"testing"
+	"bytes"
 	"github.com/idekerlab/cxtool/converter"
+	"encoding/csv"
+	"fmt"
+	"strings"
 )
 
 func TestCx2Sif(t *testing.T) {
-	c2s := converter.Cx2Sif{}
 
-	c2s.Convert("../test_data/ndex1.json")
+	output := new(bytes.Buffer)
+	csvWriter := csv.NewWriter(output)
+	csvWriter.Comma = ' '
 
+	c2s := converter.Cx2Sif{W:csvWriter}
 
+	c2s.Convert("../test_data/gal1.json")
+
+	result := output.String()
+
+	lines := strings.Split(result, "\n")
+	for idx := range lines {
+		if lines[idx] == "" {
+			fmt.Println(idx, ": EMPTY")
+		} else {
+			fmt.Println(idx, ": ", lines[idx])
+		}
+	}
+	if len(lines) != 363 {
+		t.Errorf("Expected 363, got %d", len(lines))
+	}
 }

@@ -9,9 +9,9 @@ const (
 )
 
 type VisualStyleHandler struct {
-	conversionTable map[string]string
+	conversionTable        map[string]string
 
-	typeTable map[string]string
+	typeTable              map[string]string
 
 	visualMappingGenerator VisualMappingGenerator
 }
@@ -67,7 +67,10 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 		mappings, exists := vp[cx_mappings]
 		if exists {
 			// Parse mapping entries
-			vsHandler.createMappings(mappings.(map[string]interface{}), &entry)
+			visualMappings := vsHandler.createMappings(
+				selectorTag, mappings.(map[string]interface{}), &entry)
+
+			selectors = append(selectors, visualMappings...)
 		}
 
 		// Save for later use
@@ -80,21 +83,34 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 	return vpMap
 }
 
-func (vsHandler VisualStyleHandler) createMappings(mappings map[string]interface{}, entry *SelectorEntry) {
+func (vsHandler VisualStyleHandler) createMappings(selectorTag string,
+mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEntry){
 
+	var newMaps []SelectorEntry
 
 	for vp, mapping := range mappings {
-
 		visualMapping := mapping.(map[string]interface{})
 		mappingType := visualMapping["type"].(string)
 		definition := visualMapping["definition"].(string)
 
 		switch mappingType {
 		case passthrough:
-			vsHandler.visualMappingGenerator.CreatePassthroughMapping(vp, definition, entry)
+			vsHandler.visualMappingGenerator.CreatePassthroughMapping(vp,
+				definition, entry)
+		case discrete:
+			cyjsTag := vsHandler.conversionTable[vp]
+			newMappings := vsHandler.visualMappingGenerator.CreateDiscreteMappings(cyjsTag,
+				definition, selectorTag)
+			newMaps = append(newMaps, newMappings...)
+		case continuous:
+			cyjsTag := vsHandler.conversionTable[vp]
+			newMappings := vsHandler.visualMappingGenerator.CreateContinuousMappings(cyjsTag, definition, selectorTag)
+			newMaps = append(newMaps, newMappings...)
 		default:
 		}
 	}
+
+	return newMaps
 }
 
 func isValidProperty(propertyOf string) (tag string) {

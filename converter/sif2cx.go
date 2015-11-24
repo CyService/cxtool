@@ -47,9 +47,6 @@ func (con Sif2Cx) readCSV(reader *csv.Reader) {
 
 	nodeCounter := int64(0)
 
-	// The main CX document
-//	cxDoc := CX{}
-
 	fmt.Println("[")
 	for {
 		record, err := reader.Read()

@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"io"
 //	"reflect"
+	"strconv"
+	"encoding/csv"
 )
 
 const (
@@ -13,13 +15,13 @@ const (
 )
 
 type Cx2Sif struct {
+	W *csv.Writer
 }
-
 
 func (con Cx2Sif) ConvertFromStdin() {
 	reader := bufio.NewReader(os.Stdin)
 	cxDecoder := json.NewDecoder(reader)
-	writeSif(cxDecoder)
+	parseSif(cxDecoder, *con.W)
 }
 
 func (con Cx2Sif) Convert(sourceFileName string) {
@@ -32,11 +34,17 @@ func (con Cx2Sif) Convert(sourceFileName string) {
 	// Close input file at the end of this
 	defer file.Close()
 	cxDecoder := json.NewDecoder(file)
-	writeSif(cxDecoder)
+	parseSif(cxDecoder, *con.W)
 }
 
 
-func writeSif(cxDecoder *json.Decoder) {
+func parseSif(cxDecoder *json.Decoder, w csv.Writer) {
+
+	// Edge slice used for later mapping
+	var edges []Edge
+
+	// Node ID to node name map
+	nodeMap := make(map[int64]string)
 
 	for {
 		_, err := cxDecoder.Token()
@@ -53,54 +61,66 @@ func writeSif(cxDecoder *json.Decoder) {
 			if err != nil {
 				fmt.Println(err)
 			}
-//			fmt.Println("Token = ", token)
 
 			if token == "nodes" {
-				processNode(cxDecoder)
+				processNode(cxDecoder, nodeMap)
 			} else if token == "edges" {
-				processEdge(cxDecoder)
+				processEdge(cxDecoder, &edges)
 			}
 		}
 	}
+
+	writeSif(nodeMap, edges, w)
 }
 
-func processNode(decoder *json.Decoder) {
-	token, err := decoder.Token()
-	if err != nil || token != arrayStart {
-//		fmt.Println("##INVALID: ", err)
-		return
-	}
+func writeSif(nodes map[int64]string, edges []Edge, w csv.Writer) {
+	for i := range edges {
 
-	fmt.Println("Nodes found:---", token, "---")
+		edge := edges[i]
 
-	var entry interface{}
-	for decoder.More() {
-		err := decoder.Decode(&entry)
-		if err != nil {
-			fmt.Println("##ERR: ", err)
-			return
+		if edge.I == "" {
+			w.Write([]string{nodes[edge.S], "i", nodes[edge.T]})
+		} else {
+			w.Write([]string{nodes[edge.S], edge.I, nodes[edge.T]})
 		}
-
-		fmt.Println("In Node --- ", entry)
 	}
-
+	w.Flush()
 }
 
-func processEdge(decoder *json.Decoder) {
+func processNode(decoder *json.Decoder, nodes map[int64]string) {
 	token, err := decoder.Token()
 	if err != nil || token != arrayStart {
 		return
 	}
 
-	var entry interface{}
+	var entry Node
 	for decoder.More() {
 		err := decoder.Decode(&entry)
 		if err != nil {
-			fmt.Println("##ERR: ", err)
 			return
 		}
 
-		fmt.Println("In Edge --- ", entry)
+		if entry.N == "" {
+			nodes[entry.ID] = strconv.FormatInt(entry.ID, 10)
+		} else {
+			nodes[entry.ID] = entry.N
+		}
 	}
 
+}
+
+func processEdge(decoder *json.Decoder, edges *[]Edge) {
+	token, err := decoder.Token()
+	if err != nil || token != arrayStart {
+		return
+	}
+
+	var entry Edge
+	for decoder.More() {
+		err := decoder.Decode(&entry)
+		if err != nil {
+			return
+		}
+		*edges = append(*edges, entry)
+	}
 }

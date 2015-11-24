@@ -6,6 +6,7 @@ package appbuilder
 
 import (
 	"os"
+	"encoding/csv"
 	"github.com/codegangsta/cli"
 	"github.com/idekerlab/cxtool/converter"
 )
@@ -31,11 +32,17 @@ func basicSetup(app *cli.App) {
 
 func setFlags(app *cli.App) {
 
-	app.Flags = []cli.Flag{
-		cli.StringFlag{
-			Name:  "format, f",
+	app.Flags = []cli.Flag {
+		cli.StringFlag {
+			Name:  "in-format, i",
 			Value: "cx",
 			Usage: "Source file format.  Default input file format is CX.",
+		},
+
+		cli.StringFlag {
+			Name:  "out-format, o",
+			Value: "cyjs",
+			Usage: "Output file format. Default is Cytoscape.js.",
 		},
 	}
 }
@@ -44,12 +51,10 @@ func setAction(app *cli.App) {
 	app.Action = func(c *cli.Context) {
 		commandLineArgs := c.Args()
 
-		inFileFormat := c.String("format")
-		if inFileFormat == "" {
-			inFileFormat = cx
-		}
+		inFileFormat := c.String("in-format")
+		outFileFormat := c.String("out-format")
 
-		con := getConverter(inFileFormat)
+		con := getConverter(inFileFormat, outFileFormat)
 
 		// Two cases: Run from file or piped text stream
 		if len(commandLineArgs) == 0 {
@@ -73,10 +78,18 @@ func setAction(app *cli.App) {
 	}
 }
 
-func getConverter(format string) converter.Converter {
-	switch format{
+func getConverter(inFormat string, outFormat string) converter.Converter {
+	switch inFormat {
 	case cx:
-		return converter.Cx2Cyjs{}
+		if outFormat == cytoscapejs {
+			return converter.Cx2Cyjs{}
+		}
+
+		if outFormat == sif {
+			csvWriter := csv.NewWriter(os.Stdout)
+			csvWriter.Comma = ' '
+			return converter.Cx2Sif{W: csvWriter}
+		}
 	case sif:
 		return converter.Sif2Cx{Delimiter:' '}
 	default:
