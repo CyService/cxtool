@@ -55,8 +55,9 @@ func initHandlers() map[string]CXAspectHandler {
 
 	handlers := make(map[string]CXAspectHandler)
 
-	viusalMapingGenerator := VisualMappingGenerator{}
-	vpHandler := VisualStyleHandler{conversionTable: table, typeTable: typeTable, visualMappingGenerator:viusalMapingGenerator}
+	visualMappingGenerator := VisualMappingGenerator{vpConverter:VisualPropConverter{typeTable:typeTable}}
+	vpHandler := VisualStyleHandler{conversionTable: table,
+		typeTable:typeTable, visualMappingGenerator:visualMappingGenerator}
 
 	decoder := TypeDecoder{}
 	attrHandler := AttributeHandler{typeDecoder:decoder}
@@ -127,8 +128,9 @@ func run(cxDecoder *json.Decoder) {
 	nodeAttrs := make(map[string]interface{})
 	edgeAttrs := make(map[string]interface{})
 
+	cxData := make(map[string]interface{})
 	// Basic Cytoscape.js object
-	cyjsNetwork := CyJS{Data: networkAttr, Elements: elements}
+	cyjsNetwork := CyJS{Data: networkAttr, Elements: elements, CxData:cxData}
 
 	for {
 		_, err := cxDecoder.Token()
@@ -139,8 +141,6 @@ func run(cxDecoder *json.Decoder) {
 			log.Println(err)
 			return
 		}
-
-		//log.Println("CX Array found: ", t)
 
 		// Decode entry one-by-one.
 		for cxDecoder.More() {
@@ -218,6 +218,8 @@ func detectType(
 		vpHandler := handlers[visualProperties]
 		*vps = vpHandler.HandleAspect(value.([]interface{}))
 	default:
+		// All others
+		cyjsNetwork.CxData[tag] = value
 	}
 }
 

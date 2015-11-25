@@ -12,7 +12,7 @@ type CyJSNode struct {
 
 	Position Position `json:"position,omitempty"`
 
-	Selected bool `json:"selected,omitempty"`
+	Selected bool `json:"selected"`
 }
 
 type CyJSEdge struct {
@@ -32,4 +32,6 @@ type CyJS struct {
 	Elements Elements `json:"elements"`
 
 	Style []SelectorEntry `json:"style"`
+
+	CxData map[string]interface{} `json:"cxData,omitempty"`
 }

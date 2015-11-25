@@ -104,7 +104,8 @@ mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEn
 			newMaps = append(newMaps, newMappings...)
 		case continuous:
 			cyjsTag := vsHandler.conversionTable[vp]
-			newMappings := vsHandler.visualMappingGenerator.CreateContinuousMappings(cyjsTag, definition, selectorTag)
+			vpDataType := vsHandler.typeTable[vp]
+			newMappings := vsHandler.visualMappingGenerator.CreateContinuousMappings(cyjsTag, vp, vpDataType, definition, selectorTag)
 			newMaps = append(newMaps, newMappings...)
 		default:
 		}

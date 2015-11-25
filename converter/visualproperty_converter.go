@@ -18,8 +18,9 @@ func (vpConverter VisualPropConverter) getCyjsPropertyValue(key string, value st
 		number, err := strconv.ParseFloat(value, 64)
 		if err == nil {
 			return number
+		} else {
+			return value
 		}
-		return value
 	case "font":
 		return parseFont(value)
 	default:
