@@ -55,7 +55,8 @@ func initHandlers() map[string]CXAspectHandler {
 
 	handlers := make(map[string]CXAspectHandler)
 
-	visualMappingGenerator := VisualMappingGenerator{vpConverter:VisualPropConverter{typeTable:typeTable}}
+	vpc := NewVisualPropConverter(typeTable)
+	visualMappingGenerator := VisualMappingGenerator{vpConverter:*vpc}
 	vpHandler := VisualStyleHandler{conversionTable: table,
 		typeTable:typeTable, visualMappingGenerator:visualMappingGenerator}
 

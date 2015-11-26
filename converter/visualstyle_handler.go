@@ -19,7 +19,7 @@ type VisualStyleHandler struct {
 func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
 
 	// Type converter
-	vpConverter := VisualPropConverter{typeTable: vsHandler.typeTable}
+//	vpConverter := VisualPropConverter{typeTable: vsHandler.typeTable}
 
 	vpCount := len(aspect)
 
@@ -31,21 +31,23 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 	style := make(map[string]SelectorEntry)
 
 	var selectors []SelectorEntry
+	var defaultsSelectors []SelectorEntry
 
 	for i := 0; i < vpCount; i++ {
-
 		// Extract a new selector
 		vp := aspect[i].(map[string]interface{})
 		targetProperty := vp["properties_of"].(string)
 
-		// Supported or not
-		selectorTag := isValidProperty(targetProperty)
+		// Check valid graph object (node/edge/net) ot not
+		selectorTag, isDefaults := isValidProperty(targetProperty)
 
 		if selectorTag == "" {
 			continue
 		}
 
+		// This is the actual entry to be added
 		entry := SelectorEntry{}
+
 		entry.Selector = selectorTag
 
 		cxProps := vp["properties"].(map[string]interface{})
@@ -58,7 +60,8 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 			if !exists {
 				continue
 			}
-			convertedValue := vpConverter.getCyjsPropertyValue(key, value.(string))
+
+			convertedValue := vsHandler.visualMappingGenerator.vpConverter.getCyjsPropertyValue(key, value.(string))
 			css[cyjsTag] = convertedValue
 
 		}
@@ -76,12 +79,22 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 		// Save for later use
 		// This is necessary for
 		style[selectorTag] = entry
-		selectors = append(selectors, entry)
+
+		if isDefaults {
+			defaultsSelectors = append(defaultsSelectors, entry)
+		} else {
+			selectors = append(selectors, entry)
+		}
+
 	}
-	vpMap["style"] = selectors
+
+	// Add selectors under "style" tab
+	mergedSelector := append(defaultsSelectors, selectors...)
+	vpMap["style"] = mergedSelector
 
 	return vpMap
 }
+
 
 func (vsHandler VisualStyleHandler) createMappings(selectorTag string,
 mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEntry){
@@ -114,19 +127,24 @@ mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEn
 	return newMaps
 }
 
-func isValidProperty(propertyOf string) (tag string) {
+
+//
+// Check the given "property_of" tag is valid or not.
+// 2nd parameter is true if it is a list of defaults
+//
+func isValidProperty(propertyOf string) (tag string, defaults bool) {
 	switch propertyOf {
 	case nodesDefault:
-		return node
+		return node, true
 	case cxNodes:
-		return node
+		return node, false
 	case edgesDefault:
-		return edge
+		return edge, true
 	case cxEdges:
-		return edge
+		return edge, false
 	case network:
-		return ""
+		return "", false
 	default:
-		return ""
+		return "", false
 	}
 }

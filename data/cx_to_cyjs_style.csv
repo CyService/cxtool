@@ -8,7 +8,7 @@ NODE_LABEL_COLOR,color,string
 NODE_LABEL_FONT_SIZE,font-size,number
 NODE_LABEL_FONT_FACE,font-family,font
 NODE_LABEL_TRANSPARENCY,text-opacity,number
-NODE_SHAPE,shape,string
+NODE_SHAPE,shape,shape
 NODE_HEIGHT,height,number
 NODE_WIDTH,width,number
 NODE_SELECTED_PAINT,background-color,string
@@ -19,9 +19,9 @@ EDGE_LABEL_FONT_SIZE,font-size,number
 EDGE_LABEL_FONT_FACE,font-family,font
 EDGE_LABEL_COLOR,color,string
 EDGE_LABEL_TRANSPARENCY,text-opacity,number
-EDGE_LINE_TYPE,line-style,string
+EDGE_LINE_TYPE,line-style,line
 EDGE_STROKE_UNSELECTED_PAINT,line-color,string
 EDGE_TRANSPARENCY,opacity,number
-EDGE_SOURCE_ARROW_SHAPE,source-arrow-shape,string
-EDGE_TARGET_ARROW_SHAPE,target-arrow-shape,string
+EDGE_SOURCE_ARROW_SHAPE,source-arrow-shape,arrow
+EDGE_TARGET_ARROW_SHAPE,target-arrow-shape,arrow
 EDGE_SELECTED_PAINT,line-color,string

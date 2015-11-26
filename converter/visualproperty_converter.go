@@ -7,11 +7,32 @@ import (
 
 type VisualPropConverter struct {
 	typeTable map[string]string
+
+	valueConverters map[string]ValueConverter
 }
+
+func NewVisualPropConverter(typeTable map[string]string) *VisualPropConverter {
+	asc := NewArrowShapeConverter()
+
+	valueConverterMap := map[string]ValueConverter {
+		"arrow": asc,
+	}
+
+	vpc := VisualPropConverter{typeTable:typeTable, valueConverters:valueConverterMap}
+
+	return &vpc
+}
+
 
 func (vpConverter VisualPropConverter) getCyjsPropertyValue(key string, value string) (converted interface{}) {
 
 	dataType := vpConverter.typeTable[key]
+
+	// Try converter
+	converter, exists := vpConverter.valueConverters[dataType]
+	if exists {
+		return converter.Convert(value)
+	}
 
 	switch dataType {
 	case "number":
