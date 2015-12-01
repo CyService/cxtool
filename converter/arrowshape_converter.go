@@ -4,6 +4,10 @@ type ArrowShapeConverter struct {
 	arrowMap map[string]string
 }
 
+const (
+	defaultArrowShape = "none"
+)
+
 func NewArrowShapeConverter() *ArrowShapeConverter {
 
 	arrowMap := map[string]string{
@@ -29,6 +33,6 @@ func (conv ArrowShapeConverter) Convert(value string) string {
 	if exists {
 		return cyjsArrowShape
 	} else {
-		return "none"
+		return defaultArrowShape
 	}
 }

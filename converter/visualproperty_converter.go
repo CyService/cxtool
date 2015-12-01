@@ -13,9 +13,11 @@ type VisualPropConverter struct {
 
 func NewVisualPropConverter(typeTable map[string]string) *VisualPropConverter {
 	asc := NewArrowShapeConverter()
+	sc := NewShapeConverter()
 
 	valueConverterMap := map[string]ValueConverter {
 		"arrow": asc,
+		"shape": sc,
 	}
 
 	vpc := VisualPropConverter{typeTable:typeTable, valueConverters:valueConverterMap}
