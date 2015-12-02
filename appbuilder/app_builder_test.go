@@ -3,7 +3,7 @@ package appbuilder
 import (
 	"testing"
 	"reflect"
-	"github.com/idekerlab/cxtool/converter"
+	"github.com/cytoscape-ci/cxtool/converter"
 	"bytes"
 	"strings"
 )
@@ -42,7 +42,28 @@ func TestHelp(t *testing.T) {
 
 
 func TestCx2Cyjs(t *testing.T) {
-//	app := BuildApp()
-//	testFileName := "../test_data/galcxStyle2.json"
-//	app.Run([]string{Name, testFileName})
+	output := new(bytes.Buffer)
+	app := BuildApp()
+	app.Writer = output
+	testFileName := "../test_data/galcxStyle2.json"
+	app.Run([]string{Name, testFileName})
+
+	t.Log("\n", output)
+	t.Log("\n--------OK------")
+}
+
+
+func TestCx2Sif(t *testing.T) {
+	// Test conversion from CX to SIF file.
+
+	output := new(bytes.Buffer)
+	app := BuildApp()
+	app.Writer = output
+	testFileName := "../test_data/galcxStyle2.json"
+	app.Run([]string{Name, "-o", "sif", testFileName})
+
+	result := output.String()
+//	vals := strings.Split(result, "\n")
+
+	t.Log("Lines = ", len(result))
 }

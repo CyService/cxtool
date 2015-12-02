@@ -1,4 +1,4 @@
-package converter
+package cyjs
 
 import (
 	"strconv"
@@ -26,7 +26,7 @@ func NewVisualPropConverter(typeTable map[string]string) *VisualPropConverter {
 }
 
 
-func (vpConverter VisualPropConverter) getCyjsPropertyValue(key string, value string) (converted interface{}) {
+func (vpConverter VisualPropConverter) GetCyjsPropertyValue(key string, value string) (converted interface{}) {
 
 	dataType := vpConverter.typeTable[key]
 

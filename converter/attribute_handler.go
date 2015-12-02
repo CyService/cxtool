@@ -1,12 +1,13 @@
 package converter
 
 import (
+	cx "github.com/cytoscape-ci/cxtool/cx"
 	"strconv"
 	"reflect"
 )
 
 type AttributeHandler struct {
-	typeDecoder TypeDecoder
+	typeDecoder cx.TypeDecoder
 }
 
 func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
@@ -41,7 +42,7 @@ func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[strin
 		dataType, exists := attr["d"]
 		if exists && reflect.TypeOf(value) == reflect.TypeOf("") {
 			// Need data type conversion
-			value = attrHandler.typeDecoder.decode(value.(string), dataType.
+			value = attrHandler.typeDecoder.Decode(value.(string), dataType.
 			(string))
 		}
 

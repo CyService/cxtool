@@ -1,6 +1,8 @@
 package converter
 
 import (
+	cyjs "github.com/cytoscape-ci/cxtool/cyjs"
+	cx "github.com/cytoscape-ci/cxtool/cx"
 	"bufio"
 	"bytes"
 	"encoding/csv"
@@ -22,16 +24,26 @@ func (err ResourceReadError) Error() string {
 }
 
 type Cx2Cyjs struct {
+	W *io.Writer
 }
 
 
 func (con Cx2Cyjs) ConvertFromStdin() {
+	if con.W == nil {
+		outWriter := io.Writer(os.Stdout)
+		con.W = &outWriter
+	}
 	reader := bufio.NewReader(os.Stdin)
 	cxDecoder := json.NewDecoder(reader)
-	run(cxDecoder)
+	con.run(cxDecoder)
 }
 
 func (con Cx2Cyjs) Convert(sourceFileName string) {
+	if con.W == nil {
+		outWriter := io.Writer(os.Stdout)
+		con.W = &outWriter
+	}
+
 	file, err := os.Open(sourceFileName)
 	if err != nil {
 		fmt.Println("Error:", err)
@@ -41,7 +53,7 @@ func (con Cx2Cyjs) Convert(sourceFileName string) {
 	// Close input file at the end of this
 	defer file.Close()
 	cxDecoder := json.NewDecoder(file)
-	run(cxDecoder)
+	con.run(cxDecoder)
 }
 
 
@@ -55,25 +67,25 @@ func initHandlers() map[string]CXAspectHandler {
 
 	handlers := make(map[string]CXAspectHandler)
 
-	vpc := NewVisualPropConverter(typeTable)
-	visualMappingGenerator := VisualMappingGenerator{vpConverter:*vpc}
+	vpc := cyjs.NewVisualPropConverter(typeTable)
+	visualMappingGenerator := cyjs.VisualMappingGenerator{VpConverter:*vpc}
 	vpHandler := VisualStyleHandler{conversionTable: table,
 		typeTable:typeTable, visualMappingGenerator:visualMappingGenerator}
 
-	decoder := TypeDecoder{}
+	decoder := cx.TypeDecoder{}
 	attrHandler := AttributeHandler{typeDecoder:decoder}
 	networkAttrHandler := NetworkAttributeHandler{typeDecoder: decoder}
 
 	layoutHandler := LayoutHandler{}
 
 	// Attribute Handlers: Use one common handler for all
-	handlers[networkAttributes] = networkAttrHandler
-	handlers[nodeAttributes] = attrHandler
-	handlers[edgeAttributes] = attrHandler
+	handlers[cx.NetworkAttributesTag] = networkAttrHandler
+	handlers[cx.NodeAttributesTag] = attrHandler
+	handlers[cx.EdgeAttributesTag] = attrHandler
 
 	// Cytoscape specific handlers
-	handlers[visualProperties] = vpHandler
-	handlers[cartesianLayout] = layoutHandler
+	handlers[cx.VisualPropertiesTag] = vpHandler
+	handlers[cx.CartesianLayoutTag] = layoutHandler
 
 	return handlers
 }
@@ -109,7 +121,7 @@ func prepareConversionTable() (conversionMap map[string]string, typeMap map[stri
 	return table, typeTable, nil
 }
 
-func run(cxDecoder *json.Decoder) {
+func (con Cx2Cyjs) run(cxDecoder *json.Decoder) {
 
 	// Initialize handlers
 	handlers := initHandlers()
@@ -118,12 +130,12 @@ func run(cxDecoder *json.Decoder) {
 	networkAttr := make(map[string]interface{})
 
 	// Elements
-	var nodes []CyJSNode
-	var edges []CyJSEdge
+	var nodes []cyjs.CyJSNode
+	var edges []cyjs.CyJSEdge
 	layout := make(map[string]interface{})
 	vps := make(map[string]interface{})
 
-	elements := Elements{Nodes: nodes, Edges: edges}
+	elements := cyjs.Elements{Nodes: nodes, Edges: edges}
 
 	// Temp storage for attributes
 	nodeAttrs := make(map[string]interface{})
@@ -131,7 +143,8 @@ func run(cxDecoder *json.Decoder) {
 
 	cxData := make(map[string]interface{})
 	// Basic Cytoscape.js object
-	cyjsNetwork := CyJS{Data: networkAttr, Elements: elements, CxData:cxData}
+	cyjsNetwork := cyjs.CyJS{Data: networkAttr, Elements: elements,
+		CxData:cxData}
 
 	for {
 		_, err := cxDecoder.Token()
@@ -160,14 +173,15 @@ func run(cxDecoder *json.Decoder) {
 	assignEdgeAttr(cyjsNetwork.Elements.Edges, edgeAttrs)
 
 	// Add style to net
-	cyjsNetwork.Style = vps["style"].([]SelectorEntry)
+	cyjsNetwork.Style = vps["style"].([]cyjs.SelectorEntry)
 
 	jsonString, err := json.Marshal(cyjsNetwork)
 
 	if err != nil {
 		fmt.Println("ERR: ", err)
 	} else {
-		fmt.Println(string(jsonString))
+//		fmt.Println(string(jsonString))
+		(*con.W).Write(jsonString)
 	}
 	//debug()
 }
@@ -175,7 +189,7 @@ func run(cxDecoder *json.Decoder) {
 func parseCxEntry(
 	handlers map[string]CXAspectHandler,
 	entry map[string]interface{},
-	cyjsNetwork *CyJS,
+	cyjsNetwork *cyjs.CyJS,
 	nodeAttrs *map[string]interface{},
 	edgeAttrs *map[string]interface{},
 	layout *map[string]interface{},
@@ -191,7 +205,7 @@ func parseCxEntry(
 func detectType(
 	handlers map[string]CXAspectHandler,
 	tag string, value interface{},
-	cyjsNetwork *CyJS,
+	cyjsNetwork *cyjs.CyJS,
 	nodeAttrs *map[string]interface{},
 	edgeAttrs *map[string]interface{},
 	layout *map[string]interface{},
@@ -199,24 +213,24 @@ func detectType(
 
 	switch tag {
 
-	case networkAttributes:
-		netHandler := handlers[networkAttributes]
+	case cx.NetworkAttributesTag:
+		netHandler := handlers[cx.NetworkAttributesTag]
 		cyjsNetwork.Data = netHandler.HandleAspect(value.([]interface{}))
-	case nodes:
+	case cx.NodesTag:
 		createNodes(value.([]interface{}), cyjsNetwork)
-	case edges:
+	case cx.EdgesTag:
 		decodeEdges(value.([]interface{}), cyjsNetwork)
-	case nodeAttributes:
-		nodeAttributeHandler := handlers[nodeAttributes]
+	case cx.NodeAttributesTag:
+		nodeAttributeHandler := handlers[cx.NodeAttributesTag]
 		*nodeAttrs = nodeAttributeHandler.HandleAspect(value.([]interface{}))
-	case edgeAttributes:
-		edgeAttributeHandler := handlers[edgeAttributes]
+	case cx.EdgeAttributesTag:
+		edgeAttributeHandler := handlers[cx.EdgeAttributesTag]
 		*edgeAttrs = edgeAttributeHandler.HandleAspect(value.([]interface{}))
-	case cartesianLayout:
-		layoutHandler := handlers[cartesianLayout]
+	case cx.CartesianLayoutTag:
+		layoutHandler := handlers[cx.CartesianLayoutTag]
 		*layout = layoutHandler.HandleAspect(value.([]interface{}))
-	case visualProperties:
-		vpHandler := handlers[visualProperties]
+	case cx.VisualPropertiesTag:
+		vpHandler := handlers[cx.VisualPropertiesTag]
 		*vps = vpHandler.HandleAspect(value.([]interface{}))
 	default:
 		// All others
@@ -224,7 +238,7 @@ func detectType(
 	}
 }
 
-func createNodes(nodes []interface{}, cyjsNetwork *CyJS) {
+func createNodes(nodes []interface{}, cyjsNetwork *cyjs.CyJS) {
 	nodeCount := len(nodes)
 	cyjsNodes := &cyjsNetwork.Elements.Nodes
 
@@ -232,9 +246,10 @@ func createNodes(nodes []interface{}, cyjsNetwork *CyJS) {
 		node := nodes[i].(map[string]interface{})
 
 		// Create data
-		newNode := CyJSNode{}
+		newNode := cyjs.CyJSNode{}
 		newNode.Data = make(map[string]interface{})
-		newNode.Data["id"] = strconv.FormatInt(int64(node[id].(float64)), 10)
+		newNode.Data["id"] = strconv.FormatInt(int64(node[cx.Id].(float64)),
+			10)
 
 		name, exists := newNode.Data["n"]
 		if exists {
@@ -244,7 +259,7 @@ func createNodes(nodes []interface{}, cyjsNetwork *CyJS) {
 	}
 }
 
-func decodeEdges(edges []interface{}, cyjsNetwork *CyJS) {
+func decodeEdges(edges []interface{}, cyjsNetwork *cyjs.CyJS) {
 	edgeCount := len(edges)
 	cyjsEdges := &cyjsNetwork.Elements.Edges
 
@@ -252,15 +267,17 @@ func decodeEdges(edges []interface{}, cyjsNetwork *CyJS) {
 		edge := edges[idx].(map[string]interface{})
 
 		// Create data
-		newEdge := CyJSEdge{}
+		newEdge := cyjs.CyJSEdge{}
 		newEdge.Data = make(map[string]interface{})
 
 		// Required fields
-		newEdge.Data["id"] = strconv.FormatInt(int64(edge[id].(float64)), 10)
-		newEdge.Data["source"] = strconv.FormatInt(int64(edge[s].(float64)), 10)
-		newEdge.Data["target"] = strconv.FormatInt(int64(edge[t].(float64)), 10)
+		newEdge.Data["id"] = strconv.FormatInt(int64(edge[cx.Id].(float64)), 10)
+		newEdge.Data["source"] = strconv.FormatInt(int64(edge[cx.S].(float64)),
+			10)
+		newEdge.Data["target"] = strconv.FormatInt(int64(edge[cx.T].(float64)),
+			10)
 
-		itr, exists := edge[i]
+		itr, exists := edge[cx.I]
 		if exists {
 			newEdge.Data["interaction"] = itr.(string)
 		}
@@ -270,7 +287,7 @@ func decodeEdges(edges []interface{}, cyjsNetwork *CyJS) {
 }
 
 func assignNodeAttr(
-	nodes []CyJSNode,
+	nodes []cyjs.CyJSNode,
 	nodeAttrs map[string]interface{}, layout map[string]interface{}) {
 
 	nodeCount := len(nodes)
@@ -290,13 +307,13 @@ func assignNodeAttr(
 		// Assign position if available
 		pos, exists := layout[nodeId]
 		if exists {
-			nd.Position = pos.(Position)
+			nd.Position = pos.(cyjs.Position)
 		}
 	}
 }
 
 func assignEdgeAttr(
-	edges []CyJSEdge,
+	edges []cyjs.CyJSEdge,
 	nodeAttrs map[string]interface{}) {
 
 	edgeCount := len(edges)

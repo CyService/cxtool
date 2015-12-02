@@ -1,6 +1,6 @@
 /*
 
-	cxtool: A commandline tool to convert CX and related files
+	cxtool: A command line tool to convert CX and related files
 
 	by Keiichiro Ono (kono at ucsd edu)
 
@@ -12,7 +12,7 @@
 package main
 
 import (
-	builder "github.com/idekerlab/cxtool/appbuilder"
+	builder "github.com/cytoscape-ci/cxtool/appbuilder"
 	"os"
 )
 

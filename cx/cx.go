@@ -1,28 +1,33 @@
-package converter
+package cx
 
-// Tags for CX
-
+//
+// Tags used in CX files
+//
 const (
-
 // For nodes
-	id string = "@id"
-	n  string = "n"
-	s  string = "s"
-	t  string = "t"
-	i  string = "i"
-	po string = "po"
-	v  string = "v"
+	Id string = "@id"
+	N  string = "n"
+	S  string = "s"
+	T  string = "t"
+	I  string = "i"
+	PO string = "po"
+	V  string = "v"
 )
 
+//
+// JSON structure for node
+//
 type Node struct {
 	ID int64 `json:"@id"`
 	N  string `json:"n"`
 }
 
+// List of Nodes
 type Nodes struct {
 	NodesList []Node `json:"nodes"`
 }
 
+// An Edge in CX
 type Edge struct {
 	ID int64 `json:"@id"`
 	S  int64 `json:"s"`
@@ -30,14 +35,13 @@ type Edge struct {
 	I  string `json:"i"`
 }
 
+// List of edges
 type Edges struct {
 	EdgeList []Edge `json:"edges"`
 }
 
-type Metadata struct {
 
-}
-
+// Attribute for both nodes and edges
 type Attribute struct {
 	PO int64
 	N  string
@@ -45,13 +49,20 @@ type Attribute struct {
 	D  string
 }
 
+
+// Special case: Attributes for a network
 type NetworkAttribute struct {
 	N string `json:"n"`
 	V interface{} `json:"v"`
 	D string `json:"d,omitempty"`
 }
 
+type Metadata struct {
 
+}
+
+
+// Basic structure of CX with minimum aspects for Cytoscape
 type CX struct {
 
 	NetworkAttributes []NetworkAttribute `json:"networkAttributes"`
@@ -61,7 +72,6 @@ type CX struct {
 
 	NodeAttributes    []Attribute `json:"nodeAttributes"`
 	EdgeAttributes    []Attribute `json:"edgeAttributes"`
-
 }
 
 

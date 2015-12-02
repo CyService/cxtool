@@ -1,10 +1,10 @@
-package converter
+package cx
 
 const (
-	cx_mappings = "mappings"
-	passthrough = "PASSTHROUGH"
-	discrete = "DISCRETE"
-	continuous = "CONTINUOUS"
+	Mappings = "mappings"
+	Passthrough = "PASSTHROUGH"
+	Discrete = "DISCRETE"
+	Continuous = "CONTINUOUS"
 )
 
 

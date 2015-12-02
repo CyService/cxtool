@@ -1,4 +1,4 @@
-package converter
+package cyjs
 
 type ValueConverter interface {
 

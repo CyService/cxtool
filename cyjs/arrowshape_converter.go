@@ -1,4 +1,4 @@
-package converter
+package cyjs
 
 type ArrowShapeConverter struct {
 	arrowMap map[string]string

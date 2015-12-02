@@ -4,7 +4,7 @@ package converter_test
 import (
 	"testing"
 	"bytes"
-	"github.com/idekerlab/cxtool/converter"
+	"github.com/cytoscape-ci/cxtool/converter"
 	"encoding/csv"
 	"fmt"
 	"strings"

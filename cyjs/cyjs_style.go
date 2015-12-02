@@ -1,8 +1,8 @@
-package converter
+/*
+	An entry in Cytoscape.js Style object
+ */
+package cyjs
 
-//
-// An entry in Cytoscape.js style section
-//
 type SelectorEntry struct {
 
 	Selector string                 `json:"selector"`

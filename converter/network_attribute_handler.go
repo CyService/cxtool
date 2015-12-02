@@ -1,10 +1,11 @@
 package converter
 import (
+	cx "github.com/cytoscape-ci/cxtool/cx"
 	"reflect"
 )
 
 type NetworkAttributeHandler struct {
-	typeDecoder TypeDecoder
+	typeDecoder cx.TypeDecoder
 }
 
 func (networkAttrHandler NetworkAttributeHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
@@ -23,7 +24,7 @@ func (networkAttrHandler NetworkAttributeHandler) HandleAspect(aspect []interfac
 	return attrMap
 }
 
-func processEntry(decoder TypeDecoder, attr map[string]interface{},
+func processEntry(decoder cx.TypeDecoder, attr map[string]interface{},
 	attrMap map[string]interface{}) {
 	key := attr["n"].(string)
 
@@ -33,7 +34,7 @@ func processEntry(decoder TypeDecoder, attr map[string]interface{},
 
 	if exists && reflect.TypeOf(value) == reflect.TypeOf("") {
 		// Need data type conversion
-		value = decoder.decode(value.(string), dataType.(string))
+		value = decoder.Decode(value.(string), dataType.(string))
 	}
 
 	attrMap[key] = value

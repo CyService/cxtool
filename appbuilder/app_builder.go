@@ -1,5 +1,6 @@
 /*
 	Basic settings for cxtool app.
+
 	(An utility to create new App settings)
  */
 package appbuilder
@@ -8,7 +9,7 @@ import (
 	"os"
 	"encoding/csv"
 	"github.com/codegangsta/cli"
-	"github.com/idekerlab/cxtool/converter"
+	"github.com/cytoscape-ci/cxtool/converter"
 )
 
 

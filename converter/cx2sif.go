@@ -1,5 +1,6 @@
 package converter
 import (
+	cx "github.com/cytoscape-ci/cxtool/cx"
 	"bufio"
 	"encoding/json"
 	"os"
@@ -41,7 +42,7 @@ func (con Cx2Sif) Convert(sourceFileName string) {
 func parseSif(cxDecoder *json.Decoder, w csv.Writer) {
 
 	// Edge slice used for later mapping
-	var edges []Edge
+	var edges []cx.Edge
 
 	// Node ID to node name map
 	nodeMap := make(map[int64]string)
@@ -73,7 +74,7 @@ func parseSif(cxDecoder *json.Decoder, w csv.Writer) {
 	writeSif(nodeMap, edges, w)
 }
 
-func writeSif(nodes map[int64]string, edges []Edge, w csv.Writer) {
+func writeSif(nodes map[int64]string, edges []cx.Edge, w csv.Writer) {
 	for i := range edges {
 
 		edge := edges[i]
@@ -93,7 +94,7 @@ func processNode(decoder *json.Decoder, nodes map[int64]string) {
 		return
 	}
 
-	var entry Node
+	var entry cx.Node
 	for decoder.More() {
 		err := decoder.Decode(&entry)
 		if err != nil {
@@ -109,13 +110,13 @@ func processNode(decoder *json.Decoder, nodes map[int64]string) {
 
 }
 
-func processEdge(decoder *json.Decoder, edges *[]Edge) {
+func processEdge(decoder *json.Decoder, edges *[]cx.Edge) {
 	token, err := decoder.Token()
 	if err != nil || token != arrayStart {
 		return
 	}
 
-	var entry Edge
+	var entry cx.Edge
 	for decoder.More() {
 		err := decoder.Decode(&entry)
 		if err != nil {

@@ -1,4 +1,4 @@
-package converter
+package cyjs
 
 import (
 	"strings"
@@ -12,7 +12,7 @@ const (
 )
 
 type VisualMappingGenerator struct {
-	vpConverter VisualPropConverter
+	VpConverter VisualPropConverter
 }
 
 
@@ -192,8 +192,8 @@ columnName string, vpDataType string, vp string, vpCytoscape string) []SelectorE
 			cssLeft := make(map[string]interface{})
 			cssLeftEq := make(map[string]interface{})
 
-			cssLeft[vp] = vmGenerator.vpConverter.getCyjsPropertyValue(vpCytoscape, p["l"].(string))
-			cssLeftEq[vp] = vmGenerator.vpConverter.getCyjsPropertyValue(vpCytoscape, p["e"].(string))
+			cssLeft[vp] = vmGenerator.VpConverter.GetCyjsPropertyValue(vpCytoscape, p["l"].(string))
+			cssLeftEq[vp] = vmGenerator.VpConverter.GetCyjsPropertyValue(vpCytoscape, p["e"].(string))
 
 			selectors = append(selectors, SelectorEntry{Selector:selectorLeft, CSS:cssLeft})
 			selectors = append(selectors, SelectorEntry{Selector:selectorLeftEq, CSS:cssLeftEq})
@@ -225,7 +225,7 @@ columnName string, vpDataType string, vp string, vpCytoscape string) []SelectorE
 
 			selectorNextEq := selectorType + "[" + columnName + " = " + pStrNext + "]"
 			cssNextEq := make(map[string]interface{})
-			cssNextEq[vp] = vmGenerator.vpConverter.getCyjsPropertyValue(vpCytoscape, pNext["e"].(string))
+			cssNextEq[vp] = vmGenerator.VpConverter.GetCyjsPropertyValue(vpCytoscape, pNext["e"].(string))
 
 			selectors = append(selectors, SelectorEntry{Selector:selectorNextEq,
 				CSS:cssNextEq})
@@ -235,7 +235,7 @@ columnName string, vpDataType string, vp string, vpCytoscape string) []SelectorE
 				selectorRight := selectorType + "[" + columnName + " > " +
 				pStrNext + "]"
 				cssRight := make(map[string]interface{})
-				cssRight[vp] = vmGenerator.vpConverter.getCyjsPropertyValue(vpCytoscape, pNext["g"].(string))
+				cssRight[vp] = vmGenerator.VpConverter.GetCyjsPropertyValue(vpCytoscape, pNext["g"].(string))
 				selectors = append(selectors, SelectorEntry{Selector:selectorRight,
 					CSS:cssRight})
 			}

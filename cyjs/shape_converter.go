@@ -1,4 +1,4 @@
-package converter
+package cyjs
 
 type ShapeConverter struct {
 	shapeMap map[string]string

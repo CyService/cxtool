@@ -1,5 +1,10 @@
 package converter
 
+import (
+	cx "github.com/cytoscape-ci/cxtool/cx"
+	cyjs "github.com/cytoscape-ci/cxtool/cyjs"
+)
+
 const (
 	network      string = "network"
 	cxNodes      string = "nodes"
@@ -13,7 +18,7 @@ type VisualStyleHandler struct {
 
 	typeTable              map[string]string
 
-	visualMappingGenerator VisualMappingGenerator
+	visualMappingGenerator cyjs.VisualMappingGenerator
 }
 
 func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
@@ -28,10 +33,10 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 
 	// Temp Visual Style object,
 	//  A map from selector name to actual props.
-	style := make(map[string]SelectorEntry)
+	style := make(map[string]cyjs.SelectorEntry)
 
-	var selectors []SelectorEntry
-	var defaultsSelectors []SelectorEntry
+	var selectors []cyjs.SelectorEntry
+	var defaultsSelectors []cyjs.SelectorEntry
 
 	for i := 0; i < vpCount; i++ {
 		// Extract a new selector
@@ -46,7 +51,7 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 		}
 
 		// This is the actual entry to be added
-		entry := SelectorEntry{}
+		entry := cyjs.SelectorEntry{}
 
 		entry.Selector = selectorTag
 
@@ -55,19 +60,19 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 		css := make(map[string]interface{})
 
 		for key, value := range cxProps {
-			cyjsTag, exists := vsHandler.conversionTable[key]
+			ag, exists := vsHandler.conversionTable[key]
 
 			if !exists {
 				continue
 			}
 
-			convertedValue := vsHandler.visualMappingGenerator.vpConverter.getCyjsPropertyValue(key, value.(string))
-			css[cyjsTag] = convertedValue
+			convertedValue := vsHandler.visualMappingGenerator.VpConverter.GetCyjsPropertyValue(key, value.(string))
+			css[ag] = convertedValue
 
 		}
 		entry.CSS = css
 
-		mappings, exists := vp[cx_mappings]
+		mappings, exists := vp[cx.Mappings]
 		if exists {
 			// Parse mapping entries
 			visualMappings := vsHandler.createMappings(
@@ -97,9 +102,9 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 
 
 func (vsHandler VisualStyleHandler) createMappings(selectorTag string,
-mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEntry){
+mappings map[string]interface{}, entry *cyjs.SelectorEntry)(newSelectors []cyjs.SelectorEntry){
 
-	var newMaps []SelectorEntry
+	var newMaps []cyjs.SelectorEntry
 
 	for vp, mapping := range mappings {
 		visualMapping := mapping.(map[string]interface{})
@@ -107,18 +112,18 @@ mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEn
 		definition := visualMapping["definition"].(string)
 
 		switch mappingType {
-		case passthrough:
+		case cx.Passthrough:
 			vsHandler.visualMappingGenerator.CreatePassthroughMapping(vp,
 				definition, entry)
-		case discrete:
-			cyjsTag := vsHandler.conversionTable[vp]
-			newMappings := vsHandler.visualMappingGenerator.CreateDiscreteMappings(cyjsTag,
+		case cx.Discrete:
+			ag := vsHandler.conversionTable[vp]
+			newMappings := vsHandler.visualMappingGenerator.CreateDiscreteMappings(ag,
 				definition, selectorTag)
 			newMaps = append(newMaps, newMappings...)
-		case continuous:
-			cyjsTag := vsHandler.conversionTable[vp]
+		case cx.Continuous:
+			ag := vsHandler.conversionTable[vp]
 			vpDataType := vsHandler.typeTable[vp]
-			newMappings := vsHandler.visualMappingGenerator.CreateContinuousMappings(cyjsTag, vp, vpDataType, definition, selectorTag)
+			newMappings := vsHandler.visualMappingGenerator.CreateContinuousMappings(ag, vp, vpDataType, definition, selectorTag)
 			newMaps = append(newMaps, newMappings...)
 		default:
 		}
@@ -135,13 +140,13 @@ mappings map[string]interface{}, entry *SelectorEntry)(newSelectors []SelectorEn
 func isValidProperty(propertyOf string) (tag string, defaults bool) {
 	switch propertyOf {
 	case nodesDefault:
-		return node, true
+		return cx.NodeTag, true
 	case cxNodes:
-		return node, false
+		return cx.NodeTag, false
 	case edgesDefault:
-		return edge, true
+		return cx.EdgeTag, true
 	case cxEdges:
-		return edge, false
+		return cx.EdgeTag, false
 	case network:
 		return "", false
 	default:

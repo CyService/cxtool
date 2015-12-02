@@ -1,6 +1,7 @@
 package converter
 
 import (
+	cx "github.com/cytoscape-ci/cxtool/cx"
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
@@ -52,7 +53,7 @@ func (con Sif2Cx) readCSV(reader *csv.Reader) {
 		record, err := reader.Read()
 
 		if err == io.EOF {
-			netAttr := NetworkAttribute{N:"name", V:"SIF Conversion Test"}
+			netAttr := cx.NetworkAttribute{N:"name", V:"SIF Conversion Test"}
 			b, err := json.Marshal(netAttr)
 			if err != nil {
 				fmt.Println("error:", err)
@@ -84,7 +85,7 @@ func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64) {
 	if !exists {
 		*nodeCounter = *nodeCounter + 1
 		nodesExists[source] = *nodeCounter
-		sourceNode := Node{ID:*nodeCounter, N:source}
+		sourceNode := cx.Node{ID:*nodeCounter, N:source}
 		printEntry(sourceNode)
 	}
 
@@ -93,21 +94,21 @@ func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64) {
 	if !targetExists {
 		*nodeCounter = *nodeCounter + 1
 		nodesExists[target] = *nodeCounter
-		targetNode := Node{ID:*nodeCounter, N:target}
+		targetNode := cx.Node{ID:*nodeCounter, N:target}
 		printEntry(targetNode)
 	}
 
 	*nodeCounter = *nodeCounter + 1
-	edge := Edge{ID:*nodeCounter, S:nodesExists[source],
+	edge := cx.Edge{ID:*nodeCounter, S:nodesExists[source],
 		T:nodesExists[target], I:interaction}
 
 
 	printEdge(edge)
 }
 
-func printEdge(edge Edge) {
-	newEdges := []Edge{edge}
-	edgesEntry := Edges{EdgeList:newEdges}
+func printEdge(edge cx.Edge) {
+	newEdges := []cx.Edge{edge}
+	edgesEntry := cx.Edges{EdgeList:newEdges}
 
 	b, err := json.Marshal(edgesEntry)
 	if err != nil {
@@ -118,8 +119,8 @@ func printEdge(edge Edge) {
 }
 
 func printEntry(singleNode interface{}) {
-	newNodes := []Node{singleNode.(Node)}
-	nodesEntry := Nodes{NodesList:newNodes}
+	newNodes := []cx.Node{singleNode.(cx.Node)}
+	nodesEntry := cx.Nodes{NodesList:newNodes}
 
 	b, err := json.Marshal(nodesEntry)
 	if err != nil {
