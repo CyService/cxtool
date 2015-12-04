@@ -14,10 +14,14 @@ type VisualPropConverter struct {
 func NewVisualPropConverter(typeTable map[string]string) *VisualPropConverter {
 	asc := NewArrowShapeConverter()
 	sc := NewShapeConverter()
+	lsc := NewLineStyleConverter()
 
+	// Mapper for special data types.  They should be translated into special
+	// Cytoscape.js readable string.
 	valueConverterMap := map[string]ValueConverter {
 		"arrow": asc,
 		"shape": sc,
+		"line": lsc,
 	}
 
 	vpc := VisualPropConverter{typeTable:typeTable, valueConverters:valueConverterMap}
