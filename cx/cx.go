@@ -43,10 +43,10 @@ type Edges struct {
 
 // Attribute for both nodes and edges
 type Attribute struct {
-	PO int64
-	N  string
-	V  interface{}
-	D  string
+	PO int64 `json:"po"`
+	N  string `json:"n"`
+	V  interface{} `json:"v"`
+	D  string `json:"d,omitempty"`
 }
 
 
@@ -76,9 +76,9 @@ type CX struct {
 
 
 
-type NodeAttr struct {
-	S  string `json:"s"`
-	Po string `json:"po"`
-	N  string `json:"n"`
-	V  string `json:"v"`
-}
+//type NodeAttr struct {
+//	S  string `json:"s"`
+//	Po string `json:"po"`
+//	N  string `json:"n"`
+//	V  string `json:"v"`
+//}

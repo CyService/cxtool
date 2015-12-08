@@ -1,9 +1,17 @@
 /*
-
 	Cytoscape.js Data model for serialization
-
  */
+
 package cyjs
+
+
+// Tags used in Cytoscape.js JSON
+const (
+	Id = "id"
+	Source = "source"
+	Target = "target"
+	Interaction = "interaction"
+)
 
 // Position of a node
 type Position struct {

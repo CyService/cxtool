@@ -1,4 +1,5 @@
 package converter
+
 import (
 	cx "github.com/cytoscape-ci/cxtool/cx"
 	"bufio"
@@ -6,7 +7,6 @@ import (
 	"os"
 	"fmt"
 	"io"
-//	"reflect"
 	"strconv"
 	"encoding/csv"
 )

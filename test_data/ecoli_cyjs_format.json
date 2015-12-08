@@ -1,0 +1,5087 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.3.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "BIOGRID-ORGANISM-Escherichia_coli_K12_MG1655-3.4.129.mitab",
+    "name" : "BIOGRID-ORGANISM-Escherichia_coli_K12_MG1655-3.4.129.mitab",
+    "SUID" : 52,
+    "__Annotations" : [ ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "326",
+        "shared_name" : "947002",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947002",
+        "name" : "947002",
+        "SUID" : 326,
+        "PSIMI_25_aliases" : [ "947002", "851341", "iscU", "b2529", "ECK2526", "JW2513", "hsm-5", "miaC", "nifU", "yfhN" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 618.9737604726915,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "325",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "851437",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851437",
+        "name" : "851437",
+        "SUID" : 325,
+        "PSIMI_25_aliases" : [ "851437", "31943", "YFH1", "YDL120W", "L000003525" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 724.072500096715,
+        "y" : 383.65112321964205
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "322",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "855289",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855289",
+        "name" : "855289",
+        "SUID" : 322,
+        "PSIMI_25_aliases" : [ "855289", "35426", "RKR1", "YMR247C", "LTN1", "ubiquitin-protein ligase RKR1" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -471.6016026864881,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "321",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "948538",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948538",
+        "name" : "948538",
+        "SUID" : 321,
+        "PSIMI_25_aliases" : [ "948538", "852832", "malE", "b4034", "ECK4026", "JW3994", "malJ" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -370.1784383188123,
+        "y" : 705.4595205127329
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "319",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "949040",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "949040",
+        "name" : "949040",
+        "SUID" : 319,
+        "PSIMI_25_aliases" : [ "949040", "853284", "folE", "b2153", "ECK2146", "JW2140" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -471.6016026864881,
+        "y" : 806.3341981708139
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "317",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "17714",
+        "PSIMI_25_taxon_ID" : [ "10090" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "17714",
+        "name" : "17714",
+        "SUID" : 317,
+        "PSIMI_25_aliases" : [ "17714", "201546", "Grpel2", "mt-GrpE#2", "mt-Grpel2" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -19.326334131800593,
+        "y" : -109.57235795864165
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "315",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "79563",
+        "PSIMI_25_taxon_ID" : [ "10116" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "79563",
+        "name" : "79563",
+        "SUID" : 315,
+        "PSIMI_25_aliases" : [ "79563", "249476", "Grpel1", "GrpE#1", "GrpE1" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -231.010149134242,
+        "y" : 7.911405736121537
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "313",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "854407",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "854407",
+        "name" : "854407",
+        "SUID" : 313,
+        "PSIMI_25_aliases" : [ "854407", "34625", "MGE1", "YOR232W", "GRPE", "L000000729", "L000001101", "L000002638", "YGE1" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -170.60860456331915,
+        "y" : 124.51069467655122
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "311",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "855838",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855838",
+        "name" : "855838",
+        "SUID" : 311,
+        "PSIMI_25_aliases" : [ "855838", "35925", "SUI3", "YPL237W", "L000002179", "translation initiation factor eIF2 subunit beta" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 152.5251062978869,
+        "y" : 576.1079656421274
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "309",
+        "shared_name" : "945280",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945280",
+        "name" : "945280",
+        "SUID" : 309,
+        "PSIMI_25_aliases" : [ "945280", "849658", "metT", "b0673", "ECK0661", "JWR0017", "metTalpha" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 143.4978846181994,
+        "y" : 467.1039487659067
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "308",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "853463",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "853463",
+        "name" : "853463",
+        "SUID" : 308,
+        "PSIMI_25_aliases" : [ "853463", "33763", "SUI2", "YJR007W", "L000002178", "translation initiation factor eIF2 subunit alpha" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 130.37555490628534,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "306",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "2541620",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2541620",
+        "name" : "2541620",
+        "SUID" : 306,
+        "PSIMI_25_aliases" : [ "2541620", "278117", "rqh1", "SPAC2G11.12", "hus2", "rad12", "rec9" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 530.1547297109728,
+        "y" : -372.24645406612456
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "302",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "2539004",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2539004",
+        "name" : "2539004",
+        "SUID" : 302,
+        "PSIMI_25_aliases" : [ "2539004", "275578", "mus81", "SPCC4G3.05c", "slx3" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 568.1685541738634,
+        "y" : -524.4222810924917
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "300",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "2540911",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2540911",
+        "name" : "2540911",
+        "SUID" : 300,
+        "PSIMI_25_aliases" : [ "2540911", "277427", "nse5", "SPBC651.10" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 375.63146005765253,
+        "y" : -415.82857686885893
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "298",
+        "shared_name" : "945174",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945174",
+        "name" : "945174",
+        "SUID" : 298,
+        "PSIMI_25_aliases" : [ "945174", "849560", "rusA", "b0550", "ECK0541", "JW0538", "rus", "ybcP" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 475.3603113760119,
+        "y" : -472.03974325069487
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "297",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "2541512",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2541512",
+        "name" : "2541512",
+        "SUID" : 297,
+        "PSIMI_25_aliases" : [ "2541512", "278013", "nse6", "SPAC11E3.08c" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 418.4759119619494,
+        "y" : -570.6306017101675
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "295",
+        "shared_name" : "946941",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946941",
+        "name" : "946941",
+        "SUID" : 295,
+        "PSIMI_25_aliases" : [ "946941", "851280", "rpmB", "b3637", "ECK3627", "JW3612" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -346.72356618746466,
+        "y" : -547.8457811535269
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "293",
+        "shared_name" : "945190",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945190",
+        "name" : "945190",
+        "SUID" : 293,
+        "PSIMI_25_aliases" : [ "945190", "849576", "rpmA", "b3185", "ECK3174", "JW3152", "rpz" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -174.35141052111334,
+        "y" : -556.9794786632925
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "291",
+        "shared_name" : "947809",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947809",
+        "name" : "947809",
+        "SUID" : 291,
+        "PSIMI_25_aliases" : [ "947809", "852121", "rplN", "b3310", "ECK3297", "JW3272" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -96.1379567514295,
+        "y" : -219.6109178722769
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "289",
+        "shared_name" : "947828",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947828",
+        "name" : "947828",
+        "SUID" : 289,
+        "PSIMI_25_aliases" : [ "947828", "852140", "rplM", "b3231", "ECK3220", "JW3200" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -365.2540685068006,
+        "y" : -220.4631899059683
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "287",
+        "shared_name" : "948489",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948489",
+        "name" : "948489",
+        "SUID" : 287,
+        "PSIMI_25_aliases" : [ "948489", "852783", "rplL", "b3986", "ECK3977", "JW3949" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -271.5208684335584,
+        "y" : -473.03676015743315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "285",
+        "shared_name" : "948484",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948484",
+        "name" : "948484",
+        "SUID" : 285,
+        "PSIMI_25_aliases" : [ "948484", "852778", "rplK", "b3983", "ECK3974", "JW3946", "relC" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -152.8943272958631,
+        "y" : -178.31540471920073
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "283",
+        "shared_name" : "948490",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948490",
+        "name" : "948490",
+        "SUID" : 283,
+        "PSIMI_25_aliases" : [ "948490", "852784", "rplJ", "b3985", "ECK3976", "JW3948" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -421.3343907724256,
+        "y" : -204.41150838741362
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "281",
+        "shared_name" : "947803",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947803",
+        "name" : "947803",
+        "SUID" : 281,
+        "PSIMI_25_aliases" : [ "947803", "852115", "rplF", "b3305", "ECK3292", "JW3267" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -263.156877649867,
+        "y" : -193.8973711193472
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "279",
+        "shared_name" : "947800",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947800",
+        "name" : "947800",
+        "SUID" : 279,
+        "PSIMI_25_aliases" : [ "947800", "852112", "rplE", "b3308", "ECK3295", "JW3270" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -471.6016026864881,
+        "y" : -362.26934987911284
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "277",
+        "shared_name" : "947820",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947820",
+        "name" : "947820",
+        "SUID" : 277,
+        "PSIMI_25_aliases" : [ "947820", "852132", "rplB", "b3317", "ECK3304", "JW3279" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -360.58013357027716,
+        "y" : -331.17303640255034
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "275",
+        "shared_name" : "947811",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947811",
+        "name" : "947811",
+        "SUID" : 275,
+        "PSIMI_25_aliases" : [ "947811", "852123", "rpsS", "b3316", "ECK3303", "JW3278" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -229.44203771456426,
+        "y" : -516.7932909191519
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "273",
+        "shared_name" : "947845",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947845",
+        "name" : "947845",
+        "SUID" : 273,
+        "PSIMI_25_aliases" : [ "947845", "852156", "rpsL", "b3342", "ECK3329", "JW3304", "asuB", "strA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -319.9262639413709,
+        "y" : -288.25192434200346
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "271",
+        "shared_name" : "947792",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947792",
+        "name" : "947792",
+        "SUID" : 271,
+        "PSIMI_25_aliases" : [ "947792", "852104", "rpsK", "b3297", "ECK3284", "JW3259" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -448.3511144052381,
+        "y" : -416.6320055187613
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "269",
+        "shared_name" : "947816",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947816",
+        "name" : "947816",
+        "SUID" : 269,
+        "PSIMI_25_aliases" : [ "947816", "852128", "rpsJ", "b3321", "ECK3308", "JW3283", "nusE" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -43.290094507777155,
+        "y" : -440.8879259289175
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "267",
+        "shared_name" : "947802",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947802",
+        "name" : "947802",
+        "SUID" : 267,
+        "PSIMI_25_aliases" : [ "947802", "852114", "rpsH", "b3306", "ECK3293", "JW3268" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -85.46856893404669,
+        "y" : -397.5002916515738
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "265",
+        "shared_name" : "947793",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947793",
+        "name" : "947793",
+        "SUID" : 265,
+        "PSIMI_25_aliases" : [ "947793", "852105", "rpsD", "b3296", "ECK3283", "JW3258", "ramA", "sud" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -374.6278783212537,
+        "y" : -160.0021417797476
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "263",
+        "shared_name" : "947814",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947814",
+        "name" : "947814",
+        "SUID" : 263,
+        "PSIMI_25_aliases" : [ "947814", "852126", "rpsC", "b3314", "ECK3301", "JW3276" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -111.97481740816778,
+        "y" : -282.4751756847769
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "261",
+        "shared_name" : "947874",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947874",
+        "name" : "947874",
+        "SUID" : 261,
+        "PSIMI_25_aliases" : [ "947874", "852185", "rpsB", "b0169", "ECK0168", "JW0164" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -471.10752309664434,
+        "y" : -303.27162343868315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "259",
+        "shared_name" : "945536",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945536",
+        "name" : "945536",
+        "SUID" : 259,
+        "PSIMI_25_aliases" : [ "945536", "849910", "rpsA", "b0911", "ECK0902", "JW0894", "ssyF" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -167.9316328893537,
+        "y" : -498.1997850597769
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "257",
+        "shared_name" : "945637",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945637",
+        "name" : "945637",
+        "SUID" : 257,
+        "PSIMI_25_aliases" : [ "945637", "850009", "rluC", "b1086", "ECK1071", "JW1072", "yceC" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -286.9978429208631,
+        "y" : -569.0458543957144
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "255",
+        "shared_name" : "947415",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947415",
+        "name" : "947415",
+        "SUID" : 255,
+        "PSIMI_25_aliases" : [ "947415", "851736", "fbaA", "b2925", "ECK2921", "JW2892", "ald", "fba", "fda" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -312.24463857515997,
+        "y" : -230.34726125606596
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "253",
+        "shared_name" : "948394",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948394",
+        "name" : "948394",
+        "SUID" : 253,
+        "PSIMI_25_aliases" : [ "948394", "852691", "fdoG", "b3894", "ECK3887", "JW3865" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -256.97825063570684,
+        "y" : -253.83990651973784
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "251",
+        "shared_name" : "946762",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946762",
+        "name" : "946762",
+        "SUID" : 251,
+        "PSIMI_25_aliases" : [ "946762", "851103", "nuoG", "b2283", "ECK2277", "JW2278" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -275.09104360445684,
+        "y" : -136.9747217358023
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "249",
+        "shared_name" : "945300",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945300",
+        "name" : "945300",
+        "SUID" : 249,
+        "PSIMI_25_aliases" : [ "945300", "849677", "sdhB", "b0724", "ECK0713", "JW0714" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -190.73798574312872,
+        "y" : -406.0502794445425
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "247",
+        "shared_name" : "944864",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "944864",
+        "name" : "944864",
+        "SUID" : 247,
+        "PSIMI_25_aliases" : [ "944864", "849264", "acnB", "b0118", "ECK0117", "JW0114", "yacI", "yacJ" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -89.49327291353887,
+        "y" : -338.9477098644644
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "245",
+        "shared_name" : "946724",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946724",
+        "name" : "946724",
+        "SUID" : 245,
+        "PSIMI_25_aliases" : [ "946724", "851065", "acnA", "b1276", "ECK1271", "JW1268", "acn" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -377.56353200777716,
+        "y" : -272.41497976192534
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "243",
+        "shared_name" : "948221",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948221",
+        "name" : "948221",
+        "SUID" : 243,
+        "PSIMI_25_aliases" : [ "948221", "852523", "tnaA", "b3708", "ECK3701", "JW3686", "ind" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -28.32015432223028,
+        "y" : -381.7374742687613
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "241",
+        "shared_name" : "945303",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945303",
+        "name" : "945303",
+        "SUID" : 241,
+        "PSIMI_25_aliases" : [ "945303", "849680", "sucA", "b0726", "ECK0714", "JW0715", "lys" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -295.6087590585584,
+        "y" : -515.1319139660269
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "239",
+        "shared_name" : "944834",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "944834",
+        "name" : "944834",
+        "SUID" : 239,
+        "PSIMI_25_aliases" : [ "944834", "849234", "aceE", "b0114", "ECK0113", "JW0110" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -208.22735036715216,
+        "y" : -214.61364156612456
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "237",
+        "shared_name" : "945672",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945672",
+        "name" : "945672",
+        "SUID" : 237,
+        "PSIMI_25_aliases" : [ "945672", "850044", "aldA", "b1415", "ECK1408", "JW1412", "ald" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -212.5095502267713,
+        "y" : -154.57164937862456
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "235",
+        "shared_name" : "946879",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946879",
+        "name" : "946879",
+        "SUID" : 235,
+        "PSIMI_25_aliases" : [ "946879", "851219", "ptsI", "b2416", "ECK2411", "JW2409", "ctr" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -190.41985524996466,
+        "y" : -276.56915456661284
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "233",
+        "shared_name" : "945837",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945837",
+        "name" : "945837",
+        "SUID" : 233,
+        "PSIMI_25_aliases" : [ "945837", "850204", "adhE", "b1241", "ECK1235", "JW1228", "adhC", "ana" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -33.60843862398809,
+        "y" : -323.571885889855
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "231",
+        "shared_name" : "947679",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947679",
+        "name" : "947679",
+        "SUID" : 231,
+        "PSIMI_25_aliases" : [ "947679", "851992", "gapA", "b1779", "ECK1777", "JW1768" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -104.68647207125372,
+        "y" : -451.58754140743315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "229",
+        "shared_name" : "945880",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945880",
+        "name" : "945880",
+        "SUID" : 229,
+        "PSIMI_25_aliases" : [ "945880", "850247", "tpx", "b1324", "ECK1320", "JW1317", "yzzJ" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -413.71587575777716,
+        "y" : -370.83334524044096
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "227",
+        "shared_name" : "947921",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947921",
+        "name" : "947921",
+        "SUID" : 227,
+        "PSIMI_25_aliases" : [ "947921", "852230", "malT", "b3418", "ECK3405", "JW3381", "malA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -387.31814016207403,
+        "y" : -445.614366358605
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "225",
+        "shared_name" : "945007",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945007",
+        "name" : "945007",
+        "SUID" : 225,
+        "PSIMI_25_aliases" : [ "945007", "849401", "lacI", "b0345", "ECK0342", "JW0336" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -323.56421865328497,
+        "y" : -435.01979238399565
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "223",
+        "shared_name" : "945295",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945295",
+        "name" : "945295",
+        "SUID" : 223,
+        "PSIMI_25_aliases" : [ "945295", "849672", "fur", "b0683", "ECK0671", "JW0669" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -394.35389150484747,
+        "y" : -512.0507677257925
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "221",
+        "shared_name" : "945829",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945829",
+        "name" : "945829",
+        "SUID" : 221,
+        "PSIMI_25_aliases" : [ "945829", "850196", "hns", "b1237", "B1", "ECK1232", "H1", "JW1225", "bglY", "cur", "drc", "drdX", "drs", "fimG", "hnsA", "irk", "msyA", "osmZ", "pilG", "topS", "topX", "verA", "virR" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -437.4350072275037,
+        "y" : -256.53424245723784
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "219",
+        "shared_name" : "948482",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948482",
+        "name" : "948482",
+        "SUID" : 219,
+        "PSIMI_25_aliases" : [ "948482", "852776", "tufB", "b3980", "ECK3971", "JW3943", "kirT", "pulT" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -319.8314916025037,
+        "y" : -169.1639307201773
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "217",
+        "shared_name" : "947838",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947838",
+        "name" : "947838",
+        "SUID" : 217,
+        "PSIMI_25_aliases" : [ "947838", "852150", "tufA", "b3339", "ECK3326", "JW3301", "kirT", "pulT" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -414.7745763193006,
+        "y" : -314.529405421105
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "215",
+        "shared_name" : "946223",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946223",
+        "name" : "946223",
+        "SUID" : 215,
+        "PSIMI_25_aliases" : [ "946223", "850583", "pheS", "b1714", "ECK1712", "JW5277", "phe-act" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -136.95566381319708,
+        "y" : -383.22328359493315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "213",
+        "shared_name" : "946222",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946222",
+        "name" : "946222",
+        "SUID" : 213,
+        "PSIMI_25_aliases" : [ "946222", "850582", "thrS", "b1719", "ECK1717", "JW1709" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -150.8562823663587,
+        "y" : -325.6978014171988
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "211",
+        "shared_name" : "947497",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947497",
+        "name" : "947497",
+        "SUID" : 211,
+        "PSIMI_25_aliases" : [ "947497", "851814", "leuS", "b0642", "ECK0635", "JW0637" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -369.74476064547247,
+        "y" : -397.0808580578238
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "209",
+        "shared_name" : "944761",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "944761",
+        "name" : "944761",
+        "SUID" : 209,
+        "PSIMI_25_aliases" : [ "944761", "849163", "ileS", "b0026", "ECK0027", "JW0024", "ilvS" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -343.16391958101934,
+        "y" : -484.0188463390738
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "207",
+        "shared_name" : "947175",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947175",
+        "name" : "947175",
+        "SUID" : 207,
+        "PSIMI_25_aliases" : [ "947175", "851507", "alaS", "b2697", "ECK2692", "JW2667", "act", "ala-act", "lovB" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -437.23365224703497,
+        "y" : -470.781358546105
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "205",
+        "shared_name" : "946949",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946949",
+        "name" : "946949",
+        "SUID" : 205,
+        "PSIMI_25_aliases" : [ "946949", "851288", "bcp", "b2480", "ECK2476", "JW2465" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -318.7575169931287,
+        "y" : -371.0887926281363
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "203",
+        "shared_name" : "945225",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945225",
+        "name" : "945225",
+        "SUID" : 203,
+        "PSIMI_25_aliases" : [ "945225", "849610", "ahpC", "b0605", "ECK0599", "JW0598", "tpx" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -74.84671987398809,
+        "y" : -496.51039296993315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "201",
+        "shared_name" : "946234",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946234",
+        "name" : "946234",
+        "SUID" : 201,
+        "PSIMI_25_aliases" : [ "946234", "850594", "katE", "b1732", "ECK1730", "JW1721" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -150.42887510164923,
+        "y" : -237.35108358272612
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "199",
+        "shared_name" : "944821",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "944821",
+        "name" : "944821",
+        "SUID" : 199,
+        "PSIMI_25_aliases" : [ "944821", "849222", "secA", "b0098", "ECK0099", "JW0096", "azi", "pea", "prlD" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -213.2334157358045,
+        "y" : -461.9191148937613
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "197",
+        "shared_name" : "947253",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947253",
+        "name" : "947253",
+        "SUID" : 197,
+        "PSIMI_25_aliases" : [ "947253", "851583", "pepN", "b0932", "ECK0923", "JW0915" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -120.74869359835333,
+        "y" : -528.4985826671988
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "194",
+        "shared_name" : "948665",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948665",
+        "name" : "948665",
+        "SUID" : 194,
+        "PSIMI_25_aliases" : [ "948665", "852957", "groL", "b4143", "ECK4137", "JW4103", "groEL", "mopA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -153.01035131319708,
+        "y" : -446.7589891613394
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "192",
+        "shared_name" : "944753",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "944753",
+        "name" : "944753",
+        "SUID" : 192,
+        "PSIMI_25_aliases" : [ "944753", "849156", "dnaJ", "b0015", "ECK0015", "JW0014", "faa", "groP", "grpC" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -228.25325597628301,
+        "y" : -570.6306017101675
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "189",
+        "shared_name" : "948488",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948488",
+        "name" : "948488",
+        "SUID" : 189,
+        "PSIMI_25_aliases" : [ "948488", "852782", "rpoB", "b3987", "ECK3978", "JW3950", "ftsR", "groN", "mbrD?", "nitB", "rif", "ron", "sdgB", "stl", "stv", "tabD", "tabG" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -56.76467336519903,
+        "y" : -269.23622304805815
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "187",
+        "shared_name" : "947794",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947794",
+        "name" : "947794",
+        "SUID" : 187,
+        "PSIMI_25_aliases" : [ "947794", "852106", "rpoA", "b3295", "ECK3282", "JW3257", "pez", "phs", "sez" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -264.49541677340216,
+        "y" : -421.35353261837065
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "186",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "945066",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945066",
+        "name" : "945066",
+        "SUID" : 186,
+        "PSIMI_25_aliases" : [ "945066", "849455", "yajL", "b0424", "ECK0418", "JW5057", "thiJ" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -228.282121790492,
+        "y" : -340.4582079113394
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "184",
+        "shared_name" : "947086",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947086",
+        "name" : "947086",
+        "SUID" : 184,
+        "PSIMI_25_aliases" : [ "947086", "851422", "bamD", "b2595", "ECK2593", "JW2577", "ecfD", "yfiO" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -270.1784383188123,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "183",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "945583",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945583",
+        "name" : "945583",
+        "SUID" : 183,
+        "PSIMI_25_aliases" : [ "945583", "849957", "bamE", "b2617", "ECK2613", "JW2598", "smpA", "smqA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -165.07969869478887,
+        "y" : 706.3341981708139
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "181",
+        "shared_name" : "947097",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947097",
+        "name" : "947097",
+        "SUID" : 181,
+        "PSIMI_25_aliases" : [ "947097", "851433", "grpE", "b2614", "ECK2610", "JW2594" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 275.63146005765253,
+        "y" : 63.24143808475435
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "176",
+        "shared_name" : "945764",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945764",
+        "name" : "945764",
+        "SUID" : 176,
+        "PSIMI_25_aliases" : [ "945764", "850131", "clpA", "b0882", "ECK0873", "JW0866", "lopD" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -65.07969869478887,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "175",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "948443",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948443",
+        "name" : "948443",
+        "SUID" : 175,
+        "PSIMI_25_aliases" : [ "948443", "852740", "clpS", "b0881", "ECK0872", "JW0865", "yljA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 40.01904092923456,
+        "y" : 706.3341981708139
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "173",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "946985",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "946985",
+        "name" : "946985",
+        "SUID" : 173,
+        "PSIMI_25_aliases" : [ "946985", "851324", "guaB", "b2508", "ECK2504", "JW5401", "guaR" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 274.67465768948847,
+        "y" : 576.1079656421274
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "171",
+        "shared_name" : "948695",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948695",
+        "name" : "948695",
+        "SUID" : 171,
+        "PSIMI_25_aliases" : [ "948695", "852987", "purA", "b4177", "ECK4173", "JW4135" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 252.5251062978869,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "170",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "947429",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947429",
+        "name" : "947429",
+        "SUID" : 170,
+        "PSIMI_25_aliases" : [ "947429", "851750", "rdgB", "b2954", "ECK2949", "JW2921", "yggV" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 265.64743600980097,
+        "y" : 467.1039487659067
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "168",
+        "shared_name" : "945574",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945574",
+        "name" : "945574",
+        "SUID" : 168,
+        "PSIMI_25_aliases" : [ "945574", "849948", "mgsA", "b0963", "ECK0954", "JW5129", "mgs", "yccG" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 668.1685541738634,
+        "y" : -175.26317006954253
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "166",
+        "shared_name" : "948440",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948440",
+        "name" : "948440",
+        "SUID" : 166,
+        "PSIMI_25_aliases" : [ "948440", "852737", "gldA", "b3945", "ECK3937", "JW5556" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 791.9158962835436,
+        "y" : -570.6306017101675
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "164",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "854095",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "854095",
+        "name" : "854095",
+        "SUID" : 164,
+        "PSIMI_25_aliases" : [ "854095", "34342", "GPD2", "YOL059W", "GPD3", "L000000723", "L000003160", "\"glycerol-3-phosphate dehydrogenase " ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 748.5355089773302,
+        "y" : -250.7389238537222
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "162",
+        "shared_name" : "948937",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948937",
+        "name" : "948937",
+        "SUID" : 162,
+        "PSIMI_25_aliases" : [ "948937", "853206", "srlD", "b2705", "ECK2700", "JW2674", "gutD" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 800.3170622457628,
+        "y" : -350.4795244396597
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "161",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "851539",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851539",
+        "name" : "851539",
+        "SUID" : 161,
+        "PSIMI_25_aliases" : [ "851539", "32033", "GPD1", "YDL022W", "DAR1", "HOR1", "L000000722", "OSG1", "OSR5", "\"glycerol-3-phosphate dehydrogenase " ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 812.4106997121935,
+        "y" : -462.36537343868315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "159",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "852271",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852271",
+        "name" : "852271",
+        "SUID" : 159,
+        "PSIMI_25_aliases" : [ "852271", "32688", "SCT1", "YBL011W", "GAT2", "L000001820", "bifunctional glycerol-3-phosphate/glycerone-phosphate O-acyltransferase SCT1" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 396.82420908109003,
+        "y" : 576.1079656421274
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "157",
+        "shared_name" : "948543",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948543",
+        "name" : "948543",
+        "SUID" : 157,
+        "PSIMI_25_aliases" : [ "948543", "852837", "dgkA", "b4042", "ECK4034", "JW4002" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 387.79698740140253,
+        "y" : 467.1039487659067
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "156",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "853941",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "853941",
+        "name" : "853941",
+        "SUID" : 156,
+        "PSIMI_25_aliases" : [ "853941", "34198", "GPT2", "YKR067W", "GAT1", "bifunctional glycerol-3-phosphate/glycerone-phosphate O-acyltransferase GPT2" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 374.67465768948847,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "154",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "852352",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852352",
+        "name" : "852352",
+        "SUID" : 154,
+        "PSIMI_25_aliases" : [ "852352", "32764", "ORC2", "YBR060C", "L000001776", "RRR1", "SIR5", "origin recognition complex subunit 2" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -233.54533590182012,
+        "y" : 79.89045541873872
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "151",
+        "shared_name" : "944750",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "944750",
+        "name" : "944750",
+        "SUID" : 151,
+        "PSIMI_25_aliases" : [ "944750", "849153", "dnaK", "b0014", "ECK0014", "JW0013", "groPAB", "groPC", "groPF", "grpC", "grpF", "seg" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -105.00373662813848,
+        "y" : -19.012086695519088
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "150",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "856291",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856291",
+        "name" : "856291",
+        "SUID" : 150,
+        "PSIMI_25_aliases" : [ "856291", "36335", "ORC4", "YPR162C", "L000003075", "origin recognition complex subunit 4" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -168.07334781988806,
+        "y" : 55.50128000369966
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "148",
+        "shared_name" : "2542608",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2542608",
+        "name" : "2542608",
+        "SUID" : 148,
+        "PSIMI_25_aliases" : [ "2542608", "279062", "dlp1", "SPAC19G12.12", "coq1" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 518.9737604726915,
+        "y" : 576.1079656421274
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "146",
+        "shared_name" : "2541402",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2541402",
+        "name" : "2541402",
+        "SUID" : 146,
+        "PSIMI_25_aliases" : [ "2541402", "277911", "dps1", "SPBPJ4664.01", "SPBPJ694.01", "dps" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 496.82420908109003,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "145",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "947364",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947364",
+        "name" : "947364",
+        "SUID" : 145,
+        "PSIMI_25_aliases" : [ "947364", "851687", "ispB", "b3187", "ECK3176", "JW3154", "cel", "yhbD" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 509.9465387930041,
+        "y" : 467.1039487659067
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "143",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "852385",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852385",
+        "name" : "852385",
+        "SUID" : 143,
+        "PSIMI_25_aliases" : [ "852385", "32794", "POL30", "YBR088C", "L000001463", "PCNA", "proliferating cell nuclear antigen" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 2.831228124058782,
+        "y" : 549.3954603015512
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "141",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "850430",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "850430",
+        "name" : "850430",
+        "SUID" : 141,
+        "PSIMI_25_aliases" : [ "850430", "31042", "RAD18", "YCR066W", "E3 ubiquitin-protein ligase RAD18", "L000001567" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 30.375554906285345,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "139",
+        "shared_name" : "947447",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947447",
+        "name" : "947447",
+        "SUID" : 139,
+        "PSIMI_25_aliases" : [ "947447", "851767", "mutY", "b2961", "ECK2956", "JW2928", "micA", "mutB" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -38.51894582613653,
+        "y" : 445.9469434558481
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "138",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "854942",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "854942",
+        "name" : "854942",
+        "SUID" : 138,
+        "PSIMI_25_aliases" : [ "854942", "35106", "OGG1", "YML060W", "8-oxoguanine glycosylase OGG1", "L000003339" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -148.94214834078497,
+        "y" : 430.6125928699106
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "136",
+        "shared_name" : "853664",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "853664",
+        "name" : "853664",
+        "SUID" : 136,
+        "PSIMI_25_aliases" : [ "853664", "33949", "URA1", "YKL216W", "L000002430", "dihydroorotate dehydrogenase" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 140.01904092923456,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "135",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "945556",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "945556",
+        "name" : "945556",
+        "SUID" : 135,
+        "PSIMI_25_aliases" : [ "945556", "849930", "pyrD", "b0945", "ECK0936", "JW0928" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 245.117780553258,
+        "y" : 706.3341981708139
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "133",
+        "shared_name" : "851752",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851752",
+        "name" : "851752",
+        "SUID" : 133,
+        "PSIMI_25_aliases" : [ "851752", "32225", "SUP35", "YDR172W", "GST1", "L000002200", "PNM2", "SAL3", "SUF12", "SUP2", "SUP36", "\"[PSI", "[PSI]", "eRF3", "translation termination factor GTPase eRF3" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 100.62611948148066,
+        "y" : -93.70603925594389
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "131",
+        "shared_name" : "855974",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855974",
+        "name" : "855974",
+        "SUID" : 131,
+        "PSIMI_25_aliases" : [ "855974", "36052", "TAF14", "YPL129W", "ANC1", "L000000086", "SWP29", "TAF30", "TATA-binding protein-associated factor TAF14", "TFG3", "TafII30" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 183.3379725088244,
+        "y" : 234.9302198230356
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "129",
+        "shared_name" : "855706",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855706",
+        "name" : "855706",
+        "SUID" : 129,
+        "PSIMI_25_aliases" : [ "855706", "35801", "SSN8", "YNL025C", "CNC1", "CycC", "GIG3", "L000002796", "NUT9", "RYE2", "SRB11", "UME3" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 61.11179147855097,
+        "y" : 254.5622999011606
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "127",
+        "shared_name" : "852053",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852053",
+        "name" : "852053",
+        "SUID" : 127,
+        "PSIMI_25_aliases" : [ "852053", "32498", "SSN2", "YDR443C", "L000001803", "L000002088", "L000002101", "MED13", "NUT8", "RYE3", "S000029518", "SCA1", "SRB9", "SSX5", "UME2" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 164.71996103421503,
+        "y" : -84.67236120113432
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "125",
+        "shared_name" : "850442",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "850442",
+        "name" : "850442",
+        "SUID" : 125,
+        "PSIMI_25_aliases" : [ "850442", "31054", "SRB8", "YCR081W", "GIG1", "L000003007", "MED12", "NUT6", "SSN5", "YCR080W" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -57.30488790377325,
+        "y" : 88.96369760623872
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "123",
+        "shared_name" : "851903",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851903",
+        "name" : "851903",
+        "SUID" : 123,
+        "PSIMI_25_aliases" : [ "851903", "32361", "SRB7", "YDR308C", "L000002097", "L000002754", "MED21", "S000029514", "SSX1" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 198.51970468655878,
+        "y" : 127.29919260135591
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "121",
+        "shared_name" : "852555",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852555",
+        "name" : "852555",
+        "SUID" : 121,
+        "PSIMI_25_aliases" : [ "852555", "32948", "SRB6", "YBR253W", "L000002053", "MED22" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 101.75090585843378,
+        "y" : 202.6949903308481
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "119",
+        "shared_name" : "852996",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852996",
+        "name" : "852996",
+        "SUID" : 119,
+        "PSIMI_25_aliases" : [ "852996", "33347", "SRB5", "YGR104C", "L000002052", "MED18" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -6.383417261683405,
+        "y" : 137.32122629276216
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "117",
+        "shared_name" : "856743",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856743",
+        "name" : "856743",
+        "SUID" : 117,
+        "PSIMI_25_aliases" : [ "856743", "36756", "SRB4", "YER022W", "L000002051", "MED17" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 164.13942514554316,
+        "y" : 181.9624463855356
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "115",
+        "shared_name" : "856437",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856437",
+        "name" : "856437",
+        "SUID" : 115,
+        "PSIMI_25_aliases" : [ "856437", "36473", "SRB2", "YHR041C", "HRS2", "L000002050", "L000003586", "MED20" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -30.488016260706843,
+        "y" : 34.15923898807466
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "113",
+        "shared_name" : "852750",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852750",
+        "name" : "852750",
+        "SUID" : 113,
+        "PSIMI_25_aliases" : [ "852750", "33124", "SOH1", "YGL127C", "L000001982", "MED31" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 65.00298105374628,
+        "y" : 155.23313730350435
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "111",
+        "shared_name" : "855485",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855485",
+        "name" : "855485",
+        "SUID" : 111,
+        "PSIMI_25_aliases" : [ "855485", "35603", "SIN4", "YNL236W", "BEL2", "GAL22", "L000001888", "L000002099", "MED16", "RYE1", "S000029516", "SDI3", "SSF5", "SSN4", "SSX3", "TSF3" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 217.1142176260119,
+        "y" : -53.765611475792525
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "109",
+        "shared_name" : "851415",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851415",
+        "name" : "851415",
+        "SUID" : 109,
+        "PSIMI_25_aliases" : [ "851415", "31921", "RPO21", "YDL140C", "B220", "DNA-directed RNA polymerase II core subunit RPO21", "L000001744", "RPB1", "RPB220", "SUA8" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 63.95866953030878,
+        "y" : -44.71479207881987
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "107",
+        "shared_name" : "852184",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852184",
+        "name" : "852184",
+        "SUID" : 107,
+        "PSIMI_25_aliases" : [ "852184", "32610", "ROX3", "YBL093C", "L000001662", "L000002098", "MED19", "NUT3", "S000029515", "SSN7", "SSX2" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 130.72801767484003,
+        "y" : -26.19886953243315
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "105",
+        "shared_name" : "850760",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "850760",
+        "name" : "850760",
+        "SUID" : 105,
+        "PSIMI_25_aliases" : [ "850760", "31345", "RGR1", "YLR071C", "L000001629", "MED14" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 130.14809213773066,
+        "y" : 136.4176923572153
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "103",
+        "shared_name" : "852860",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852860",
+        "name" : "852860",
+        "SUID" : 103,
+        "PSIMI_25_aliases" : [ "852860", "33222", "PGD1", "YGL025C", "HRS1", "L000000811", "L000001408", "MED3" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 23.490529881871282,
+        "y" : 197.10420053592622
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "101",
+        "shared_name" : "856297",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856297",
+        "name" : "856297",
+        "SUID" : 101,
+        "PSIMI_25_aliases" : [ "856297", "36341", "NUT2", "YPR168W", "L000003447", "L000004593", "MED10" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 165.55418954984003,
+        "y" : 72.62913339725435
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "99",
+        "shared_name" : "852726",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852726",
+        "name" : "852726",
+        "SUID" : 99,
+        "PSIMI_25_aliases" : [ "852726", "33102", "NUT1", "YGL151W", "L000002100", "L000003073", "MED5", "S000029517", "SSX4" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 219.87041269437128,
+        "y" : 58.05663889041841
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "97",
+        "shared_name" : "852492",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852492",
+        "name" : "852492",
+        "SUID" : 97,
+        "PSIMI_25_aliases" : [ "852492", "32890", "MED8", "YBR193C", "L000003917" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 6.304372655308782,
+        "y" : -20.864847010460494
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "95",
+        "shared_name" : "853985",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "853985",
+        "name" : "853985",
+        "SUID" : 95,
+        "PSIMI_25_aliases" : [ "853985", "34241", "MED7", "YOL135C", "L000003916" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 252.54616342679316,
+        "y" : -1.2833269298940877
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "93",
+        "shared_name" : "856455",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856455",
+        "name" : "856455",
+        "SUID" : 93,
+        "PSIMI_25_aliases" : [ "856455", "36490", "MED6", "YHR058C", "L000003569" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 230.40065561429316,
+        "y" : 184.8284131824106
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "91",
+        "shared_name" : "854345",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "854345",
+        "name" : "854345",
+        "SUID" : 91,
+        "PSIMI_25_aliases" : [ "854345", "34568", "MED4", "YOR174W", "L000003915" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -2.101053370081843,
+        "y" : 249.83357065311372
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "89",
+        "shared_name" : "851559",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851559",
+        "name" : "851559",
+        "SUID" : 89,
+        "PSIMI_25_aliases" : [ "851559", "32049", "MED2", "YDL005C", "L000003914" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -45.99189962252325,
+        "y" : 203.09092538944185
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "87",
+        "shared_name" : "855139",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855139",
+        "name" : "855139",
+        "SUID" : 87,
+        "PSIMI_25_aliases" : [ "855139", "35288", "MED11", "YMR112C", "L000004634" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -72.56550039156622,
+        "y" : 149.6024610339731
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "85",
+        "shared_name" : "856183",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856183",
+        "name" : "856183",
+        "SUID" : 85,
+        "PSIMI_25_aliases" : [ "856183", "36242", "MED1", "YPR070W" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 259.0556238760119,
+        "y" : 126.31959360233247
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "83",
+        "shared_name" : "854106",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "854106",
+        "name" : "854106",
+        "SUID" : 83,
+        "PSIMI_25_aliases" : [ "854106", "34353", "GAL11", "YOL051W", "ABE1", "L000000664", "MED15", "RAR3", "SDS4", "SPT13" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 184.17033945218378,
+        "y" : 2.5979673205941936
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "81",
+        "shared_name" : "855744",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855744",
+        "name" : "855744",
+        "SUID" : 81,
+        "PSIMI_25_aliases" : [ "855744", "35835", "CSE2", "YNR010W", "L000000426", "MED9" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 123.92284189359003,
+        "y" : 258.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "80",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "947077",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947077",
+        "name" : "947077",
+        "SUID" : 80,
+        "PSIMI_25_aliases" : [ "947077", "851414", "clpB", "b2592", "ECK2590", "JW2573", "htpM" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 86.9840143789416,
+        "y" : 58.09902780643404
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "78",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "856804",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "856804",
+        "name" : "856804",
+        "SUID" : 78,
+        "PSIMI_25_aliases" : [ "856804", "36816", "ALD5", "YER073W", "L000004949", "\"aldehyde dehydrogenase " ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -382.94451345308966,
+        "y" : 358.4065076648325
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "76",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "855913",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "855913",
+        "name" : "855913",
+        "SUID" : 76,
+        "PSIMI_25_aliases" : [ "855913", "35995", "POS5", "YPL188W", "L000002651" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -337.3702794443006,
+        "y" : 581.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "74",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "853839",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "853839",
+        "name" : "853839",
+        "SUID" : 74,
+        "PSIMI_25_aliases" : [ "853839", "34102", "MAE1", "YKL029C", "L000003506", "\"malate dehydrogenase " ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -471.6016026864881,
+        "y" : 492.5475293933481
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "72",
+        "shared_name" : "947092",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947092",
+        "name" : "947092",
+        "SUID" : 72,
+        "PSIMI_25_aliases" : [ "947092", "851428", "nadK", "b2615", "ECK2611", "JW2596", "yfjB", "yfjE" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -360.1453038583631,
+        "y" : 469.83396738162935
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "71",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "851493",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851493",
+        "name" : "851493",
+        "SUID" : 71,
+        "PSIMI_25_aliases" : [ "851493", "31993", "IDP1", "YDL066W", "L000000852", "\"isocitrate dehydrogenase " ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -248.94214834078497,
+        "y" : 446.8457471667856
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "69",
+        "shared_name" : "947055",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "947055",
+        "name" : "947055",
+        "SUID" : 69,
+        "PSIMI_25_aliases" : [ "947055", "851393", "srmB", "b2576", "ECK2574", "JW2560", "rbaB", "rhlA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 345.117780553258,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "68",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "851775",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "851775",
+        "name" : "851775",
+        "SUID" : 68,
+        "PSIMI_25_aliases" : [ "851775", "32246", "MSS116", "YDR194C", "L000001206" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 450.21652017728144,
+        "y" : 706.3341981708139
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "66",
+        "shared_name" : "948559",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948559",
+        "name" : "948559",
+        "SUID" : 66,
+        "PSIMI_25_aliases" : [ "948559", "852853", "uvrA", "b4058", "ECK4050", "JW4019", "dar" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 550.2165201772814,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "65",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "2541704",
+        "PSIMI_25_taxon_ID" : [ "284812" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "2541704",
+        "name" : "2541704",
+        "SUID" : 65,
+        "PSIMI_25_aliases" : [ "2541704", "278199", "atl1", "SPAC1250.04c" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 655.3152598013048,
+        "y" : 706.3341981708139
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "63",
+        "shared_name" : "948461",
+        "PSIMI_25_taxon_ID" : [ "511145" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "948461",
+        "name" : "948461",
+        "SUID" : 63,
+        "PSIMI_25_aliases" : [ "948461", "852757", "sthA", "b3962", "ECK3954", "JW5551", "sth", "udhA" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 755.3152598013048,
+        "y" : 681.0895826160043
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "62",
+        "psi_mi" : "\"MI:0463\"(biogrid)",
+        "shared_name" : "852495",
+        "PSIMI_25_taxon_ID" : [ "559292" ],
+        "PSIMI_25_taxon_DB" : [ "taxid" ],
+        "entrez_gene_locuslink" : "852495",
+        "name" : "852495",
+        "SUID" : 62,
+        "PSIMI_25_aliases" : [ "852495", "32893", "PGI1", "YBR196C", "CDC30", "L000001409", "L000001410", "glucose-6-phosphate isomerase" ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 860.4139994253283,
+        "y" : 706.3341981708139
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "327",
+        "source" : "325",
+        "target" : "326",
+        "PSIMI_25_publication_ID" : [ "25996596" ],
+        "shared_interaction" : "1173429",
+        "PSIMI_25_authors" : [ "\"Yoon H (2015)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "851437 (1173429) 947002",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "851437 (1173429) 947002",
+        "interaction" : "1173429",
+        "SUID" : 327,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "324",
+        "source" : "322",
+        "target" : "321",
+        "PSIMI_25_publication_ID" : [ "25305489" ],
+        "shared_interaction" : "1032216",
+        "PSIMI_25_authors" : [ "\"Sung KH (2014)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "855289 (1032216) 948538",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "855289 (1032216) 948538",
+        "interaction" : "1032216",
+        "SUID" : 324,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "323",
+        "source" : "321",
+        "target" : "322",
+        "PSIMI_25_publication_ID" : [ "25305489" ],
+        "shared_interaction" : "1032215",
+        "PSIMI_25_authors" : [ "\"Sung KH (2014)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "948538 (1032215) 855289",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "948538 (1032215) 855289",
+        "interaction" : "1032215",
+        "SUID" : 323,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "320",
+        "source" : "319",
+        "target" : "319",
+        "PSIMI_25_publication_ID" : [ "11087827" ],
+        "shared_interaction" : "906062",
+        "PSIMI_25_authors" : [ "\"Auerbach G (2000)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0914" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "x-ray crystallography" ],
+        "shared_name" : "949040 (906062) 949040",
+        "PSIMI_25_interaction_type" : [ "association" ],
+        "name" : "949040 (906062) 949040",
+        "interaction" : "906062",
+        "SUID" : 320,
+        "PSIMI_25_detection_method_ID" : [ "MI:0114" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "318",
+        "source" : "317",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "9694873" ],
+        "shared_interaction" : "824542",
+        "PSIMI_25_authors" : [ "\"Naylor DJ (1998)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "17714 (824542) 944750",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "17714 (824542) 944750",
+        "interaction" : "824542",
+        "SUID" : 318,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "316",
+        "source" : "315",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "9694873" ],
+        "shared_interaction" : "824541",
+        "PSIMI_25_authors" : [ "\"Naylor DJ (1998)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "79563 (824541) 944750",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "79563 (824541) 944750",
+        "interaction" : "824541",
+        "SUID" : 316,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "314",
+        "source" : "313",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "23345595" ],
+        "shared_interaction" : "811733",
+        "PSIMI_25_authors" : [ "\"Marada A (2013)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0914" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "biochemical" ],
+        "shared_name" : "854407 (811733) 944750",
+        "PSIMI_25_interaction_type" : [ "association" ],
+        "name" : "854407 (811733) 944750",
+        "interaction" : "811733",
+        "SUID" : 314,
+        "PSIMI_25_detection_method_ID" : [ "MI:0401" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "312",
+        "source" : "311",
+        "target" : "309",
+        "PSIMI_25_publication_ID" : [ "23193270" ],
+        "shared_interaction" : "797994",
+        "PSIMI_25_authors" : [ "\"Naveau M (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "855838 (797994) 945280",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "855838 (797994) 945280",
+        "interaction" : "797994",
+        "SUID" : 312,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "310",
+        "source" : "308",
+        "target" : "309",
+        "PSIMI_25_publication_ID" : [ "23193270" ],
+        "shared_interaction" : "797993",
+        "PSIMI_25_authors" : [ "\"Naveau M (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "853463 (797993) 945280",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "853463 (797993) 945280",
+        "interaction" : "797993",
+        "SUID" : 310,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "307",
+        "source" : "306",
+        "target" : "298",
+        "PSIMI_25_publication_ID" : [ "12084712" ],
+        "shared_interaction" : "740618",
+        "PSIMI_25_authors" : [ "\"Doe CL (2002)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "2541620 (740618) 945174",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "2541620 (740618) 945174",
+        "interaction" : "740618",
+        "SUID" : 307,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "305",
+        "source" : "302",
+        "target" : "298",
+        "PSIMI_25_publication_ID" : [ "12084712" ],
+        "shared_interaction" : "740617",
+        "PSIMI_25_authors" : [ "\"Doe CL (2002)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "2539004 (740617) 945174",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "2539004 (740617) 945174",
+        "interaction" : "740617",
+        "SUID" : 305,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "303",
+        "source" : "302",
+        "target" : "298",
+        "PSIMI_25_publication_ID" : [ "22855558" ],
+        "shared_interaction" : "735526",
+        "PSIMI_25_authors" : [ "\"Wehrkamp-Richter S (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "2539004 (735526) 945174",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "2539004 (735526) 945174",
+        "interaction" : "735526",
+        "SUID" : 303,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "301",
+        "source" : "300",
+        "target" : "298",
+        "PSIMI_25_publication_ID" : [ "22855558" ],
+        "shared_interaction" : "735525",
+        "PSIMI_25_authors" : [ "\"Wehrkamp-Richter S (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "2540911 (735525) 945174",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "2540911 (735525) 945174",
+        "interaction" : "735525",
+        "SUID" : 301,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "299",
+        "source" : "297",
+        "target" : "298",
+        "PSIMI_25_publication_ID" : [ "22855558" ],
+        "shared_interaction" : "735524",
+        "PSIMI_25_authors" : [ "\"Wehrkamp-Richter S (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "2541512 (735524) 945174",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "2541512 (735524) 945174",
+        "interaction" : "735524",
+        "SUID" : 299,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "304",
+        "source" : "186",
+        "target" : "186",
+        "PSIMI_25_publication_ID" : [ "16181642" ],
+        "shared_interaction" : "736152",
+        "PSIMI_25_authors" : [ "\"Wilson MA (2005)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0914" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "x-ray crystallography" ],
+        "shared_name" : "945066 (736152) 945066",
+        "PSIMI_25_interaction_type" : [ "association" ],
+        "name" : "945066 (736152) 945066",
+        "interaction" : "736152",
+        "SUID" : 304,
+        "PSIMI_25_detection_method_ID" : [ "MI:0114" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "296",
+        "source" : "186",
+        "target" : "295",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734770",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734770) 946941",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734770) 946941",
+        "interaction" : "734770",
+        "SUID" : 296,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "294",
+        "source" : "186",
+        "target" : "293",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734769",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734769) 945190",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734769) 945190",
+        "interaction" : "734769",
+        "SUID" : 294,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "292",
+        "source" : "186",
+        "target" : "291",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734768",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734768) 947809",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734768) 947809",
+        "interaction" : "734768",
+        "SUID" : 292,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "290",
+        "source" : "186",
+        "target" : "289",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734767",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734767) 947828",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734767) 947828",
+        "interaction" : "734767",
+        "SUID" : 290,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "288",
+        "source" : "186",
+        "target" : "287",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734766",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734766) 948489",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734766) 948489",
+        "interaction" : "734766",
+        "SUID" : 288,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "286",
+        "source" : "186",
+        "target" : "285",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734765",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734765) 948484",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734765) 948484",
+        "interaction" : "734765",
+        "SUID" : 286,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "284",
+        "source" : "186",
+        "target" : "283",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734764",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734764) 948490",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734764) 948490",
+        "interaction" : "734764",
+        "SUID" : 284,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "282",
+        "source" : "186",
+        "target" : "281",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734763",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734763) 947803",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734763) 947803",
+        "interaction" : "734763",
+        "SUID" : 282,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "280",
+        "source" : "186",
+        "target" : "279",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734762",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734762) 947800",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734762) 947800",
+        "interaction" : "734762",
+        "SUID" : 280,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "278",
+        "source" : "186",
+        "target" : "277",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734761",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734761) 947820",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734761) 947820",
+        "interaction" : "734761",
+        "SUID" : 278,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "276",
+        "source" : "186",
+        "target" : "275",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734760",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734760) 947811",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734760) 947811",
+        "interaction" : "734760",
+        "SUID" : 276,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "274",
+        "source" : "186",
+        "target" : "273",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734759",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734759) 947845",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734759) 947845",
+        "interaction" : "734759",
+        "SUID" : 274,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "272",
+        "source" : "186",
+        "target" : "271",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734758",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734758) 947792",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734758) 947792",
+        "interaction" : "734758",
+        "SUID" : 272,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "270",
+        "source" : "186",
+        "target" : "269",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734757",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734757) 947816",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734757) 947816",
+        "interaction" : "734757",
+        "SUID" : 270,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "268",
+        "source" : "186",
+        "target" : "267",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734756",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734756) 947802",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734756) 947802",
+        "interaction" : "734756",
+        "SUID" : 268,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "266",
+        "source" : "186",
+        "target" : "265",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734755",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734755) 947793",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734755) 947793",
+        "interaction" : "734755",
+        "SUID" : 266,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "264",
+        "source" : "186",
+        "target" : "263",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734754",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734754) 947814",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734754) 947814",
+        "interaction" : "734754",
+        "SUID" : 264,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "262",
+        "source" : "186",
+        "target" : "261",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734753",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734753) 947874",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734753) 947874",
+        "interaction" : "734753",
+        "SUID" : 262,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "260",
+        "source" : "186",
+        "target" : "259",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734752",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734752) 945536",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734752) 945536",
+        "interaction" : "734752",
+        "SUID" : 260,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "258",
+        "source" : "186",
+        "target" : "257",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734749",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734749) 945637",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734749) 945637",
+        "interaction" : "734749",
+        "SUID" : 258,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "256",
+        "source" : "186",
+        "target" : "255",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734748",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734748) 947415",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734748) 947415",
+        "interaction" : "734748",
+        "SUID" : 256,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "254",
+        "source" : "186",
+        "target" : "253",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734747",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734747) 948394",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734747) 948394",
+        "interaction" : "734747",
+        "SUID" : 254,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "252",
+        "source" : "186",
+        "target" : "251",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734746",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734746) 946762",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734746) 946762",
+        "interaction" : "734746",
+        "SUID" : 252,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "250",
+        "source" : "186",
+        "target" : "249",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734745",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734745) 945300",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734745) 945300",
+        "interaction" : "734745",
+        "SUID" : 250,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "248",
+        "source" : "186",
+        "target" : "247",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734744",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734744) 944864",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734744) 944864",
+        "interaction" : "734744",
+        "SUID" : 248,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "246",
+        "source" : "186",
+        "target" : "245",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734743",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734743) 946724",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734743) 946724",
+        "interaction" : "734743",
+        "SUID" : 246,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "244",
+        "source" : "186",
+        "target" : "243",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734742",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734742) 948221",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734742) 948221",
+        "interaction" : "734742",
+        "SUID" : 244,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "242",
+        "source" : "186",
+        "target" : "241",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734741",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734741) 945303",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734741) 945303",
+        "interaction" : "734741",
+        "SUID" : 242,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "240",
+        "source" : "186",
+        "target" : "239",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734740",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734740) 944834",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734740) 944834",
+        "interaction" : "734740",
+        "SUID" : 240,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "238",
+        "source" : "186",
+        "target" : "237",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734739",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734739) 945672",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734739) 945672",
+        "interaction" : "734739",
+        "SUID" : 238,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "236",
+        "source" : "186",
+        "target" : "235",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734738",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734738) 946879",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734738) 946879",
+        "interaction" : "734738",
+        "SUID" : 236,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "234",
+        "source" : "186",
+        "target" : "233",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734737",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734737) 945837",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734737) 945837",
+        "interaction" : "734737",
+        "SUID" : 234,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "232",
+        "source" : "186",
+        "target" : "231",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734736",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734736) 947679",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734736) 947679",
+        "interaction" : "734736",
+        "SUID" : 232,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "230",
+        "source" : "186",
+        "target" : "229",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734735",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734735) 945880",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734735) 945880",
+        "interaction" : "734735",
+        "SUID" : 230,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "228",
+        "source" : "186",
+        "target" : "227",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734734",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734734) 947921",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734734) 947921",
+        "interaction" : "734734",
+        "SUID" : 228,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "226",
+        "source" : "186",
+        "target" : "225",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734733",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734733) 945007",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734733) 945007",
+        "interaction" : "734733",
+        "SUID" : 226,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "224",
+        "source" : "186",
+        "target" : "223",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734732",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734732) 945295",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734732) 945295",
+        "interaction" : "734732",
+        "SUID" : 224,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "222",
+        "source" : "186",
+        "target" : "221",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734731",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734731) 945829",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734731) 945829",
+        "interaction" : "734731",
+        "SUID" : 222,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "220",
+        "source" : "186",
+        "target" : "219",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734730",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734730) 948482",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734730) 948482",
+        "interaction" : "734730",
+        "SUID" : 220,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "218",
+        "source" : "186",
+        "target" : "217",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734729",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734729) 947838",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734729) 947838",
+        "interaction" : "734729",
+        "SUID" : 218,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "216",
+        "source" : "186",
+        "target" : "215",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734728",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734728) 946223",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734728) 946223",
+        "interaction" : "734728",
+        "SUID" : 216,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "214",
+        "source" : "186",
+        "target" : "213",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734727",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734727) 946222",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734727) 946222",
+        "interaction" : "734727",
+        "SUID" : 214,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "212",
+        "source" : "186",
+        "target" : "211",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734726",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734726) 947497",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734726) 947497",
+        "interaction" : "734726",
+        "SUID" : 212,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "210",
+        "source" : "186",
+        "target" : "209",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734725",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734725) 944761",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734725) 944761",
+        "interaction" : "734725",
+        "SUID" : 210,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "208",
+        "source" : "186",
+        "target" : "207",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734724",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734724) 947175",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734724) 947175",
+        "interaction" : "734724",
+        "SUID" : 208,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "206",
+        "source" : "186",
+        "target" : "205",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734723",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734723) 946949",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734723) 946949",
+        "interaction" : "734723",
+        "SUID" : 206,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "204",
+        "source" : "186",
+        "target" : "203",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734722",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734722) 945225",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734722) 945225",
+        "interaction" : "734722",
+        "SUID" : 204,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "202",
+        "source" : "186",
+        "target" : "201",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734721",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734721) 946234",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734721) 946234",
+        "interaction" : "734721",
+        "SUID" : 202,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "200",
+        "source" : "186",
+        "target" : "199",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734720",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734720) 944821",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734720) 944821",
+        "interaction" : "734720",
+        "SUID" : 200,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "198",
+        "source" : "186",
+        "target" : "197",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734719",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734719) 947253",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734719) 947253",
+        "interaction" : "734719",
+        "SUID" : 198,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "196",
+        "source" : "186",
+        "target" : "80",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734718",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734718) 947077",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734718) 947077",
+        "interaction" : "734718",
+        "SUID" : 196,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "195",
+        "source" : "186",
+        "target" : "194",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734717",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734717) 948665",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734717) 948665",
+        "interaction" : "734717",
+        "SUID" : 195,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "193",
+        "source" : "186",
+        "target" : "192",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734716",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734716) 944753",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734716) 944753",
+        "interaction" : "734716",
+        "SUID" : 193,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "191",
+        "source" : "186",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734715",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734715) 944750",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734715) 944750",
+        "interaction" : "734715",
+        "SUID" : 191,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "190",
+        "source" : "186",
+        "target" : "189",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734714",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734714) 948488",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734714) 948488",
+        "interaction" : "734714",
+        "SUID" : 190,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "188",
+        "source" : "186",
+        "target" : "187",
+        "PSIMI_25_publication_ID" : [ "22157000" ],
+        "shared_interaction" : "734713",
+        "PSIMI_25_authors" : [ "\"Le HT (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "945066 (734713) 947794",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "945066 (734713) 947794",
+        "interaction" : "734713",
+        "SUID" : 188,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "185",
+        "source" : "183",
+        "target" : "184",
+        "PSIMI_25_publication_ID" : [ "21586578" ],
+        "shared_interaction" : "672071",
+        "PSIMI_25_authors" : [ "\"Albrecht R (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "945583 (672071) 947086",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "945583 (672071) 947086",
+        "interaction" : "672071",
+        "SUID" : 185,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "177",
+        "source" : "175",
+        "target" : "176",
+        "PSIMI_25_publication_ID" : [ "16467841" ],
+        "shared_interaction" : "661937",
+        "PSIMI_25_authors" : [ "\"Erbse A (2006)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0914" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "x-ray crystallography" ],
+        "shared_name" : "948443 (661937) 945764",
+        "PSIMI_25_interaction_type" : [ "association" ],
+        "name" : "948443 (661937) 945764",
+        "interaction" : "661937",
+        "SUID" : 177,
+        "PSIMI_25_detection_method_ID" : [ "MI:0114" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "174",
+        "source" : "173",
+        "target" : "170",
+        "PSIMI_25_publication_ID" : [ "22308425" ],
+        "shared_interaction" : "616366",
+        "PSIMI_25_authors" : [ "\"Pang B (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0799" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "946985 (616366) 947429",
+        "PSIMI_25_interaction_type" : [ "additive genetic interaction defined by inequality" ],
+        "name" : "946985 (616366) 947429",
+        "interaction" : "616366",
+        "SUID" : 174,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "172",
+        "source" : "170",
+        "target" : "171",
+        "PSIMI_25_publication_ID" : [ "22308425" ],
+        "shared_interaction" : "616365",
+        "PSIMI_25_authors" : [ "\"Pang B (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0799" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "947429 (616365) 948695",
+        "PSIMI_25_interaction_type" : [ "additive genetic interaction defined by inequality" ],
+        "name" : "947429 (616365) 948695",
+        "interaction" : "616365",
+        "SUID" : 172,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "169",
+        "source" : "164",
+        "target" : "168",
+        "PSIMI_25_publication_ID" : [ "21720823" ],
+        "shared_interaction" : "553680",
+        "PSIMI_25_authors" : [ "\"Jain VK (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "854095 (553680) 945574",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "854095 (553680) 945574",
+        "interaction" : "553680",
+        "SUID" : 169,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "165",
+        "source" : "164",
+        "target" : "162",
+        "PSIMI_25_publication_ID" : [ "21720823" ],
+        "shared_interaction" : "553678",
+        "PSIMI_25_authors" : [ "\"Jain VK (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "854095 (553678) 948937",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "854095 (553678) 948937",
+        "interaction" : "553678",
+        "SUID" : 165,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "167",
+        "source" : "161",
+        "target" : "166",
+        "PSIMI_25_publication_ID" : [ "21720823" ],
+        "shared_interaction" : "553679",
+        "PSIMI_25_authors" : [ "\"Jain VK (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "851539 (553679) 948440",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "851539 (553679) 948440",
+        "interaction" : "553679",
+        "SUID" : 167,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "163",
+        "source" : "161",
+        "target" : "162",
+        "PSIMI_25_publication_ID" : [ "21720823" ],
+        "shared_interaction" : "553677",
+        "PSIMI_25_authors" : [ "\"Jain VK (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "851539 (553677) 948937",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "851539 (553677) 948937",
+        "interaction" : "553677",
+        "SUID" : 163,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "160",
+        "source" : "159",
+        "target" : "157",
+        "PSIMI_25_publication_ID" : [ "12167660" ],
+        "shared_interaction" : "482975",
+        "PSIMI_25_authors" : [ "\"Zaremberg V (2002)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "852271 (482975) 948543",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "852271 (482975) 948543",
+        "interaction" : "482975",
+        "SUID" : 160,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "158",
+        "source" : "156",
+        "target" : "157",
+        "PSIMI_25_publication_ID" : [ "12167660" ],
+        "shared_interaction" : "482974",
+        "PSIMI_25_authors" : [ "\"Zaremberg V (2002)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "853941 (482974) 948543",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "853941 (482974) 948543",
+        "interaction" : "482974",
+        "SUID" : 158,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "155",
+        "source" : "154",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "20732327" ],
+        "shared_interaction" : "452575",
+        "PSIMI_25_authors" : [ "\"Alamo MM (2010)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "852352 (452575) 944750",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "852352 (452575) 944750",
+        "interaction" : "452575",
+        "SUID" : 155,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "153",
+        "source" : "150",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "20732327" ],
+        "shared_interaction" : "452572",
+        "PSIMI_25_authors" : [ "\"Alamo MM (2010)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "856291 (452572) 944750",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "856291 (452572) 944750",
+        "interaction" : "452572",
+        "SUID" : 153,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "152",
+        "source" : "150",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "20732327" ],
+        "shared_interaction" : "452570",
+        "PSIMI_25_authors" : [ "\"Alamo MM (2010)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "856291 (452570) 944750",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "856291 (452570) 944750",
+        "interaction" : "452570",
+        "SUID" : 152,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "149",
+        "source" : "145",
+        "target" : "148",
+        "PSIMI_25_publication_ID" : [ "20051244" ],
+        "shared_interaction" : "354339",
+        "PSIMI_25_authors" : [ "\"Cui TZ (2010)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "947364 (354339) 2542608",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "947364 (354339) 2542608",
+        "interaction" : "354339",
+        "SUID" : 149,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "147",
+        "source" : "145",
+        "target" : "146",
+        "PSIMI_25_publication_ID" : [ "20051244" ],
+        "shared_interaction" : "354338",
+        "PSIMI_25_authors" : [ "\"Cui TZ (2010)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "pull down" ],
+        "shared_name" : "947364 (354338) 2541402",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "947364 (354338) 2541402",
+        "interaction" : "354338",
+        "SUID" : 147,
+        "PSIMI_25_detection_method_ID" : [ "MI:0096" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "144",
+        "source" : "143",
+        "target" : "139",
+        "PSIMI_25_publication_ID" : [ "19264809" ],
+        "shared_interaction" : "349581",
+        "PSIMI_25_authors" : [ "\"van der Kemp PA (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "852385 (349581) 947447",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "852385 (349581) 947447",
+        "interaction" : "349581",
+        "SUID" : 144,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "142",
+        "source" : "141",
+        "target" : "139",
+        "PSIMI_25_publication_ID" : [ "19264809" ],
+        "shared_interaction" : "349580",
+        "PSIMI_25_authors" : [ "\"van der Kemp PA (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "850430 (349580) 947447",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "850430 (349580) 947447",
+        "interaction" : "349580",
+        "SUID" : 142,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "140",
+        "source" : "138",
+        "target" : "139",
+        "PSIMI_25_publication_ID" : [ "19264809" ],
+        "shared_interaction" : "349579",
+        "PSIMI_25_authors" : [ "\"van der Kemp PA (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "854942 (349579) 947447",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "854942 (349579) 947447",
+        "interaction" : "349579",
+        "SUID" : 140,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "137",
+        "source" : "135",
+        "target" : "136",
+        "PSIMI_25_publication_ID" : [ "16941010" ],
+        "shared_interaction" : "348088",
+        "PSIMI_25_authors" : [ "\"Deutscher D (2006)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0794" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "945556 (348088) 853664",
+        "PSIMI_25_interaction_type" : [ "synthetic genetic interaction defined by inequality" ],
+        "name" : "945556 (348088) 853664",
+        "interaction" : "348088",
+        "SUID" : 137,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "182",
+        "source" : "80",
+        "target" : "181",
+        "PSIMI_25_publication_ID" : [ "22732191" ],
+        "shared_interaction" : "668573",
+        "PSIMI_25_authors" : [ "\"Reidy M (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0799" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "947077 (668573) 947097",
+        "PSIMI_25_interaction_type" : [ "additive genetic interaction defined by inequality" ],
+        "name" : "947077 (668573) 947097",
+        "interaction" : "668573",
+        "SUID" : 182,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "180",
+        "source" : "80",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "22732191" ],
+        "shared_interaction" : "668572",
+        "PSIMI_25_authors" : [ "\"Reidy M (2012)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0799" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "947077 (668572) 944750",
+        "PSIMI_25_interaction_type" : [ "additive genetic interaction defined by inequality" ],
+        "name" : "947077 (668572) 944750",
+        "interaction" : "668572",
+        "SUID" : 180,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "179",
+        "source" : "80",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "21474779" ],
+        "shared_interaction" : "661969",
+        "PSIMI_25_authors" : [ "\"Miot M (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "two hybrid" ],
+        "shared_name" : "947077 (661969) 944750",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "947077 (661969) 944750",
+        "interaction" : "661969",
+        "SUID" : 179,
+        "PSIMI_25_detection_method_ID" : [ "MI:0018" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "178",
+        "source" : "80",
+        "target" : "151",
+        "PSIMI_25_publication_ID" : [ "21474779" ],
+        "shared_interaction" : "661968",
+        "PSIMI_25_authors" : [ "\"Miot M (2011)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "enzymatic study" ],
+        "shared_name" : "947077 (661968) 944750",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "947077 (661968) 944750",
+        "interaction" : "661968",
+        "SUID" : 178,
+        "PSIMI_25_detection_method_ID" : [ "MI:0415" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "134",
+        "source" : "80",
+        "target" : "133",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344563",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344563) 851752",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344563) 851752",
+        "interaction" : "344563",
+        "SUID" : 134,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "132",
+        "source" : "80",
+        "target" : "131",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344562",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344562) 855974",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344562) 855974",
+        "interaction" : "344562",
+        "SUID" : 132,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "130",
+        "source" : "80",
+        "target" : "129",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344561",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344561) 855706",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344561) 855706",
+        "interaction" : "344561",
+        "SUID" : 130,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "128",
+        "source" : "80",
+        "target" : "127",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344560",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344560) 852053",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344560) 852053",
+        "interaction" : "344560",
+        "SUID" : 128,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "126",
+        "source" : "80",
+        "target" : "125",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344559",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344559) 850442",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344559) 850442",
+        "interaction" : "344559",
+        "SUID" : 126,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "124",
+        "source" : "80",
+        "target" : "123",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344558",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344558) 851903",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344558) 851903",
+        "interaction" : "344558",
+        "SUID" : 124,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "122",
+        "source" : "80",
+        "target" : "121",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344557",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344557) 852555",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344557) 852555",
+        "interaction" : "344557",
+        "SUID" : 122,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "120",
+        "source" : "80",
+        "target" : "119",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344556",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344556) 852996",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344556) 852996",
+        "interaction" : "344556",
+        "SUID" : 120,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "118",
+        "source" : "80",
+        "target" : "117",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344555",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344555) 856743",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344555) 856743",
+        "interaction" : "344555",
+        "SUID" : 118,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "116",
+        "source" : "80",
+        "target" : "115",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344554",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344554) 856437",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344554) 856437",
+        "interaction" : "344554",
+        "SUID" : 116,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "114",
+        "source" : "80",
+        "target" : "113",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344553",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344553) 852750",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344553) 852750",
+        "interaction" : "344553",
+        "SUID" : 114,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "112",
+        "source" : "80",
+        "target" : "111",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344552",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344552) 855485",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344552) 855485",
+        "interaction" : "344552",
+        "SUID" : 112,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "110",
+        "source" : "80",
+        "target" : "109",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344551",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344551) 851415",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344551) 851415",
+        "interaction" : "344551",
+        "SUID" : 110,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "108",
+        "source" : "80",
+        "target" : "107",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344550",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344550) 852184",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344550) 852184",
+        "interaction" : "344550",
+        "SUID" : 108,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "106",
+        "source" : "80",
+        "target" : "105",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344549",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344549) 850760",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344549) 850760",
+        "interaction" : "344549",
+        "SUID" : 106,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "104",
+        "source" : "80",
+        "target" : "103",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344548",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344548) 852860",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344548) 852860",
+        "interaction" : "344548",
+        "SUID" : 104,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "102",
+        "source" : "80",
+        "target" : "101",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344547",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344547) 856297",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344547) 856297",
+        "interaction" : "344547",
+        "SUID" : 102,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "100",
+        "source" : "80",
+        "target" : "99",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344546",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344546) 852726",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344546) 852726",
+        "interaction" : "344546",
+        "SUID" : 100,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "98",
+        "source" : "80",
+        "target" : "97",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344545",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344545) 852492",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344545) 852492",
+        "interaction" : "344545",
+        "SUID" : 98,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "96",
+        "source" : "80",
+        "target" : "95",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344544",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344544) 853985",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344544) 853985",
+        "interaction" : "344544",
+        "SUID" : 96,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "94",
+        "source" : "80",
+        "target" : "93",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344543",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344543) 856455",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344543) 856455",
+        "interaction" : "344543",
+        "SUID" : 94,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "92",
+        "source" : "80",
+        "target" : "91",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344542",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344542) 854345",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344542) 854345",
+        "interaction" : "344542",
+        "SUID" : 92,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "90",
+        "source" : "80",
+        "target" : "89",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344541",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344541) 851559",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344541) 851559",
+        "interaction" : "344541",
+        "SUID" : 90,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "88",
+        "source" : "80",
+        "target" : "87",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344540",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344540) 855139",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344540) 855139",
+        "interaction" : "344540",
+        "SUID" : 88,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "86",
+        "source" : "80",
+        "target" : "85",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344539",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344539) 856183",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344539) 856183",
+        "interaction" : "344539",
+        "SUID" : 86,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "84",
+        "source" : "80",
+        "target" : "83",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344538",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344538) 854106",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344538) 854106",
+        "interaction" : "344538",
+        "SUID" : 84,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "82",
+        "source" : "80",
+        "target" : "81",
+        "PSIMI_25_publication_ID" : [ "19026788" ],
+        "shared_interaction" : "344537",
+        "PSIMI_25_authors" : [ "\"Tipton KA (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0915" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "affinity chromatography technology" ],
+        "shared_name" : "947077 (344537) 855744",
+        "PSIMI_25_interaction_type" : [ "physical association" ],
+        "name" : "947077 (344537) 855744",
+        "interaction" : "344537",
+        "SUID" : 82,
+        "PSIMI_25_detection_method_ID" : [ "MI:0004" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "79",
+        "source" : "78",
+        "target" : "72",
+        "PSIMI_25_publication_ID" : [ "19158096" ],
+        "shared_interaction" : "344110",
+        "PSIMI_25_authors" : [ "\"Miyagi H (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "856804 (344110) 947092",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "856804 (344110) 947092",
+        "interaction" : "344110",
+        "SUID" : 79,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "77",
+        "source" : "76",
+        "target" : "72",
+        "PSIMI_25_publication_ID" : [ "19158096" ],
+        "shared_interaction" : "344106",
+        "PSIMI_25_authors" : [ "\"Miyagi H (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "855913 (344106) 947092",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "855913 (344106) 947092",
+        "interaction" : "344106",
+        "SUID" : 77,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "75",
+        "source" : "74",
+        "target" : "72",
+        "PSIMI_25_publication_ID" : [ "19158096" ],
+        "shared_interaction" : "344105",
+        "PSIMI_25_authors" : [ "\"Miyagi H (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "853839 (344105) 947092",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "853839 (344105) 947092",
+        "interaction" : "344105",
+        "SUID" : 75,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "73",
+        "source" : "71",
+        "target" : "72",
+        "PSIMI_25_publication_ID" : [ "19158096" ],
+        "shared_interaction" : "344103",
+        "PSIMI_25_authors" : [ "\"Miyagi H (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "851493 (344103) 947092",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "851493 (344103) 947092",
+        "interaction" : "344103",
+        "SUID" : 73,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "70",
+        "source" : "68",
+        "target" : "69",
+        "PSIMI_25_publication_ID" : [ "19393667" ],
+        "shared_interaction" : "343119",
+        "PSIMI_25_authors" : [ "\"Del Campo M (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "851775 (343119) 947055",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "851775 (343119) 947055",
+        "interaction" : "343119",
+        "SUID" : 70,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "67",
+        "source" : "65",
+        "target" : "66",
+        "PSIMI_25_publication_ID" : [ "19516334" ],
+        "shared_interaction" : "338619",
+        "PSIMI_25_authors" : [ "\"Tubbs JL (2009)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0407" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "far western blotting" ],
+        "shared_name" : "2541704 (338619) 948559",
+        "PSIMI_25_interaction_type" : [ "direct interaction" ],
+        "name" : "2541704 (338619) 948559",
+        "interaction" : "338619",
+        "SUID" : 67,
+        "PSIMI_25_detection_method_ID" : [ "MI:0047" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "64",
+        "source" : "62",
+        "target" : "63",
+        "PSIMI_25_publication_ID" : [ "18036177" ],
+        "shared_interaction" : "263839",
+        "PSIMI_25_authors" : [ "\"Heux S (2008)\"" ],
+        "PSIMI_25_interaction_type_ID" : [ "MI:0796" ],
+        "PSIMI_25_source_DB" : [ "psi-mi" ],
+        "PSIMI_25_detection_method" : [ "genetic interference" ],
+        "shared_name" : "852495 (263839) 948461",
+        "PSIMI_25_interaction_type" : [ "suppressive genetic interaction defined by inequality" ],
+        "name" : "852495 (263839) 948461",
+        "interaction" : "263839",
+        "SUID" : 64,
+        "PSIMI_25_detection_method_ID" : [ "MI:0254" ],
+        "PSIMI_25_publication_DB" : [ "pubmed" ],
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}

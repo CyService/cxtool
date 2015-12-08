@@ -10,6 +10,7 @@ import (
 	"encoding/csv"
 	"github.com/codegangsta/cli"
 	"github.com/cytoscape-ci/cxtool/converter"
+	"github.com/cytoscape-ci/cxtool/converter/fromcyjs"
 )
 
 
@@ -93,6 +94,8 @@ func getConverter(inFormat string, outFormat string) converter.Converter {
 		}
 	case sif:
 		return converter.Sif2Cx{Delimiter:' '}
+	case cytoscapejs:
+		return fromcyjs.Cyjs2Cx{}
 	default:
 		return converter.Cx2Cyjs{}
 	}

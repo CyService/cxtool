@@ -13,6 +13,7 @@ import (
 	"os"
 	"runtime" // For debugging
 	"strconv"
+	"reflect"
 )
 
 type ResourceReadError struct {
@@ -172,8 +173,12 @@ func (con Cx2Cyjs) run(cxDecoder *json.Decoder) {
 	assignNodeAttr(cyjsNetwork.Elements.Nodes, nodeAttrs, layout)
 	assignEdgeAttr(cyjsNetwork.Elements.Edges, edgeAttrs)
 
-	// Add style to net
-	cyjsNetwork.Style = vps["style"].([]cyjs.SelectorEntry)
+	// Add style to net (if style data is available...)
+	if vps != nil && reflect.ValueOf(vps).IsNil() == false {
+		if vps["style"] != nil {
+			cyjsNetwork.Style = vps["style"].([]cyjs.SelectorEntry)
+		}
+	}
 
 	jsonString, err := json.Marshal(cyjsNetwork)
 
