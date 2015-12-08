@@ -12,6 +12,7 @@ const (
 	I  string = "i"
 	PO string = "po"
 	V  string = "v"
+
 )
 
 //
@@ -63,16 +64,16 @@ type Metadata struct {
 
 
 // Basic structure of CX with minimum aspects for Cytoscape
-type CX struct {
-
-	NetworkAttributes []NetworkAttribute `json:"networkAttributes"`
-
-	Nodes             Nodes `json:"nodes"`
-	Edges             Edges `json:"edges"`
-
-	NodeAttributes    []Attribute `json:"nodeAttributes"`
-	EdgeAttributes    []Attribute `json:"edgeAttributes"`
-}
+//type NetworkAttributes struct {
+//	[]NetworkAttribute `json:"networkAttributes"`
+//}
+//
+//	Nodes             Nodes `json:"nodes"`
+//	Edges             Edges `json:"edges"`
+//
+//	NodeAttributes    []Attribute `json:"nodeAttributes"`
+//	EdgeAttributes    []Attribute `json:"edgeAttributes"`
+//}
 
 
 
