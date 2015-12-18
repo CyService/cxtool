@@ -7,10 +7,12 @@ package appbuilder
 
 import (
 	"os"
-	"encoding/csv"
 	"github.com/codegangsta/cli"
 	"github.com/cytoscape-ci/cxtool/converter"
 	"github.com/cytoscape-ci/cxtool/converter/fromcyjs"
+	"bufio"
+	"io"
+	"log"
 )
 
 
@@ -71,11 +73,24 @@ func setAction(app *cli.App) {
 				cli.ShowAppHelp(c)
 			} else {
 				// No param.  Use Pipe
-				con.ConvertFromStdin()
+				r := bufio.NewReader(os.Stdin)
+				w := io.Writer(os.Stdout)
+				con.Convert(r, w)
 			}
 		} else {
 			source := commandLineArgs[0]
-			con.Convert(source)
+
+			f, err := os.Open(source)
+			if err != nil {
+				log.Fatal("Error:", err)
+				return
+			}
+
+			// Close input file at the end of this
+			defer f.Close()
+
+			w := io.Writer(os.Stdout)
+			con.Convert(bufio.NewReader(f), w)
 		}
 	}
 }
@@ -88,9 +103,7 @@ func getConverter(inFormat string, outFormat string) converter.Converter {
 		}
 
 		if outFormat == sif {
-			csvWriter := csv.NewWriter(os.Stdout)
-			csvWriter.Comma = ' '
-			return converter.Cx2Sif{W: csvWriter}
+			return converter.Cx2Sif{}
 		}
 	case sif:
 		return converter.Sif2Cx{Delimiter:' '}

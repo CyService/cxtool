@@ -2,9 +2,7 @@ package converter
 
 import (
 	cx "github.com/cytoscape-ci/cxtool/cx"
-	"bufio"
 	"encoding/json"
-	"os"
 	"fmt"
 	"io"
 	"strconv"
@@ -16,30 +14,19 @@ const (
 )
 
 type Cx2Sif struct {
-	W *csv.Writer
-}
-
-func (con Cx2Sif) ConvertFromStdin() {
-	reader := bufio.NewReader(os.Stdin)
-	cxDecoder := json.NewDecoder(reader)
-	parseSif(cxDecoder, *con.W)
-}
-
-func (con Cx2Sif) Convert(sourceFileName string) {
-	file, err := os.Open(sourceFileName)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
-
-	// Close input file at the end of this
-	defer file.Close()
-	cxDecoder := json.NewDecoder(file)
-	parseSif(cxDecoder, *con.W)
 }
 
 
-func parseSif(cxDecoder *json.Decoder, w csv.Writer) {
+func (cx2sif Cx2Sif) Convert(r io.Reader, w io.Writer) {
+	cxDecoder := json.NewDecoder(r)
+
+	csvWriter := csv.NewWriter(w)
+	csvWriter.Comma = ' '
+
+	parseSif(cxDecoder, csvWriter)
+}
+
+func parseSif(cxDecoder *json.Decoder, w *csv.Writer) {
 
 	// Edge slice used for later mapping
 	var edges []cx.Edge
@@ -71,7 +58,7 @@ func parseSif(cxDecoder *json.Decoder, w csv.Writer) {
 		}
 	}
 
-	writeSif(nodeMap, edges, w)
+	writeSif(nodeMap, edges, *w)
 }
 
 func writeSif(nodes map[int64]string, edges []cx.Edge, w csv.Writer) {

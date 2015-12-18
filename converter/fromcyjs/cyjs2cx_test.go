@@ -6,7 +6,8 @@ import (
 	"io"
 	"encoding/json"
 	"github.com/cytoscape-ci/cxtool/converter/fromcyjs"
-	"github.com/cytoscape-ci/cxtool/cx"
+	"os"
+	"bufio"
 )
 
 func TestCyjs2Cx(t *testing.T) {
@@ -14,14 +15,24 @@ func TestCyjs2Cx(t *testing.T) {
 	output := new(bytes.Buffer)
 	resultWriter := io.Writer(output)
 
-	c2c := fromcyjs.Cyjs2Cx{W: &resultWriter}
-	c2c.Convert("../../test_data/ecoli_cyjs_format.json")
+
+	file, err := os.Open("../../test_data/ecoli_cyjs_format.json")
+	if err != nil {
+		t.Fatal("Error:", err)
+		return
+	}
+
+	// Close input file at the end of this
+	defer file.Close()
+
+	c2c := fromcyjs.Cyjs2Cx{}
+	c2c.Convert(bufio.NewReader(file), resultWriter)
 
 	result := output.String()
 
 	var cxData []map[string]interface{}
 
-	err := json.Unmarshal([]byte(result), &cxData)
+	err = json.Unmarshal([]byte(result), &cxData)
 	if err != nil {
 		t.Error("error:", err)
 		return

@@ -4,42 +4,28 @@ import (
 	cx "github.com/cytoscape-ci/cxtool/cx"
 	"encoding/csv"
 	"encoding/json"
-	"fmt"
 	"io"
 	"log"
-	"os"
 	"bufio"
 )
+
 
 type Sif2Cx struct {
 	Delimiter rune
 }
 
 
-func (con Sif2Cx) ConvertFromStdin() {
-	log.Println("Waiting input from STDIN...")
+func (con Sif2Cx) Convert(r io.Reader, w io.Writer) {
+	reader := csv.NewReader(r)
+	bufW := bufio.NewWriter(w)
 
-	stdinReader := bufio.NewReader(os.Stdin)
-	reader := csv.NewReader(stdinReader)
-	con.readCSV(reader)
-}
-
-func (con Sif2Cx) Convert(sourceFileName string) {
-	file, err := os.Open(sourceFileName)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
-
-	// Close input file at the end of this
-	defer file.Close()
-	reader := csv.NewReader(file)
-	con.readCSV(reader)
+	con.readSIF(reader, bufW)
 }
 
 
-func (con Sif2Cx) readCSV(reader *csv.Reader) {
+func (con Sif2Cx) readSIF(reader *csv.Reader, w *bufio.Writer) {
 	// Set delimiter
+
 	reader.Comma = con.Delimiter
 	reader.LazyQuotes = true
 
@@ -48,37 +34,48 @@ func (con Sif2Cx) readCSV(reader *csv.Reader) {
 
 	nodeCounter := int64(0)
 
-	fmt.Println("[")
+	w.Write([]byte("["))
+
 	for {
 		record, err := reader.Read()
 
 		if err == io.EOF {
-			netAttr := cx.NetworkAttribute{N:"name", V:"SIF Conversion Test"}
-			b, err := json.Marshal(netAttr)
-			if err != nil {
-				fmt.Println("error:", err)
-			}
+			log.Println("-------- end ---------")
+			// Add network attributes at the end of doc.
+//			netAttr := cx.NetworkAttribute{N:"name", V:"SIF Conversion Test"}
+//
+//			attrList := []cx.NetworkAttribute{netAttr}
+//			netAttrs := make(map[string][]cx.NetworkAttribute)
+//
+//			netAttrs["networkAttributes"] = attrList
 
-			fmt.Println("{\"networkAttributes\": [", string(b[:]), "]}]")
-
+			w.Write([]byte("]"))
+			w.Flush()
 			break
 		}
+
 		if err != nil {
 			log.Fatal(err)
 		}
 
 		if len(record) == 3 {
-			toJson(record, nodesExists, &nodeCounter)
+			toJson(record, nodesExists, &nodeCounter, w)
+		} else {
+			log.Println("INVALID Line")
 		}
 	}
+
+	log.Println("-------- end2 ---------")
 }
 
-func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64) {
+
+func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64, w *bufio.Writer) {
+
+	log.Println(record)
 
 	source := record[0]
 	interaction := record[1]
 	target := record[2]
-
 
 	_, exists := nodesExists[source]
 
@@ -86,7 +83,7 @@ func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64) {
 		*nodeCounter = *nodeCounter + 1
 		nodesExists[source] = *nodeCounter
 		sourceNode := cx.Node{ID:*nodeCounter, N:source}
-		printEntry(sourceNode)
+		printEntry(sourceNode, w)
 	}
 
 	_, targetExists := nodesExists[target]
@@ -95,37 +92,38 @@ func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64) {
 		*nodeCounter = *nodeCounter + 1
 		nodesExists[target] = *nodeCounter
 		targetNode := cx.Node{ID:*nodeCounter, N:target}
-		printEntry(targetNode)
+		printEntry(targetNode, w)
 	}
 
 	*nodeCounter = *nodeCounter + 1
 	edge := cx.Edge{ID:*nodeCounter, S:nodesExists[source],
 		T:nodesExists[target], I:interaction}
 
-
-	printEdge(edge)
+	printEdge(edge, w)
 }
 
-func printEdge(edge cx.Edge) {
+func printEdge(edge cx.Edge, w *bufio.Writer) {
 	newEdges := []cx.Edge{edge}
 	edgesEntry := cx.Edges{EdgeList:newEdges}
-
-	b, err := json.Marshal(edgesEntry)
-	if err != nil {
-		fmt.Println("error:", err)
+	if len(newEdges) == 0 {
+		log.Fatal("####################")
 	}
 
-	fmt.Println(string(b[:]), ",")
+	json.NewEncoder(w).Encode(edgesEntry)
+
+	w.WriteString(",\n")
+	w.Flush()
 }
 
-func printEntry(singleNode interface{}) {
+
+func printEntry(singleNode interface{}, w *bufio.Writer) {
 	newNodes := []cx.Node{singleNode.(cx.Node)}
 	nodesEntry := cx.Nodes{NodesList:newNodes}
 
-	b, err := json.Marshal(nodesEntry)
-	if err != nil {
-		fmt.Println("error:", err)
+	if len(newNodes) == 0 {
+		log.Fatal("####################")
 	}
-
-	fmt.Println(string(b[:]), ",")
+	json.NewEncoder(w).Encode(nodesEntry)
+	w.WriteString(",\n")
+	w.Flush()
 }

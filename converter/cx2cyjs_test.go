@@ -10,6 +10,8 @@ import (
 	"strings"
 	"errors"
 	"strconv"
+	"os"
+	"bufio"
 )
 
 
@@ -18,8 +20,17 @@ func TestCx2Cyjs(t *testing.T) {
 	output := new(bytes.Buffer)
 	resultWriter := io.Writer(output)
 
-	c2c := converter.Cx2Cyjs{W:&resultWriter}
-	c2c.Convert("../test_data/galcxStyle2.json")
+	file, err := os.Open("../test_data/galcxStyle2.json")
+	if err != nil {
+		t.Fatal("Error:", err)
+		return
+	}
+
+	// Close input file at the end of this
+	defer file.Close()
+
+	c2c := converter.Cx2Cyjs{}
+	c2c.Convert(bufio.NewReader(file), resultWriter)
 
 	result := output.String()
 

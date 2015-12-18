@@ -5,9 +5,11 @@ import (
 	"testing"
 	"bytes"
 	"github.com/cytoscape-ci/cxtool/converter"
-	"encoding/csv"
 	"fmt"
 	"strings"
+	"os"
+	"bufio"
+	"io"
 )
 
 
@@ -15,14 +17,20 @@ import (
 // Read a CX file and generate SIF.
 //
 func TestCx2Sif(t *testing.T) {
-
 	output := new(bytes.Buffer)
-	csvWriter := csv.NewWriter(output)
-	csvWriter.Comma = ' '
+	w := io.Writer(output)
 
-	c2s := converter.Cx2Sif{W:csvWriter}
+	file, err := os.Open("../test_data/galcxStyle2.json")
+	if err != nil {
+		t.Fatal("Error:", err)
+		return
+	}
 
-	c2s.Convert("../test_data/galcxStyle2.json")
+	// Close input file at the end of this
+	defer file.Close()
+
+	c2s := converter.Cx2Sif{}
+	c2s.Convert(bufio.NewReader(file), w)
 
 	result := output.String()
 

@@ -3,14 +3,12 @@ package converter
 import (
 	cyjs "github.com/cytoscape-ci/cxtool/cyjs"
 	cx "github.com/cytoscape-ci/cxtool/cx"
-	"bufio"
 	"bytes"
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
 	"io"
 	"log"
-	"os"
 	"runtime" // For debugging
 	"strconv"
 	"reflect"
@@ -25,36 +23,11 @@ func (err ResourceReadError) Error() string {
 }
 
 type Cx2Cyjs struct {
-	W *io.Writer
 }
 
-
-func (con Cx2Cyjs) ConvertFromStdin() {
-	if con.W == nil {
-		outWriter := io.Writer(os.Stdout)
-		con.W = &outWriter
-	}
-	reader := bufio.NewReader(os.Stdin)
-	cxDecoder := json.NewDecoder(reader)
-	con.run(cxDecoder)
-}
-
-func (con Cx2Cyjs) Convert(sourceFileName string) {
-	if con.W == nil {
-		outWriter := io.Writer(os.Stdout)
-		con.W = &outWriter
-	}
-
-	file, err := os.Open(sourceFileName)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
-
-	// Close input file at the end of this
-	defer file.Close()
-	cxDecoder := json.NewDecoder(file)
-	con.run(cxDecoder)
+func (cx2cy Cx2Cyjs) Convert(r io.Reader, w io.Writer) {
+	cxDecoder := json.NewDecoder(r)
+	run(cxDecoder, w)
 }
 
 
@@ -122,7 +95,7 @@ func prepareConversionTable() (conversionMap map[string]string, typeMap map[stri
 	return table, typeTable, nil
 }
 
-func (con Cx2Cyjs) run(cxDecoder *json.Decoder) {
+func run(cxDecoder *json.Decoder, w io.Writer) {
 
 	// Initialize handlers
 	handlers := initHandlers()
@@ -186,7 +159,7 @@ func (con Cx2Cyjs) run(cxDecoder *json.Decoder) {
 		fmt.Println("ERR: ", err)
 	} else {
 //		fmt.Println(string(jsonString))
-		(*con.W).Write(jsonString)
+		w.Write(jsonString)
 	}
 	//debug()
 }
