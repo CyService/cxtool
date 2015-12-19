@@ -12,6 +12,7 @@ import (
 
 type Sif2Cx struct {
 	Delimiter rune
+	Name string
 }
 
 
@@ -25,6 +26,13 @@ func (con Sif2Cx) Convert(r io.Reader, w io.Writer) {
 
 func (con Sif2Cx) readSIF(reader *csv.Reader, w *bufio.Writer) {
 	// Set delimiter
+
+	var netName string
+	if con.Name == "" {
+		netName = "CX from SIF file"
+	} else {
+		netName = con.Name
+	}
 
 	reader.Comma = con.Delimiter
 	reader.LazyQuotes = true
@@ -40,14 +48,15 @@ func (con Sif2Cx) readSIF(reader *csv.Reader, w *bufio.Writer) {
 		record, err := reader.Read()
 
 		if err == io.EOF {
-			log.Println("-------- end ---------")
 			// Add network attributes at the end of doc.
-//			netAttr := cx.NetworkAttribute{N:"name", V:"SIF Conversion Test"}
-//
-//			attrList := []cx.NetworkAttribute{netAttr}
-//			netAttrs := make(map[string][]cx.NetworkAttribute)
-//
-//			netAttrs["networkAttributes"] = attrList
+			netAttr := cx.NetworkAttribute{N:"name", V: netName}
+
+			attrList := []cx.NetworkAttribute{netAttr}
+			netAttrs := make(map[string][]cx.NetworkAttribute)
+
+			netAttrs["networkAttributes"] = attrList
+
+			json.NewEncoder(w).Encode(netAttrs)
 
 			w.Write([]byte("]"))
 			w.Flush()
@@ -60,18 +69,14 @@ func (con Sif2Cx) readSIF(reader *csv.Reader, w *bufio.Writer) {
 
 		if len(record) == 3 {
 			toJson(record, nodesExists, &nodeCounter, w)
-		} else {
-			log.Println("INVALID Line")
 		}
-	}
 
-	log.Println("-------- end2 ---------")
+		w.Flush()
+	}
 }
 
 
 func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64, w *bufio.Writer) {
-
-	log.Println(record)
 
 	source := record[0]
 	interaction := record[1]
@@ -102,28 +107,18 @@ func toJson(record []string, nodesExists map[string]int64, nodeCounter *int64, w
 	printEdge(edge, w)
 }
 
+
 func printEdge(edge cx.Edge, w *bufio.Writer) {
 	newEdges := []cx.Edge{edge}
 	edgesEntry := cx.Edges{EdgeList:newEdges}
-	if len(newEdges) == 0 {
-		log.Fatal("####################")
-	}
-
 	json.NewEncoder(w).Encode(edgesEntry)
-
-	w.WriteString(",\n")
-	w.Flush()
+	w.WriteString(",")
 }
 
 
 func printEntry(singleNode interface{}, w *bufio.Writer) {
 	newNodes := []cx.Node{singleNode.(cx.Node)}
 	nodesEntry := cx.Nodes{NodesList:newNodes}
-
-	if len(newNodes) == 0 {
-		log.Fatal("####################")
-	}
 	json.NewEncoder(w).Encode(nodesEntry)
-	w.WriteString(",\n")
-	w.Flush()
+	w.WriteString(",")
 }

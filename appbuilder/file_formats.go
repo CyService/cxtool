@@ -5,4 +5,5 @@ const (
 	cx = "cx"
 	sif = "sif"
 	cytoscapejs = "cyjs"
+	nodeids = "node-ids"
 )

@@ -13,6 +13,7 @@ import (
 	"bufio"
 	"io"
 	"log"
+	"github.com/cytoscape-ci/cxtool/converter/filter"
 )
 
 
@@ -104,6 +105,10 @@ func getConverter(inFormat string, outFormat string) converter.Converter {
 
 		if outFormat == sif {
 			return converter.Cx2Sif{}
+		}
+
+		if outFormat == nodeids {
+			return filter.Cx2IdList{}
 		}
 	case sif:
 		return converter.Sif2Cx{Delimiter:' '}
