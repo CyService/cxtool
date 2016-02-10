@@ -1,0 +1,2047 @@
+[
+  {
+    "numberVerification": [
+      {
+        "longNumber": 281474976710655
+      }
+    ]
+  },
+  {
+    "metaData": [
+      {
+        "consistencyGroup": 1,
+        "elementCount": 5,
+        "lastUpdate": 1454950512221,
+        "name": "@context",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "lastUpdate": 1454950512221,
+        "name": "edgeAttributes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 11,
+        "lastUpdate": 1454950512221,
+        "name": "edges",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 1,
+        "lastUpdate": 1454950512221,
+        "name": "ndexStatus",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "lastUpdate": 1454950512221,
+        "name": "networkAttributes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "lastUpdate": 1454950512221,
+        "name": "nodeAttributes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 15,
+        "lastUpdate": 1454950512221,
+        "name": "nodes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "lastUpdate": 1454950512221,
+        "name": "provenanceHistory",
+        "properties": [],
+        "version": "1.0"
+      }
+    ]
+  },
+  {
+    "ndexStatus": [
+      {
+        "externalId": "b7eb8b32-ce84-11e5-83ca-0251251672f9",
+        "creationTime": 1454950512135,
+        "modificationTime": 1454950512221,
+        "visibility": "PUBLIC",
+        "published": false,
+        "nodeCount": 15,
+        "edgeCount": 11,
+        "owner": "vrynkov",
+        "ndexServerURI": "http://dev2.ndexbio.org",
+        "readOnly": false
+      }
+    ]
+  },
+  {
+    "provenanceHistory": [
+      {
+        "entity": {
+          "uri": "http://dev2.ndexbio.org/network/b7eb8b32-ce84-11e5-83ca-0251251672f9",
+          "creationEvent": {
+            "endedAtTime": 1454950754975,
+            "startedAtTime": 1454950754975,
+            "inputs": [
+              {
+                "uri": "http://dev2.ndexbio.org/network/b7eb8b32-ce84-11e5-83ca-0251251672f9",
+                "creationEvent": {
+                  "endedAtTime": 1454950512135,
+                  "startedAtTime": 1454950512135,
+                  "inputs": null,
+                  "eventType": "File Upload",
+                  "properties": [
+                    {
+                      "name": "user",
+                      "value": "Vladimir Rynkov"
+                    },
+                    {
+                      "name": "account name",
+                      "value": "vrynkov"
+                    },
+                    {
+                      "name": "filename",
+                      "value": "network_renamed_from_KAM_.xgmml"
+                    }
+                  ]
+                },
+                "properties": [
+                  {
+                    "name": "edge count",
+                    "value": "11"
+                  },
+                  {
+                    "name": "node count",
+                    "value": "15"
+                  },
+                  {
+                    "name": "dc:title",
+                    "value": "N/A"
+                  },
+                  {
+                    "name": "description",
+                    "value": "N/A"
+                  }
+                ]
+              }
+            ],
+            "eventType": "Update Network Profile",
+            "properties": [
+              {
+                "name": "user",
+                "value": "Vladimir Rynkov"
+              },
+              {
+                "name": "account name",
+                "value": "vrynkov"
+              }
+            ]
+          },
+          "properties": [
+            {
+              "name": "edge count",
+              "value": "11"
+            },
+            {
+              "name": "node count",
+              "value": "15"
+            },
+            {
+              "name": "dc:title",
+              "value": "Network renamed from KAM original"
+            },
+            {
+              "name": "description",
+              "value": "N/A"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "@context": [
+      {
+        "xmlns": "http://www.cs.rpi.edu/XGMML",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cy": "http://www.cytoscape.org",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "xlink": "http://www.w3.org/1999/xlink"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "name",
+        "v": "Network renamed from KAM original"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "description",
+        "v": "N/A"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "ndex:sourceFormat",
+        "v": "XGMML"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "id",
+        "v": "52"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "directed",
+        "v": "1"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "dc:type",
+        "v": "Protein-Protein Interaction"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "dc:identifier",
+        "v": "N/A"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "dc:date",
+        "v": "2014-11-20 17:15:14"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "dc:source",
+        "v": "http://www.cytoscape.org/"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "dc:format",
+        "v": "Cytoscape-XGMML"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "shared name",
+        "v": "Network from KAM original"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "selected",
+        "v": "1",
+        "d": "boolean"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "__Annotations",
+        "v": null
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3509,
+        "n": "p(MGI:Rbl2)"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3509,
+        "n": "shared name",
+        "v": "p(MGI:Rbl2)"
+      },
+      {
+        "po": 3509,
+        "n": "name",
+        "v": "p(MGI:Rbl2)"
+      },
+      {
+        "po": 3509,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3509,
+        "n": "Degree",
+        "v": "0",
+        "d": "integer"
+      },
+      {
+        "po": 3509,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3509,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3509,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(MGI:Rbl2)"
+      },
+      {
+        "po": 3509,
+        "n": "canonicalName",
+        "v": "p(MGI:Rbl2)"
+      },
+      {
+        "po": 3509,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(MGI:Rbl2)"
+      },
+      {
+        "po": 3509,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3509,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3509,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAKIw"
+      },
+      {
+        "po": 3509,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3510,
+        "n": "p(MGI:Rbl1)"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3510,
+        "n": "shared name",
+        "v": "p(MGI:Rbl1)"
+      },
+      {
+        "po": 3510,
+        "n": "name",
+        "v": "p(MGI:Rbl1)"
+      },
+      {
+        "po": 3510,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3510,
+        "n": "Degree",
+        "v": "0",
+        "d": "integer"
+      },
+      {
+        "po": 3510,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3510,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3510,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(MGI:Rbl1)"
+      },
+      {
+        "po": 3510,
+        "n": "canonicalName",
+        "v": "p(MGI:Rbl1)"
+      },
+      {
+        "po": 3510,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(MGI:Rbl1)"
+      },
+      {
+        "po": 3510,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3510,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3510,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAP1A"
+      },
+      {
+        "po": 3510,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3511,
+        "n": "p(HGNC:RBL2)"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3511,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2)"
+      },
+      {
+        "po": 3511,
+        "n": "name",
+        "v": "p(HGNC:RBL2)"
+      },
+      {
+        "po": 3511,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3511,
+        "n": "Degree",
+        "v": "10",
+        "d": "integer"
+      },
+      {
+        "po": 3511,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3511,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3511,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2)"
+      },
+      {
+        "po": 3511,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2)"
+      },
+      {
+        "po": 3511,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2)"
+      },
+      {
+        "po": 3511,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3511,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3511,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAADag"
+      },
+      {
+        "po": 3511,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3512,
+        "n": "p(HGNC:RBL2,pmod(P,T,694))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3512,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3512,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3512,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3512,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3512,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3512,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3512,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3512,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3512,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3512,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3512,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3512,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfk"
+      },
+      {
+        "po": 3512,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3513,
+        "n": "p(HGNC:RBL2,pmod(P,T,642))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3513,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3513,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3513,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3513,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3513,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3513,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3513,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3513,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3513,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3513,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "39.99998474121094"
+      },
+      {
+        "po": 3513,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3513,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfg"
+      },
+      {
+        "po": 3513,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3514,
+        "n": "p(HGNC:RBL2,pmod(P,T,1097))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3514,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3514,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3514,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3514,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3514,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3514,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3514,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3514,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3514,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3514,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3514,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3514,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfc"
+      },
+      {
+        "po": 3514,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3515,
+        "n": "p(HGNC:RBL2,pmod(P,S,982))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3515,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3515,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3515,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3515,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3515,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3515,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3515,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3515,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3515,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3515,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "39.999996185302734"
+      },
+      {
+        "po": 3515,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3515,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAPek"
+      },
+      {
+        "po": 3515,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3516,
+        "n": "p(HGNC:RBL2,pmod(P,S,973))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3516,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3516,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3516,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3516,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3516,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3516,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3516,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3516,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3516,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3516,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3516,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3516,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAPeg"
+      },
+      {
+        "po": 3516,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3517,
+        "n": "p(HGNC:RBL2,pmod(P,S,688))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3517,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3517,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3517,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3517,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3517,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3517,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3517,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3517,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3517,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3517,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3517,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3517,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfY"
+      },
+      {
+        "po": 3517,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3518,
+        "n": "p(HGNC:RBL2,pmod(P,S,662))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3518,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3518,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3518,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3518,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3518,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3518,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3518,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3518,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3518,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3518,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "39.999996185302734"
+      },
+      {
+        "po": 3518,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3518,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfU"
+      },
+      {
+        "po": 3518,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3519,
+        "n": "p(HGNC:RBL2,pmod(P,S,639))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3519,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3519,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3519,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3519,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3519,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3519,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3519,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3519,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3519,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3519,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3519,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3519,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAPec"
+      },
+      {
+        "po": 3519,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3520,
+        "n": "p(HGNC:RBL2,pmod(P,S,413))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3520,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3520,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3520,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3520,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3520,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3520,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3520,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3520,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3520,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3520,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "39.99998474121094"
+      },
+      {
+        "po": 3520,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3520,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfQ"
+      },
+      {
+        "po": 3520,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3521,
+        "n": "p(HGNC:RBL2,pmod(P,S,1080))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3521,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3521,
+        "n": "name",
+        "v": "p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3521,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3521,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3521,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3521,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3521,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3521,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3521,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3521,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3521,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3521,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAEfM"
+      },
+      {
+        "po": 3521,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3522,
+        "n": "p(HGNC:RBL1)"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3522,
+        "n": "shared name",
+        "v": "p(HGNC:RBL1)"
+      },
+      {
+        "po": 3522,
+        "n": "name",
+        "v": "p(HGNC:RBL1)"
+      },
+      {
+        "po": 3522,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3522,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3522,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3522,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3522,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL1)"
+      },
+      {
+        "po": 3522,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL1)"
+      },
+      {
+        "po": 3522,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL1)"
+      },
+      {
+        "po": 3522,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3522,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3522,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAB/c"
+      },
+      {
+        "po": 3522,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 3523,
+        "n": "p(HGNC:RBL1,pmod(P))"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 3523,
+        "n": "shared name",
+        "v": "p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3523,
+        "n": "name",
+        "v": "p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3523,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3523,
+        "n": "Degree",
+        "v": "1",
+        "d": "integer"
+      },
+      {
+        "po": 3523,
+        "n": "KAM_NAME",
+        "v": "Large Corpus"
+      },
+      {
+        "po": 3523,
+        "n": "KAM_NODE_FUNCTION",
+        "v": "PROTEIN_ABUNDANCE"
+      },
+      {
+        "po": 3523,
+        "n": "KAM_NODE_LABEL",
+        "v": "p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3523,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3523,
+        "n": "vizmap:Network 0 NODE_LABEL",
+        "v": "p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3523,
+        "n": "vizmap:Network 0 NODE_SIZE",
+        "v": "40.0"
+      },
+      {
+        "po": 3523,
+        "n": "KAM_COMPILE_DATE",
+        "v": "1340385379000"
+      },
+      {
+        "po": 3523,
+        "n": "KAM_NODE_ID",
+        "v": "NAAAABAAAB/g"
+      },
+      {
+        "po": 3523,
+        "n": "WSDL_URL",
+        "v": "http://demo.openbel.org/openbel-ws/belframework.wsdl"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3525,
+        "s": 3511,
+        "t": 3514,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3525,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3525,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3525,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3525,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3525,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3525,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,1097))"
+      },
+      {
+        "po": 3525,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9Sc"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3526,
+        "s": 3511,
+        "t": 3517,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3526,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3526,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3526,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3526,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3526,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3526,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,688))"
+      },
+      {
+        "po": 3526,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9SY"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3527,
+        "s": 3511,
+        "t": 3518,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3527,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3527,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3527,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3527,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3527,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3527,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,662))"
+      },
+      {
+        "po": 3527,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9SU"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3528,
+        "s": 3511,
+        "t": 3520,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3528,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3528,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3528,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3528,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3528,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3528,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,413))"
+      },
+      {
+        "po": 3528,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9SQ"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3529,
+        "s": 3511,
+        "t": 3521,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3529,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3529,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3529,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3529,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3529,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3529,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,1080))"
+      },
+      {
+        "po": 3529,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9SM"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3530,
+        "s": 3511,
+        "t": 3512,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3530,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3530,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3530,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3530,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3530,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3530,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,694))"
+      },
+      {
+        "po": 3530,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9Sk"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3531,
+        "s": 3511,
+        "t": 3513,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3531,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3531,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3531,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3531,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3531,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3531,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,T,642))"
+      },
+      {
+        "po": 3531,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA9Sg"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3532,
+        "s": 3511,
+        "t": 3519,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3532,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3532,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3532,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3532,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3532,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3532,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,639))"
+      },
+      {
+        "po": 3532,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAABB0M"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3533,
+        "s": 3511,
+        "t": 3515,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3533,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3533,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3533,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3533,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3533,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3533,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,982))"
+      },
+      {
+        "po": 3533,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAABB0U"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3534,
+        "s": 3511,
+        "t": 3516,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3534,
+        "n": "label",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3534,
+        "n": "shared name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3534,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3534,
+        "n": "name",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3534,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3534,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL2) (HAS_MODIFICATION) p(HGNC:RBL2,pmod(P,S,973))"
+      },
+      {
+        "po": 3534,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAABB0Q"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 3535,
+        "s": 3522,
+        "t": 3523,
+        "i": "HAS_MODIFICATION"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 3535,
+        "n": "label",
+        "v": "p(HGNC:RBL1) (HAS_MODIFICATION) p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3535,
+        "n": "shared name",
+        "v": "p(HGNC:RBL1) (HAS_MODIFICATION) p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3535,
+        "n": "shared interaction",
+        "v": "HAS_MODIFICATION"
+      },
+      {
+        "po": 3535,
+        "n": "name",
+        "v": "p(HGNC:RBL1) (HAS_MODIFICATION) p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3535,
+        "n": "selected",
+        "v": "0",
+        "d": "boolean"
+      },
+      {
+        "po": 3535,
+        "n": "canonicalName",
+        "v": "p(HGNC:RBL1) (HAS_MODIFICATION) p(HGNC:RBL1,pmod(P))"
+      },
+      {
+        "po": 3535,
+        "n": "KAM_EDGE_ID",
+        "v": "EAAAABAAA77M"
+      }
+    ]
+  },
+  {
+    "metaData": [
+      {
+        "idCounter": 3523,
+        "name": "nodes",
+        "properties": []
+      },
+      {
+        "idCounter": 3535,
+        "name": "edges",
+        "properties": []
+      }
+    ]
+  },
+  {
+    "status": [
+      {
+        "error": "",
+        "success": true
+      }
+    ]
+  }
+]

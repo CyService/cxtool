@@ -28,14 +28,19 @@ func processEntry(decoder cx.TypeDecoder, attr map[string]interface{},
 	attrMap map[string]interface{}) {
 	key := attr["n"].(string)
 
-	value := attr["v"].(interface{})
+	value := attr["v"]
+	if value == nil {
+		return
+	}
+
+	v := value.(interface{})
 
 	dataType, exists := attr["d"]
 
-	if exists && reflect.TypeOf(value) == reflect.TypeOf("") {
+	if exists && reflect.TypeOf(v) == reflect.TypeOf("") {
 		// Need data type conversion
-		value = decoder.Decode(value.(string), dataType.(string))
+		value = decoder.Decode(v.(string), dataType.(string))
 	}
 
-	attrMap[key] = value
+	attrMap[key] = v
 }
