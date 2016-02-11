@@ -19,7 +19,6 @@ func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[strin
 	for i := 0; i < attrCount; i++ {
 		attr := aspect[i].(map[string]interface{})
 
-
 		// Pointer value
 		ptr := attr["po"]
 
@@ -36,6 +35,10 @@ func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[strin
 
 		attributeName := attr["n"].(string)
 
+		// Special handler: should not use "id" in attribute name.
+		if attributeName == "id" {
+			attributeName = "id_cx"
+		}
 		value := attr["v"]
 
 		// This is optional (data type)
@@ -47,7 +50,6 @@ func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[strin
 		}
 
 		attrEntries[attributeName] = value
-
 		values[pointer] = attrEntries
 	}
 

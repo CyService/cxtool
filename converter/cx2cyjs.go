@@ -200,10 +200,12 @@ func detectType(
 		decodeEdges(value.([]interface{}), cyjsNetwork)
 	case cx.NodeAttributesTag:
 		nodeAttributeHandler := handlers[cx.NodeAttributesTag]
-		*nodeAttrs = nodeAttributeHandler.HandleAspect(value.([]interface{}))
+		na := nodeAttributeHandler.HandleAspect(value.([]interface{}))
+		*nodeAttrs = mergeAttr(na, *nodeAttrs)
 	case cx.EdgeAttributesTag:
 		edgeAttributeHandler := handlers[cx.EdgeAttributesTag]
-		*edgeAttrs = edgeAttributeHandler.HandleAspect(value.([]interface{}))
+		ea := edgeAttributeHandler.HandleAspect(value.([]interface{}))
+		*edgeAttrs = mergeAttr(ea, *edgeAttrs)
 	case cx.CartesianLayoutTag:
 		layoutHandler := handlers[cx.CartesianLayoutTag]
 		*layout = layoutHandler.HandleAspect(value.([]interface{}))
@@ -214,6 +216,17 @@ func detectType(
 		// All others
 		cyjsNetwork.CxData[tag] = value
 	}
+}
+
+func mergeAttr(m1, m2 map[string]interface{}) map[string]interface{} {
+	merged := make(map[string]interface{})
+	for k, v := range m1 {
+		merged[k] = v
+	}
+	for k, v := range m2 {
+		merged[k] = v
+	}
+	return merged
 }
 
 func createNodes(nodes []interface{}, cyjsNetwork *cyjs.CyJS) {
