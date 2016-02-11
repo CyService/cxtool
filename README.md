@@ -10,6 +10,20 @@ files.  Its main function is file conversion from/to SIF, Cytoscape.js JSON and 
 ## Status
 * 11/20/2015: Pre alpha.  Simply converts CX to basic Cytoscpae.js JSON.
 
+## Build 
+
+In addition to build executables, you need to generate 
+
+* https://github.com/jteeuwen/go-bindata
+
+Run:
+
+```
+go-bindata -o converter/ data/
+```
+
+to generate new bundle.  And copy it to  
+
 ### Supported Functions
 
 * ___From CX___
