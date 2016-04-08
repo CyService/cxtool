@@ -202,6 +202,8 @@ func detectType(
 		nodeAttributeHandler := handlers[cx.NodeAttributesTag]
 		na := nodeAttributeHandler.HandleAspect(value.([]interface{}))
 		*nodeAttrs = mergeAttr(na, *nodeAttrs)
+
+
 	case cx.EdgeAttributesTag:
 		edgeAttributeHandler := handlers[cx.EdgeAttributesTag]
 		ea := edgeAttributeHandler.HandleAspect(value.([]interface{}))
@@ -219,12 +221,21 @@ func detectType(
 }
 
 func mergeAttr(m1, m2 map[string]interface{}) map[string]interface{} {
+
 	merged := make(map[string]interface{})
 	for k, v := range m1 {
 		merged[k] = v
 	}
+
 	for k, v := range m2 {
-		merged[k] = v
+		if existing, ok := merged[k]; ok {
+			for k2, v2 := range v.(map[string]interface{}) {
+				existing.(map[string]interface{})[k2] = v2
+			}
+			merged[k] = existing
+		} else {
+			merged[k] = v
+		}
 	}
 	return merged
 }
