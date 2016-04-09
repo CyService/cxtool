@@ -4,6 +4,8 @@ import (
 	"strings"
 	"strconv"
 	"sort"
+	"regexp"
+	"log"
 )
 
 const (
@@ -14,6 +16,8 @@ const (
 type VisualMappingGenerator struct {
 	VpConverter VisualPropConverter
 }
+
+var replaceInvalid = regexp.MustCompile(`^[^a-zA-Z_]+|[^a-zA-Z_0-9]+`)
 
 
 func (vmGenerator VisualMappingGenerator) CreatePassthroughMapping(
@@ -73,11 +77,16 @@ vpName string, definition string, selectorType string) []SelectorEntry {
 		// Example: node[degree = 5]
 		var selectorStr string
 
+		// Replace invalid char
+		colN := replaceInvalid.ReplaceAllString(colName[1], "_")
+		log.Println(colN)
+
+
 		if isNumberType(typeName[1]) {
 			// ' is not necessary for numbers.
-			selectorStr = selectorType + "[" + colName[1] + " = " + colVal + "]"
+			selectorStr = selectorType + "[" + colN + " = " + colVal + "]"
 		} else {
-			selectorStr = selectorType + "[" + colName[1] + " = '" + colVal + "']"
+			selectorStr = selectorType + "[" + colN + " = '" + colVal + "']"
 		}
 
 		css := make(map[string]interface{})
@@ -112,6 +121,9 @@ vpName string, vpCytoscape string, vpDataType string, definition string, selecto
 	typeName := strings.Split(parts[1], kvSeparator)
 
 	columnName := colName[1]
+	// Replace invalid char
+	columnName = replaceInvalid.ReplaceAllString(colName[1], "_")
+
 	columnDataType := typeName[1]
 
 	// Assume all values are double in continuous mapping

@@ -4,11 +4,14 @@ import (
 	cx "github.com/cytoscape-ci/cxtool/cx"
 	"strconv"
 	"reflect"
+	"regexp"
 )
 
 type AttributeHandler struct {
 	typeDecoder cx.TypeDecoder
 }
+
+var replaceInvalid = regexp.MustCompile(`^[^a-zA-Z_]+|[^a-zA-Z_0-9]+`)
 
 func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
 
@@ -34,6 +37,8 @@ func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[strin
 		}
 
 		attributeName := attr["n"].(string)
+		// Replace invalid chars
+		attributeName = replaceInvalid.ReplaceAllString(attributeName, "_")
 
 		// Special handler: should not use "id" in attribute name.
 		if attributeName == "id" || attributeName == "source" || attributeName == "target" {
