@@ -1,0 +1,2674 @@
+{
+  "data": {
+    "ndex:sourceFormat": "BIOPAX"
+  },
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "88950539",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950541",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "catalysisDirection": "LEFT_TO_RIGHT",
+          "controlType": "ACTIVATION",
+          "displayName": "Unnamed process",
+          "id": "88950543",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "Catalysis"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950545",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "catalysisDirection": "LEFT_TO_RIGHT",
+          "controlType": "ACTIVATION",
+          "displayName": "Unnamed process",
+          "id": "88950547",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "Catalysis"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "catalysisDirection": "LEFT_TO_RIGHT",
+          "controlType": "ACTIVATION",
+          "displayName": "Unnamed process",
+          "id": "88950549",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "Catalysis"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950551",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950553",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950555",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950557",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "catalysisDirection": "LEFT_TO_RIGHT",
+          "controlType": "ACTIVATION",
+          "displayName": "Unnamed process",
+          "id": "88950559",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "Catalysis"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950561",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950563",
+          "id_cx": "C00219",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950566",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "CHEBI:CHEBI:37739"
+          ],
+          "displayName": "GP",
+          "id": "88950568",
+          "molecularWeight": "1.4E-45",
+          "name": "GP",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "catalysisDirection": "LEFT_TO_RIGHT",
+          "controlType": "ACTIVATION",
+          "displayName": "Unnamed process",
+          "id": "88950570",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "Catalysis"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "GP",
+          "id": "88950572",
+          "name": "GP",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "GP"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950574",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "CHEBI",
+          "id": "88950576",
+          "id_cx": "CHEBI:37739",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950579",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950581",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950583",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950585",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950587",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950589",
+          "id_cx": "C00427",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Arachidonic acid pathway",
+          "id": "88950592",
+          "name": "Arachidonic acid pathway",
+          "ndex:bioPAXType": "Pathway"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03010009",
+            "KEGG Compound:C05956"
+          ],
+          "chemicalFormula": "C20H32O6",
+          "displayName": "PGG2",
+          "id": "88950594",
+          "molecularWeight": "368.21988",
+          "name": "PGG2",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "PGH2",
+          "id": "88950596",
+          "name": "PGH2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "PGH2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950598",
+          "id_cx": "LMFA03010010",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950601",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950603",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "catalysisDirection": "LEFT_TO_RIGHT",
+          "controlType": "ACTIVATION",
+          "displayName": "Unnamed process",
+          "id": "88950605",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "Catalysis"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "PGG2",
+          "id": "88950607",
+          "name": "PGG2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "PGG2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950609",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03010003",
+            "KEGG Compound:C00584"
+          ],
+          "chemicalFormula": "C20H32O5",
+          "displayName": "PGE2",
+          "id": "88950611",
+          "molecularWeight": "352.22498",
+          "name": "(5Z,13E)-(15S)-11alpha,15-Dihydroxy-9-oxoprosta-5,13-dienoate",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950613",
+          "id_cx": "C00584",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "KEGG Compound:C00427",
+            "LIPID MAPS:LMFA03010010"
+          ],
+          "chemicalFormula": "C20H32O5",
+          "displayName": "PGH2",
+          "id": "88950616",
+          "molecularWeight": "352.22498",
+          "name": "(5Z,13E)-(15S)-9alpha,11alpha-Epidioxy-15-hydroxyprosta-5,13-dienoate",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "PGE2",
+          "id": "88950618",
+          "name": "PGE2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "PGE2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950620",
+          "id_cx": "LMFA03010003",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950623",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950625",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950627",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "id": "88950629",
+          "ndex:bioPAXType": "Stoichiometry",
+          "stoichiometricCoefficient": "1.0"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "conversionDirection": "LEFT_TO_RIGHT",
+          "displayName": "Unnamed process",
+          "id": "88950631",
+          "name": "Unnamed process",
+          "ndex:bioPAXType": "BiochemicalReaction"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "PGF2a",
+          "id": "88950633",
+          "name": "PGF2a",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "PGF2a"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950635",
+          "id_cx": "LMFA03010077",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950638",
+          "id_cx": "MGI:1195256",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03010077",
+            "LIPID MAPS:LMFA03010002",
+            "KEGG Compound:C00639"
+          ],
+          "chemicalFormula": "C20H34O5",
+          "displayName": "PGF2a",
+          "id": "88950641",
+          "molecularWeight": "354.24063",
+          "name": "Enzaprost",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950643",
+          "id_cx": "LMFA03010002",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950646",
+          "id_cx": "C00639",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950649",
+          "id_cx": "MGI:101899",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950652",
+          "id_cx": "MGI:2384819",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Pla2g4a/Pla2g4b/Pla2g5/Pl",
+          "id": "88950655",
+          "name": "Pla2g4a/Pla2g4b/Pla2g5/Pla2g6",
+          "ndex:bioPAXType": "Protein",
+          "standardName": "Pla2g4a/Pla2g4b/Pla2g5/Pla2g6"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950657",
+          "id_cx": "MGI:1859152",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "Mouse Genome Database:MGI:97798",
+            "Mouse Genome Database:MGI:97797"
+          ],
+          "displayName": "Ptgs1/2",
+          "id": "88950660",
+          "name": "Ptgs1/2",
+          "ndex:bioPAXType": "ProteinReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Ptgs1/2",
+          "id": "88950662",
+          "name": "Ptgs1/2",
+          "ndex:bioPAXType": "Protein",
+          "standardName": "Ptgs1/2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "Mouse Genome Database:MGI:97798",
+            "Mouse Genome Database:MGI:97797"
+          ],
+          "displayName": "Ptgs1/2",
+          "id": "88950664",
+          "name": "Ptgs1/2",
+          "ndex:bioPAXType": "ProteinReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Ptgs1/2",
+          "id": "88950666",
+          "name": "Ptgs1/2",
+          "ndex:bioPAXType": "Protein",
+          "standardName": "Ptgs1/2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "Mouse Genome Database:MGI:2384819",
+            "Mouse Genome Database:MGI:1195256",
+            "Mouse Genome Database:MGI:101899",
+            "Mouse Genome Database:MGI:1859152"
+          ],
+          "displayName": "Pla2g4a/Pla2g4b/Pla2g5/Pl",
+          "id": "88950668",
+          "name": "Pla2g4a/Pla2g4b/Pla2g5/Pla2g6",
+          "ndex:bioPAXType": "ProteinReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950670",
+          "id_cx": "MGI:97798",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950673",
+          "id_cx": "MGI:97797",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Ptges",
+          "id": "88950676",
+          "name": "Ptges",
+          "ndex:bioPAXType": "Protein",
+          "standardName": "Ptges"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950678",
+          "id_cx": "MGI:1927593",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "Mouse Genome Database:MGI:1927593"
+          ],
+          "displayName": "Ptges",
+          "id": "88950681",
+          "name": "Ptges",
+          "ndex:bioPAXType": "ProteinReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "5-HETE",
+          "id": "88950683",
+          "name": "5-HETE",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "5-HETE"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950685",
+          "id_cx": "LMFA03060084",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950688",
+          "id_cx": "LMFA03060085",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03060084",
+            "KEGG Compound:C04805"
+          ],
+          "chemicalFormula": "C20H32O3",
+          "displayName": "5-HETE",
+          "id": "88950691",
+          "molecularWeight": "320.23514",
+          "name": "5-HETE",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Alox5",
+          "id": "88950693",
+          "name": "Alox5",
+          "ndex:bioPAXType": "Protein",
+          "standardName": "Alox5"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950695",
+          "id_cx": "MGI:87999",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950698",
+          "id_cx": "C04805",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "Mouse Genome Database:MGI:87999"
+          ],
+          "displayName": "Alox5",
+          "id": "88950701",
+          "name": "Alox5",
+          "ndex:bioPAXType": "ProteinReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03060085"
+          ],
+          "chemicalFormula": "C20H32O3",
+          "displayName": "11-HETE",
+          "id": "88950703",
+          "molecularWeight": "320.23514",
+          "name": "11-hydroxy-5Z,8Z,11E,14Z-eicosatetraenoic acid",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "11-HETE",
+          "id": "88950705",
+          "name": "11-HETE",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "11-HETE"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "PGD2",
+          "id": "88950707",
+          "name": "PGD2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "PGD2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950709",
+          "id_cx": "LMFA03010007",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950712",
+          "id_cx": "C05957",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "KEGG Compound:C00696",
+            "LIPID MAPS:LMFA03010007",
+            "LIPID MAPS:LMFA03010004"
+          ],
+          "chemicalFormula": "C20H32O5",
+          "displayName": "PGD2",
+          "id": "88950715",
+          "molecularWeight": "356.24966",
+          "name": "Prostaglandin D2",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "Mouse Genome Database:MGI:99261"
+          ],
+          "displayName": "Ptgds",
+          "id": "88950717",
+          "name": "Ptgds",
+          "ndex:bioPAXType": "ProteinReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "Ptgds",
+          "id": "88950719",
+          "name": "Ptgds",
+          "ndex:bioPAXType": "Protein",
+          "standardName": "Ptgds"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950721",
+          "id_cx": "LMFA03010004",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950724",
+          "id_cx": "C00696",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950727",
+          "id_cx": "LMFA03010019",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA01030003",
+            "LIPID MAPS:LMFA01030001",
+            "KEGG Compound:C00219"
+          ],
+          "chemicalFormula": "C20H32O2",
+          "displayName": "AA",
+          "id": "88950730",
+          "molecularWeight": "312.28964",
+          "name": "cis-5,8,11,14-Eicosatetraenoic acid",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "AA",
+          "id": "88950732",
+          "name": "AA",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "AA"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950734",
+          "id_cx": "LMFA01030003",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "Mouse Genome Database",
+          "id": "88950737",
+          "id_cx": "MGI:99261",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950740",
+          "id_cx": "LMFA01030001",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950743",
+          "id_cx": "LMFA03010009",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950746",
+          "id_cx": "C05956",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950749",
+          "id_cx": "LMFA03010051",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03010162",
+            "KEGG Compound:C14717",
+            "LIPID MAPS:LMFA03010021"
+          ],
+          "chemicalFormula": "C20H28O3",
+          "displayName": "15-deoxy-PGJ2",
+          "id": "88950752",
+          "molecularWeight": "316.20386",
+          "name": "15-Deoxy-PGJ2",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "LIPID MAPS:LMFA03010051"
+          ],
+          "chemicalFormula": "C20H30O4",
+          "displayName": "15-deoxy-PGD2",
+          "id": "88950754",
+          "molecularWeight": "334.21442",
+          "name": "15-deoxy-PGD2",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "15-deoxy-PGD2",
+          "id": "88950756",
+          "name": "15-deoxy-PGD2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "15-deoxy-PGD2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950758",
+          "id_cx": "LMFA03010021",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "KEGG Compound",
+          "id": "88950761",
+          "id_cx": "C14717",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "15-deoxy-PGJ2",
+          "id": "88950764",
+          "name": "15-deoxy-PGJ2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "15-deoxy-PGJ2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "db": "LIPID MAPS",
+          "id": "88950766",
+          "id_cx": "LMFA03010162",
+          "ndex:bioPAXType": "UnificationXref"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "alias": [
+            "KEGG Compound:C05957",
+            "LIPID MAPS:LMFA03010019"
+          ],
+          "chemicalFormula": "C20H30O4",
+          "displayName": "PGJ2",
+          "id": "88950769",
+          "molecularWeight": "334.21442",
+          "name": "11-oxo-15S-hydroxy-5Z,8Z,13E-prostatrienoic acid",
+          "ndex:bioPAXType": "SmallMoleculeReference"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      },
+      {
+        "data": {
+          "displayName": "PGJ2",
+          "id": "88950771",
+          "name": "PGJ2",
+          "ndex:bioPAXType": "SmallMolecule",
+          "standardName": "PGJ2"
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": false
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "88950773",
+          "interaction": "bp:physicalEntity",
+          "source": "88950539",
+          "target": "88950596"
+        }
+      },
+      {
+        "data": {
+          "id": "88950775",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950541",
+          "target": "88950539"
+        }
+      },
+      {
+        "data": {
+          "id": "88950776",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950541",
+          "target": "88950551"
+        }
+      },
+      {
+        "data": {
+          "id": "88950778",
+          "interaction": "bp:right",
+          "source": "88950541",
+          "target": "88950596"
+        }
+      },
+      {
+        "data": {
+          "id": "88950780",
+          "interaction": "bp:left",
+          "source": "88950541",
+          "target": "88950607"
+        }
+      },
+      {
+        "data": {
+          "id": "88950782",
+          "interaction": "bp:controller",
+          "source": "88950543",
+          "target": "88950666"
+        }
+      },
+      {
+        "data": {
+          "id": "88950784",
+          "interaction": "bp:controlled",
+          "source": "88950543",
+          "target": "88950541"
+        }
+      },
+      {
+        "data": {
+          "id": "88950785",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950545",
+          "target": "88950551"
+        }
+      },
+      {
+        "data": {
+          "id": "88950786",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950545",
+          "target": "88950555"
+        }
+      },
+      {
+        "data": {
+          "id": "88950787",
+          "interaction": "bp:right",
+          "source": "88950545",
+          "target": "88950607"
+        }
+      },
+      {
+        "data": {
+          "id": "88950788",
+          "interaction": "bp:left",
+          "source": "88950545",
+          "target": "88950732"
+        }
+      },
+      {
+        "data": {
+          "id": "88950789",
+          "interaction": "bp:controller",
+          "source": "88950547",
+          "target": "88950655"
+        }
+      },
+      {
+        "data": {
+          "id": "88950790",
+          "interaction": "bp:controlled",
+          "source": "88950547",
+          "target": "88950553"
+        }
+      },
+      {
+        "data": {
+          "id": "88950791",
+          "interaction": "bp:controller",
+          "source": "88950549",
+          "target": "88950662"
+        }
+      },
+      {
+        "data": {
+          "id": "88950792",
+          "interaction": "bp:controlled",
+          "source": "88950549",
+          "target": "88950545"
+        }
+      },
+      {
+        "data": {
+          "id": "88950793",
+          "interaction": "bp:physicalEntity",
+          "source": "88950551",
+          "target": "88950607"
+        }
+      },
+      {
+        "data": {
+          "id": "88950794",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950553",
+          "target": "88950555"
+        }
+      },
+      {
+        "data": {
+          "id": "88950795",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950553",
+          "target": "88950557"
+        }
+      },
+      {
+        "data": {
+          "id": "88950796",
+          "interaction": "bp:right",
+          "source": "88950553",
+          "target": "88950732"
+        }
+      },
+      {
+        "data": {
+          "id": "88950797",
+          "interaction": "bp:left",
+          "source": "88950553",
+          "target": "88950572"
+        }
+      },
+      {
+        "data": {
+          "id": "88950798",
+          "interaction": "bp:physicalEntity",
+          "source": "88950555",
+          "target": "88950732"
+        }
+      },
+      {
+        "data": {
+          "id": "88950799",
+          "interaction": "bp:physicalEntity",
+          "source": "88950557",
+          "target": "88950572"
+        }
+      },
+      {
+        "data": {
+          "id": "88950800",
+          "interaction": "bp:controller",
+          "source": "88950559",
+          "target": "88950719"
+        }
+      },
+      {
+        "data": {
+          "id": "88950801",
+          "interaction": "bp:controlled",
+          "source": "88950559",
+          "target": "88950574"
+        }
+      },
+      {
+        "data": {
+          "id": "88950802",
+          "interaction": "bp:physicalEntity",
+          "source": "88950561",
+          "target": "88950707"
+        }
+      },
+      {
+        "data": {
+          "id": "88950803",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950566",
+          "target": "88950579"
+        }
+      },
+      {
+        "data": {
+          "id": "88950804",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950566",
+          "target": "88950555"
+        }
+      },
+      {
+        "data": {
+          "id": "88950805",
+          "interaction": "bp:right",
+          "source": "88950566",
+          "target": "88950705"
+        }
+      },
+      {
+        "data": {
+          "id": "88950806",
+          "interaction": "bp:left",
+          "source": "88950566",
+          "target": "88950732"
+        }
+      },
+      {
+        "data": {
+          "id": "88950808",
+          "interaction": "bp:xref",
+          "source": "88950568",
+          "target": "88950576"
+        }
+      },
+      {
+        "data": {
+          "id": "88950809",
+          "interaction": "bp:controller",
+          "source": "88950570",
+          "target": "88950676"
+        }
+      },
+      {
+        "data": {
+          "id": "88950810",
+          "interaction": "bp:controlled",
+          "source": "88950570",
+          "target": "88950587"
+        }
+      },
+      {
+        "data": {
+          "id": "88950812",
+          "interaction": "bp:entityReference",
+          "source": "88950572",
+          "target": "88950568"
+        }
+      },
+      {
+        "data": {
+          "id": "88950813",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950574",
+          "target": "88950539"
+        }
+      },
+      {
+        "data": {
+          "id": "88950814",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950574",
+          "target": "88950561"
+        }
+      },
+      {
+        "data": {
+          "id": "88950815",
+          "interaction": "bp:right",
+          "source": "88950574",
+          "target": "88950707"
+        }
+      },
+      {
+        "data": {
+          "id": "88950816",
+          "interaction": "bp:left",
+          "source": "88950574",
+          "target": "88950596"
+        }
+      },
+      {
+        "data": {
+          "id": "88950817",
+          "interaction": "bp:physicalEntity",
+          "source": "88950579",
+          "target": "88950705"
+        }
+      },
+      {
+        "data": {
+          "id": "88950818",
+          "interaction": "bp:physicalEntity",
+          "source": "88950581",
+          "target": "88950633"
+        }
+      },
+      {
+        "data": {
+          "id": "88950819",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950583",
+          "target": "88950539"
+        }
+      },
+      {
+        "data": {
+          "id": "88950820",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950583",
+          "target": "88950581"
+        }
+      },
+      {
+        "data": {
+          "id": "88950821",
+          "interaction": "bp:right",
+          "source": "88950583",
+          "target": "88950633"
+        }
+      },
+      {
+        "data": {
+          "id": "88950822",
+          "interaction": "bp:left",
+          "source": "88950583",
+          "target": "88950596"
+        }
+      },
+      {
+        "data": {
+          "id": "88950823",
+          "interaction": "bp:physicalEntity",
+          "source": "88950585",
+          "target": "88950618"
+        }
+      },
+      {
+        "data": {
+          "id": "88950824",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950587",
+          "target": "88950539"
+        }
+      },
+      {
+        "data": {
+          "id": "88950825",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950587",
+          "target": "88950585"
+        }
+      },
+      {
+        "data": {
+          "id": "88950826",
+          "interaction": "bp:right",
+          "source": "88950587",
+          "target": "88950618"
+        }
+      },
+      {
+        "data": {
+          "id": "88950827",
+          "interaction": "bp:left",
+          "source": "88950587",
+          "target": "88950596"
+        }
+      },
+      {
+        "data": {
+          "id": "88950829",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950559"
+        }
+      },
+      {
+        "data": {
+          "id": "88950830",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950541"
+        }
+      },
+      {
+        "data": {
+          "id": "88950831",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950543"
+        }
+      },
+      {
+        "data": {
+          "id": "88950832",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950566"
+        }
+      },
+      {
+        "data": {
+          "id": "88950833",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950545"
+        }
+      },
+      {
+        "data": {
+          "id": "88950834",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950601"
+        }
+      },
+      {
+        "data": {
+          "id": "88950835",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950570"
+        }
+      },
+      {
+        "data": {
+          "id": "88950836",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950547"
+        }
+      },
+      {
+        "data": {
+          "id": "88950837",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950549"
+        }
+      },
+      {
+        "data": {
+          "id": "88950838",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950574"
+        }
+      },
+      {
+        "data": {
+          "id": "88950839",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950605"
+        }
+      },
+      {
+        "data": {
+          "id": "88950840",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950623"
+        }
+      },
+      {
+        "data": {
+          "id": "88950841",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950553"
+        }
+      },
+      {
+        "data": {
+          "id": "88950842",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950583"
+        }
+      },
+      {
+        "data": {
+          "id": "88950843",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950627"
+        }
+      },
+      {
+        "data": {
+          "id": "88950844",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950587"
+        }
+      },
+      {
+        "data": {
+          "id": "88950845",
+          "interaction": "bp:pathwayComponent",
+          "source": "88950592",
+          "target": "88950631"
+        }
+      },
+      {
+        "data": {
+          "id": "88950846",
+          "interaction": "bp:xref",
+          "source": "88950594",
+          "target": "88950743"
+        }
+      },
+      {
+        "data": {
+          "id": "88950847",
+          "interaction": "bp:xref",
+          "source": "88950594",
+          "target": "88950746"
+        }
+      },
+      {
+        "data": {
+          "id": "88950848",
+          "interaction": "bp:entityReference",
+          "source": "88950596",
+          "target": "88950616"
+        }
+      },
+      {
+        "data": {
+          "id": "88950849",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950601",
+          "target": "88950609"
+        }
+      },
+      {
+        "data": {
+          "id": "88950850",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950601",
+          "target": "88950555"
+        }
+      },
+      {
+        "data": {
+          "id": "88950851",
+          "interaction": "bp:right",
+          "source": "88950601",
+          "target": "88950683"
+        }
+      },
+      {
+        "data": {
+          "id": "88950852",
+          "interaction": "bp:left",
+          "source": "88950601",
+          "target": "88950732"
+        }
+      },
+      {
+        "data": {
+          "id": "88950853",
+          "interaction": "bp:physicalEntity",
+          "source": "88950603",
+          "target": "88950756"
+        }
+      },
+      {
+        "data": {
+          "id": "88950854",
+          "interaction": "bp:controller",
+          "source": "88950605",
+          "target": "88950693"
+        }
+      },
+      {
+        "data": {
+          "id": "88950855",
+          "interaction": "bp:controlled",
+          "source": "88950605",
+          "target": "88950601"
+        }
+      },
+      {
+        "data": {
+          "id": "88950856",
+          "interaction": "bp:entityReference",
+          "source": "88950607",
+          "target": "88950594"
+        }
+      },
+      {
+        "data": {
+          "id": "88950857",
+          "interaction": "bp:physicalEntity",
+          "source": "88950609",
+          "target": "88950683"
+        }
+      },
+      {
+        "data": {
+          "id": "88950858",
+          "interaction": "bp:xref",
+          "source": "88950611",
+          "target": "88950613"
+        }
+      },
+      {
+        "data": {
+          "id": "88950859",
+          "interaction": "bp:xref",
+          "source": "88950611",
+          "target": "88950620"
+        }
+      },
+      {
+        "data": {
+          "id": "88950860",
+          "interaction": "bp:xref",
+          "source": "88950616",
+          "target": "88950589"
+        }
+      },
+      {
+        "data": {
+          "id": "88950861",
+          "interaction": "bp:xref",
+          "source": "88950616",
+          "target": "88950598"
+        }
+      },
+      {
+        "data": {
+          "id": "88950862",
+          "interaction": "bp:entityReference",
+          "source": "88950618",
+          "target": "88950611"
+        }
+      },
+      {
+        "data": {
+          "id": "88950863",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950623",
+          "target": "88950625"
+        }
+      },
+      {
+        "data": {
+          "id": "88950864",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950623",
+          "target": "88950629"
+        }
+      },
+      {
+        "data": {
+          "id": "88950865",
+          "interaction": "bp:right",
+          "source": "88950623",
+          "target": "88950764"
+        }
+      },
+      {
+        "data": {
+          "id": "88950866",
+          "interaction": "bp:left",
+          "source": "88950623",
+          "target": "88950771"
+        }
+      },
+      {
+        "data": {
+          "id": "88950867",
+          "interaction": "bp:physicalEntity",
+          "source": "88950625",
+          "target": "88950771"
+        }
+      },
+      {
+        "data": {
+          "id": "88950868",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950627",
+          "target": "88950561"
+        }
+      },
+      {
+        "data": {
+          "id": "88950869",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950627",
+          "target": "88950603"
+        }
+      },
+      {
+        "data": {
+          "id": "88950870",
+          "interaction": "bp:right",
+          "source": "88950627",
+          "target": "88950756"
+        }
+      },
+      {
+        "data": {
+          "id": "88950871",
+          "interaction": "bp:left",
+          "source": "88950627",
+          "target": "88950707"
+        }
+      },
+      {
+        "data": {
+          "id": "88950872",
+          "interaction": "bp:physicalEntity",
+          "source": "88950629",
+          "target": "88950764"
+        }
+      },
+      {
+        "data": {
+          "id": "88950873",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950631",
+          "target": "88950561"
+        }
+      },
+      {
+        "data": {
+          "id": "88950874",
+          "interaction": "bp:participantStoichiometry",
+          "source": "88950631",
+          "target": "88950625"
+        }
+      },
+      {
+        "data": {
+          "id": "88950875",
+          "interaction": "bp:right",
+          "source": "88950631",
+          "target": "88950771"
+        }
+      },
+      {
+        "data": {
+          "id": "88950876",
+          "interaction": "bp:left",
+          "source": "88950631",
+          "target": "88950707"
+        }
+      },
+      {
+        "data": {
+          "id": "88950877",
+          "interaction": "bp:entityReference",
+          "source": "88950633",
+          "target": "88950641"
+        }
+      },
+      {
+        "data": {
+          "id": "88950878",
+          "interaction": "bp:xref",
+          "source": "88950641",
+          "target": "88950635"
+        }
+      },
+      {
+        "data": {
+          "id": "88950879",
+          "interaction": "bp:xref",
+          "source": "88950641",
+          "target": "88950643"
+        }
+      },
+      {
+        "data": {
+          "id": "88950880",
+          "interaction": "bp:xref",
+          "source": "88950641",
+          "target": "88950646"
+        }
+      },
+      {
+        "data": {
+          "id": "88950881",
+          "interaction": "bp:entityReference",
+          "source": "88950655",
+          "target": "88950668"
+        }
+      },
+      {
+        "data": {
+          "id": "88950882",
+          "interaction": "bp:xref",
+          "source": "88950660",
+          "target": "88950670"
+        }
+      },
+      {
+        "data": {
+          "id": "88950883",
+          "interaction": "bp:xref",
+          "source": "88950660",
+          "target": "88950673"
+        }
+      },
+      {
+        "data": {
+          "id": "88950884",
+          "interaction": "bp:entityReference",
+          "source": "88950662",
+          "target": "88950660"
+        }
+      },
+      {
+        "data": {
+          "id": "88950885",
+          "interaction": "bp:xref",
+          "source": "88950664",
+          "target": "88950670"
+        }
+      },
+      {
+        "data": {
+          "id": "88950886",
+          "interaction": "bp:xref",
+          "source": "88950664",
+          "target": "88950673"
+        }
+      },
+      {
+        "data": {
+          "id": "88950887",
+          "interaction": "bp:entityReference",
+          "source": "88950666",
+          "target": "88950664"
+        }
+      },
+      {
+        "data": {
+          "id": "88950888",
+          "interaction": "bp:xref",
+          "source": "88950668",
+          "target": "88950638"
+        }
+      },
+      {
+        "data": {
+          "id": "88950889",
+          "interaction": "bp:xref",
+          "source": "88950668",
+          "target": "88950649"
+        }
+      },
+      {
+        "data": {
+          "id": "88950890",
+          "interaction": "bp:xref",
+          "source": "88950668",
+          "target": "88950652"
+        }
+      },
+      {
+        "data": {
+          "id": "88950891",
+          "interaction": "bp:xref",
+          "source": "88950668",
+          "target": "88950657"
+        }
+      },
+      {
+        "data": {
+          "id": "88950892",
+          "interaction": "bp:entityReference",
+          "source": "88950676",
+          "target": "88950681"
+        }
+      },
+      {
+        "data": {
+          "id": "88950893",
+          "interaction": "bp:xref",
+          "source": "88950681",
+          "target": "88950678"
+        }
+      },
+      {
+        "data": {
+          "id": "88950894",
+          "interaction": "bp:entityReference",
+          "source": "88950683",
+          "target": "88950691"
+        }
+      },
+      {
+        "data": {
+          "id": "88950895",
+          "interaction": "bp:xref",
+          "source": "88950691",
+          "target": "88950685"
+        }
+      },
+      {
+        "data": {
+          "id": "88950896",
+          "interaction": "bp:xref",
+          "source": "88950691",
+          "target": "88950698"
+        }
+      },
+      {
+        "data": {
+          "id": "88950897",
+          "interaction": "bp:entityReference",
+          "source": "88950693",
+          "target": "88950701"
+        }
+      },
+      {
+        "data": {
+          "id": "88950898",
+          "interaction": "bp:xref",
+          "source": "88950701",
+          "target": "88950695"
+        }
+      },
+      {
+        "data": {
+          "id": "88950899",
+          "interaction": "bp:xref",
+          "source": "88950703",
+          "target": "88950688"
+        }
+      },
+      {
+        "data": {
+          "id": "88950900",
+          "interaction": "bp:entityReference",
+          "source": "88950705",
+          "target": "88950703"
+        }
+      },
+      {
+        "data": {
+          "id": "88950901",
+          "interaction": "bp:entityReference",
+          "source": "88950707",
+          "target": "88950715"
+        }
+      },
+      {
+        "data": {
+          "id": "88950902",
+          "interaction": "bp:xref",
+          "source": "88950715",
+          "target": "88950709"
+        }
+      },
+      {
+        "data": {
+          "id": "88950903",
+          "interaction": "bp:xref",
+          "source": "88950715",
+          "target": "88950721"
+        }
+      },
+      {
+        "data": {
+          "id": "88950904",
+          "interaction": "bp:xref",
+          "source": "88950715",
+          "target": "88950724"
+        }
+      },
+      {
+        "data": {
+          "id": "88950905",
+          "interaction": "bp:xref",
+          "source": "88950717",
+          "target": "88950737"
+        }
+      },
+      {
+        "data": {
+          "id": "88950906",
+          "interaction": "bp:entityReference",
+          "source": "88950719",
+          "target": "88950717"
+        }
+      },
+      {
+        "data": {
+          "id": "88950907",
+          "interaction": "bp:xref",
+          "source": "88950730",
+          "target": "88950563"
+        }
+      },
+      {
+        "data": {
+          "id": "88950908",
+          "interaction": "bp:xref",
+          "source": "88950730",
+          "target": "88950734"
+        }
+      },
+      {
+        "data": {
+          "id": "88950909",
+          "interaction": "bp:xref",
+          "source": "88950730",
+          "target": "88950740"
+        }
+      },
+      {
+        "data": {
+          "id": "88950910",
+          "interaction": "bp:entityReference",
+          "source": "88950732",
+          "target": "88950730"
+        }
+      },
+      {
+        "data": {
+          "id": "88950911",
+          "interaction": "bp:xref",
+          "source": "88950752",
+          "target": "88950758"
+        }
+      },
+      {
+        "data": {
+          "id": "88950912",
+          "interaction": "bp:xref",
+          "source": "88950752",
+          "target": "88950761"
+        }
+      },
+      {
+        "data": {
+          "id": "88950913",
+          "interaction": "bp:xref",
+          "source": "88950752",
+          "target": "88950766"
+        }
+      },
+      {
+        "data": {
+          "id": "88950914",
+          "interaction": "bp:xref",
+          "source": "88950754",
+          "target": "88950749"
+        }
+      },
+      {
+        "data": {
+          "id": "88950915",
+          "interaction": "bp:entityReference",
+          "source": "88950756",
+          "target": "88950754"
+        }
+      },
+      {
+        "data": {
+          "id": "88950916",
+          "interaction": "bp:entityReference",
+          "source": "88950764",
+          "target": "88950752"
+        }
+      },
+      {
+        "data": {
+          "id": "88950917",
+          "interaction": "bp:xref",
+          "source": "88950769",
+          "target": "88950712"
+        }
+      },
+      {
+        "data": {
+          "id": "88950918",
+          "interaction": "bp:xref",
+          "source": "88950769",
+          "target": "88950727"
+        }
+      },
+      {
+        "data": {
+          "id": "88950919",
+          "interaction": "bp:entityReference",
+          "source": "88950771",
+          "target": "88950769"
+        }
+      }
+    ]
+  },
+  "style": null,
+  "cxData": {
+    "@context": [
+      {
+        "bp": "http://www.biopax.org/release/biopax-level3.owl#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+      }
+    ],
+    "metaData": [
+      {
+        "idCounter": 88950771,
+        "name": "nodes",
+        "properties": []
+      },
+      {
+        "idCounter": 88950919,
+        "name": "edges",
+        "properties": []
+      }
+    ],
+    "ndexStatus": [
+      {
+        "creationTime": 1458596147099,
+        "edgeCount": 139,
+        "externalId": "dfb0d6b1-efac-11e5-9051-0660b7976219",
+        "modificationTime": 1458596147437,
+        "ndexServerURI": "http://dev2.ndexbio.org",
+        "nodeCount": 100,
+        "owner": "vrynkov",
+        "published": false,
+        "readOnly": false,
+        "visibility": "PUBLIC"
+      }
+    ],
+    "numberVerification": [
+      {
+        "longNumber": 281474976710655
+      }
+    ],
+    "provenanceHistory": [
+      {
+        "entity": {
+          "creationEvent": {
+            "endedAtTime": 1458596203447,
+            "eventType": "Update Network Profile",
+            "inputs": [
+              {
+                "creationEvent": {
+                  "endedAtTime": 1458596147099,
+                  "eventType": "File Upload",
+                  "inputs": null,
+                  "properties": [
+                    {
+                      "name": "user",
+                      "value": "Vladimir Rynkov"
+                    },
+                    {
+                      "name": "account name",
+                      "value": "vrynkov"
+                    },
+                    {
+                      "name": "filename",
+                      "value": "Arachidonic_acid_pathway.owl"
+                    }
+                  ],
+                  "startedAtTime": 1458596147099
+                },
+                "properties": [
+                  {
+                    "name": "edge count",
+                    "value": "139"
+                  },
+                  {
+                    "name": "node count",
+                    "value": "100"
+                  },
+                  {
+                    "name": "dc:title",
+                    "value": "Arachidonic_acid_pathway"
+                  }
+                ],
+                "uri": "http://dev2.ndexbio.org/network/dfb0d6b1-efac-11e5-9051-0660b7976219"
+              }
+            ],
+            "properties": [
+              {
+                "name": "user",
+                "value": "Vladimir Rynkov"
+              },
+              {
+                "name": "account name",
+                "value": "vrynkov"
+              }
+            ],
+            "startedAtTime": 1458596203447
+          },
+          "properties": [
+            {
+              "name": "edge count",
+              "value": "139"
+            },
+            {
+              "name": "node count",
+              "value": "100"
+            },
+            {
+              "name": "dc:title",
+              "value": "Arachidonic_acid_pathway"
+            },
+            {
+              "name": "description",
+              "value": ""
+            }
+          ],
+          "uri": "http://dev2.ndexbio.org/network/dfb0d6b1-efac-11e5-9051-0660b7976219"
+        }
+      }
+    ],
+    "status": [
+      {
+        "error": "",
+        "success": true
+      }
+    ]
+  }
+}

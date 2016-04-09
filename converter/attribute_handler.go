@@ -36,8 +36,9 @@ func (attrHandler AttributeHandler) HandleAspect(aspect []interface{}) map[strin
 		attributeName := attr["n"].(string)
 
 		// Special handler: should not use "id" in attribute name.
-		if attributeName == "id" {
-			attributeName = "id_cx"
+		if attributeName == "id" || attributeName == "source" || attributeName == "target" {
+			attributeName = attributeName + "_cx" // Add suffix to avoid namespace conflict.
+			// TODO: are there any better way to handle this issue?
 		}
 		value := attr["v"]
 

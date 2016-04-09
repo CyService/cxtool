@@ -32,7 +32,7 @@ vpName string, definition string, entry *SelectorEntry) {
 
 	// This mapping is valid only for Labels (at least for now...)
 	if vpName == "NODE_LABEL" || vpName == "EDGE_LABEL" {
-		entry.CSS["contents"] = "data(" + tagAndValue[1] + ")"
+		entry.CSS["content"] = "data(" + tagAndValue[1] + ")"
 	}
 }
 

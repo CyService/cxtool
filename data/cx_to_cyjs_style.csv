@@ -11,7 +11,7 @@ NODE_LABEL_TRANSPARENCY,text-opacity,number
 NODE_SHAPE,shape,shape
 NODE_HEIGHT,height,number
 NODE_WIDTH,width,number
-NODE_SELECTED_PAINT,background-color,string
+NODE_SIZE,width,number
 
 EDGE_WIDTH,width,number
 EDGE_LABEL,label,string
@@ -21,7 +21,7 @@ EDGE_LABEL_COLOR,color,string
 EDGE_LABEL_TRANSPARENCY,text-opacity,number
 EDGE_LINE_TYPE,line-style,line
 EDGE_STROKE_UNSELECTED_PAINT,line-color,string
+EDGE_UNSELECTED_PAINT,line-color,string
 EDGE_TRANSPARENCY,opacity,number
 EDGE_SOURCE_ARROW_SHAPE,source-arrow-shape,arrow
 EDGE_TARGET_ARROW_SHAPE,target-arrow-shape,arrow
-EDGE_SELECTED_PAINT,line-color,string

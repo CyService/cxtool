@@ -202,8 +202,6 @@ func detectType(
 		nodeAttributeHandler := handlers[cx.NodeAttributesTag]
 		na := nodeAttributeHandler.HandleAspect(value.([]interface{}))
 		*nodeAttrs = mergeAttr(na, *nodeAttrs)
-
-
 	case cx.EdgeAttributesTag:
 		edgeAttributeHandler := handlers[cx.EdgeAttributesTag]
 		ea := edgeAttributeHandler.HandleAspect(value.([]interface{}))
