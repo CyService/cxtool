@@ -1,4 +1,4 @@
-NODE_BORDER_PAINT,background-color,string
+NODE_BORDER_PAINT,border-color,string
 NODE_BORDER_TRANSPARENCY,border-opacity,number
 NODE_BORDER_WIDTH,border-width,number
 NODE_FILL_COLOR,background-color,string
