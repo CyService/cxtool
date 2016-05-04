@@ -1,0 +1,1595 @@
+[ {
+  "numberVerification" : [ {
+    "longNumber" : 281474976710655
+  } ]
+}, {
+  "metaData" : [ {
+    "consistencyGroup" : 1,
+    "elementCount" : 14,
+    "idCounter" : 1777,
+    "name" : "nodes",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 37,
+    "idCounter" : 1777,
+    "name" : "edges",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "elementCount" : 7,
+    "name" : "networkAttributes",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 1,
+    "name" : "hiddenAttributes",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 56,
+    "name" : "nodeAttributes",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 37,
+    "name" : "edgeAttributes",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 14,
+    "name" : "cartesianLayout",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 3,
+    "name" : "visualProperties",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 1,
+    "name" : "subNetworks",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 1,
+    "name" : "cyViews",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 0,
+    "name" : "cyGroups",
+    "properties" : [ ]
+  }, {
+    "elementCount" : 2,
+    "name" : "networkRelations",
+    "properties" : [ ]
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 1,
+    "lastUpdate" : 1460151327194,
+    "name" : "ndexStatus",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 1,
+    "lastUpdate" : 1460151327194,
+    "name" : "provenanceHistory",
+    "properties" : [ ],
+    "version" : "1.0"
+  } ]
+}, {
+  "ndexStatus" : [ {
+    "externalId" : "ceabdd01-fdd1-11e5-a5bc-0660b7976219",
+    "creationTime" : 1460151326203,
+    "modificationTime" : 1460151355497,
+    "visibility" : "PUBLIC",
+    "published" : false,
+    "nodeCount" : 14,
+    "edgeCount" : 37,
+    "owner" : "drh",
+    "ndexServerURI" : "http://dev2.ndexbio.org",
+    "readOnly" : false
+  } ]
+}, {
+  "provenanceHistory" : [ {
+    "entity" : {
+      "uri" : "http://dev2.ndexbio.org/network/ceabdd01-fdd1-11e5-a5bc-0660b7976219",
+      "creationEvent" : {
+        "inputs" : [ {
+          "uri" : "http://dev2.ndexbio.org/network/d891353b-fc56-11e5-a5bc-0660b7976219",
+          "creationEvent" : {
+            "inputs" : [ {
+              "uri" : "http://dev2.ndexbio.org/network/d891353b-fc56-11e5-a5bc-0660b7976219",
+              "creationEvent" : {
+                "inputs" : [ {
+                  "uri" : "http://dev2.ndexbio.org/network/d891353b-fc56-11e5-a5bc-0660b7976219",
+                  "creationEvent" : {
+                    "inputs" : null,
+                    "startedAtTime" : 1459988563545,
+                    "endedAtTime" : 1459988563545,
+                    "eventType" : "File Upload",
+                    "properties" : [ {
+                      "name" : "user",
+                      "value" : "CRAVAT / muPIT"
+                    }, {
+                      "name" : "account name",
+                      "value" : "cravat"
+                    }, {
+                      "name" : "filename",
+                      "value" : "a6b1_and_a6b4_Integrin_signaling.SIF"
+                    } ]
+                  },
+                  "properties" : [ {
+                    "name" : "edge count",
+                    "value" : "338"
+                  }, {
+                    "name" : "node count",
+                    "value" : "47"
+                  }, {
+                    "name" : "dc:title",
+                    "value" : "a6b1 and a6b4 Integrin signaling"
+                  }, {
+                    "name" : "description",
+                    "value" : ""
+                  } ]
+                } ],
+                "startedAtTime" : 1459989825962,
+                "endedAtTime" : 1459989825962,
+                "eventType" : "Update Network Profile",
+                "properties" : [ {
+                  "name" : "user",
+                  "value" : "CRAVAT / muPIT"
+                }, {
+                  "name" : "account name",
+                  "value" : "cravat"
+                } ]
+              },
+              "properties" : [ {
+                "name" : "edge count",
+                "value" : "338"
+              }, {
+                "name" : "node count",
+                "value" : "47"
+              }, {
+                "name" : "dc:title",
+                "value" : "a6b1 and a6b4 Integrin signaling"
+              }, {
+                "name" : "description",
+                "value" : ""
+              } ]
+            } ],
+            "startedAtTime" : 1459990412958,
+            "endedAtTime" : 1459990412958,
+            "eventType" : "Update Network Profile",
+            "properties" : [ {
+              "name" : "user",
+              "value" : "CRAVAT / muPIT"
+            }, {
+              "name" : "account name",
+              "value" : "cravat"
+            }, {
+              "name" : "description",
+              "value" : "This network belongs to the NCI Pathway Interaction Database (PID) and was obtained from Pathway Commons (PC2 v.7)."
+            } ]
+          },
+          "properties" : [ {
+            "name" : "edge count",
+            "value" : "338"
+          }, {
+            "name" : "node count",
+            "value" : "47"
+          }, {
+            "name" : "dc:title",
+            "value" : "a6b1 and a6b4 Integrin signaling"
+          }, {
+            "name" : "description",
+            "value" : "This network belongs to the NCI Pathway Interaction Database (PID) and was obtained from Pathway Commons (PC2 v.7)."
+          } ]
+        } ],
+        "startedAtTime" : 1460151327194,
+        "endedAtTime" : 1460151327194,
+        "eventType" : "Cytoscape Upload",
+        "properties" : [ {
+          "name" : "user",
+          "value" : "drh drh"
+        }, {
+          "name" : "account name",
+          "value" : "drh"
+        } ]
+      },
+      "properties" : [ {
+        "name" : "edge count",
+        "value" : "37"
+      }, {
+        "name" : "node count",
+        "value" : "14"
+      }, {
+        "name" : "dc:title",
+        "value" : "a6b1 and a6b4 Integrin signaling small test"
+      }, {
+        "name" : "description",
+        "value" : "This network belongs to the NCI Pathway Interaction Database (PID) and was obtained from Pathway Commons (PC2 v.7)."
+      } ]
+    }
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "name",
+    "v" : "a6b1 and a6b4 Integrin signaling small test"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "description",
+    "v" : "This network belongs to the NCI Pathway Interaction Database (PID) and was obtained from Pathway Commons (PC2 v.7)."
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "s" : 994,
+    "n" : "name",
+    "v" : "a6b1 and a6b4 Integrin signaling small test"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "s" : 994,
+    "n" : "URI",
+    "v" : "http://purl.org/pc2/6/Pathway_5b76a7e3ff0230325be467c001aa180d"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "s" : 994,
+    "n" : "ORGANISM",
+    "v" : "http://purl.org/pc2/6/BioSource_343022ef4adbf95df362e8b555d61240"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "s" : 994,
+    "n" : "Source",
+    "v" : "http://purl.org/pc2/6/pid"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "s" : 994,
+    "n" : "selected",
+    "v" : "true",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1050,
+    "n" : "RPS6KB1"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1050,
+    "n" : "alias",
+    "v" : [ "KS6B1_HUMAN", "UniProt Knowledgebase:Q7Z721", "UniProt Isoform:B2R779", "UniProt Isoform:B4DLT4", "UniProt Isoform:B4DTG1", "UniProt Isoform:E7ESB8", "UniProt Isoform:F6UYM1", "UniProt Knowledgebase:P23443" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1050,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0014911", "GENE ONTOLOGY:GO:0016477", "ENSEMBL:ENST00000406116", "ENSEMBL:ENST00000443572", "GENE ONTOLOGY:GO:0000082", "GENE ONTOLOGY:GO:0003009", "GENE ONTOLOGY:GO:0005741", "GENE ONTOLOGY:GO:0006468", "GENE ONTOLOGY:GO:0007616", "GENE ONTOLOGY:GO:0009408", "GENE ONTOLOGY:GO:0009612", "GENE ONTOLOGY:GO:0009749", "GENE ONTOLOGY:GO:0014732", "GENE ONTOLOGY:GO:0014878", "ENSEMBL:ENST00000225577", "ENSEMBL:ENST00000393021", "GENE ONTOLOGY:GO:0009986", "GENE ONTOLOGY:GO:0009611", "GENE ONTOLOGY:GO:0042493", "GENE ONTOLOGY:GO:0048471", "GENE ONTOLOGY:GO:0005737", "GENE ONTOLOGY:GO:0043066", "GENE ONTOLOGY:GO:0007584", "GENE ONTOLOGY:GO:0004711", "ENSEMBL:ENSG00000108443", "GENE ONTOLOGY:GO:0007281", "ENSEMBL:ENSP00000225577", "ENSEMBL:ENSP00000376744", "ENSEMBL:ENSP00000384335", "ENSEMBL:ENSP00000441993", "GENE ONTOLOGY:GO:0007568", "interpro:IPR000719", "refseq:NP_003152.1", "GENE ONTOLOGY:GO:0008286", "refseq:NP_001258989.1", "reactome:REACT_111102", "vega:OTTHUMG00000150642", "GENE ONTOLOGY:GO:0030054", "GENE ONTOLOGY:GO:0005739", "GENE ONTOLOGY:GO:0005829", "GENE ONTOLOGY:GO:0006915", "GENE ONTOLOGY:GO:0007165", "GENE ONTOLOGY:GO:0005515", "interpro:IPR011009", "GENE ONTOLOGY:GO:0048015", "GENE ONTOLOGY:GO:0005634", "nucleotide genbank identifier:2106960", "refseq:NP_001258972.1", "nucleotide genbank identifier:194390421", "GENE ONTOLOGY:GO:0004672", "GENE ONTOLOGY:GO:0005524", "nucleotide genbank identifier:21858614", "nucleotide genbank identifier:24809327", "nucleotide genbank identifier:21749887", "GENE ONTOLOGY:GO:0009636", "nucleotide genbank identifier:52289171", "nucleotide genbank identifier:55925648", "nucleotide genbank identifier:34191267", "refseq:NP_001258971.1", "nucleotide genbank identifier:5393007", "refseq:NP_001258973.1", "omim:608938", "nucleotide genbank identifier:194386163", "nucleotide genbank identifier:189507", "nucleotide genbank identifier:194375671", "interpro:IPR017441", "genbank indentifier:AAA36411", "hgnc:10436", "hprd:10202", "intact:EBI-1775921", "nucleotide genbank identifier:31418466", "nucleotide genbank identifier:23273567", "nucleotide genbank identifier:10439650", "nucleotide genbank identifier:27789125", "nucleotide genbank identifier:164691679", "interpro:IPR017892", "nucleotide genbank identifier:189509", "nucleotide genbank identifier:13665640", "genbank indentifier:189510", "genbank indentifier:4506736", "genbank indentifier:4506737", "genbank indentifier:55925648", "UNIPROT:B2R779", "UNIPROT:B4DLT4", "UNIPROT:B4DTG1", "UNIPROT:E7ESB8", "interpro:IPR000961", "interpro:IPR002290", "interpro:IPR008271", "interpro:IPR016238", "ensembl:ENST00000225577", "ensembl:ENST00000393021", "ensembl:ENST00000406116", "ensembl:ENST00000443572", "REFSEQ:NP_001258973", "REFSEQ:NP_001258989", "REFSEQ:NP_003152", "UNIPROT KNOWLEDGEBASE:P23443", "PROTEIN DATA BANK:3A60", "PROTEIN DATA BANK:3A61", "PROTEIN DATA BANK:3A62", "PROTEIN DATA BANK:4L3J", "UNIPROT:F6UYM1", "UNIPROT:KS6B1_HUMAN", "biogrid:112112", "ensembl:ENSG00000108443", "PROTEIN DATA BANK:4L45", "PROTEIN DATA BANK:4L46", "REFSEQ:NP_001258971", "REFSEQ:NP_001258972", "HGNC SYMBOL:RPS6KB1", "HGNC:HGNC:10436", "NCBI GENE:6198", "PANTHER Family:PTHR24351:SF48", "GENPEPT:134274222", "GENPEPT:189053560", "GENPEPT:189508", "GENPEPT:189510", "PROTEIN DATA BANK:4L3L", "PROTEIN DATA BANK:4L42", "PROTEIN DATA BANK:4L43", "PROTEIN DATA BANK:4L44", "GENPEPT:4506737", "GENPEPT:54041234", "GENPEPT:71052007", "GENPEPT:74759249", "GENPEPT:119614788", "GENPEPT:119614789", "GENPEPT:119614790", "GENPEPT:121943924", "GENE ONTOLOGY:GO:0043491", "GENE ONTOLOGY:GO:0045202", "GENE ONTOLOGY:GO:0045471", "GENE ONTOLOGY:GO:0045931", "GENPEPT:194375672", "GENPEPT:194386164", "GENPEPT:194390422", "GENPEPT:31418467", "GENE ONTOLOGY:GO:0048661", "GENE ONTOLOGY:GO:0051384", "GENE ONTOLOGY:GO:0071363", "GENE ONTOLOGY:GO:2001237", "GENE ONTOLOGY:GO:0034612", "GENE ONTOLOGY:GO:0042277", "GENE ONTOLOGY:GO:0043201", "GENE ONTOLOGY:GO:0045727", "GENE ONTOLOGY:GO:0043005", "GENE ONTOLOGY:GO:0045948", "GENE ONTOLOGY:GO:0046324", "GENE ONTOLOGY:GO:0046627", "GENE ONTOLOGY:GO:0048633", "GENE ONTOLOGY:GO:0031929", "GENE ONTOLOGY:GO:0032496", "GENE ONTOLOGY:GO:0033574", "GENE ONTOLOGY:GO:0033762" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1050,
+    "n" : "name",
+    "v" : "RPS6KB1"
+  }, {
+    "s" : 994,
+    "po" : 1050,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1047,
+    "n" : "LAMC2"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1047,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:Q02536", "LAMC2_HUMAN", "UniProt Knowledgebase:Q02537", "UniProt Knowledgebase:Q14DF7", "UniProt Knowledgebase:Q14941", "UniProt Knowledgebase:Q13753", "UniProt Knowledgebase:Q13752", "UniProt Knowledgebase:Q5VYE8", "UniProt Knowledgebase:Q2M1N2" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1047,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0048471", "refseq:NP_061486.2", "GENE ONTOLOGY:GO:0022617", "omim:150292", "vega:OTTHUMG00000035520", "nucleotide genbank identifier:194384665", "refseq:NP_005553.2", "nucleotide genbank identifier:157419139", "nucleotide genbank identifier:219518881", "GENE ONTOLOGY:GO:0005576", "GENE ONTOLOGY:GO:0005607", "genbank indentifier:157419139", "GENE ONTOLOGY:GO:0016020", "nucleotide genbank identifier:109730446", "GENE ONTOLOGY:GO:0031581", "nucleotide genbank identifier:157419137", "GENE ONTOLOGY:GO:0030198", "GENE ONTOLOGY:GO:0034329", "hgnc:6493", "nucleotide genbank identifier:452754", "nucleotide genbank identifier:164694102", "nucleotide genbank identifier:34229", "nucleotide genbank identifier:85566964", "genbank indentifier:5031847", "nucleotide genbank identifier:34231", "genbank indentifier:157419138", "genbank indentifier:9845499", "ensembl:ENSG00000058085", "biogrid:110112", "GENPEPT:90185107", "GENPEPT:85566965", "GENPEPT:55663092", "GENPEPT:452755", "PANTHER Family:PTHR10574:SF79", "NCBI GENE:3918", "UNIPROT KNOWLEDGEBASE:Q13753", "hprd:01031", "GENE ONTOLOGY:GO:0007155", "UNIPROT:LAMC2_HUMAN", "REFSEQ:NP_061486", "REFSEQ:NP_005553", "ensembl:ENST00000493293", "ensembl:ENST00000264144", "GENPEPT:34230", "GENPEPT:1236323", "GENPEPT:157419140", "GENPEPT:34232", "ENSEMBL:ENST00000493293", "GENPEPT:194384666", "ENSEMBL:ENSP00000432063", "GENE ONTOLOGY:GO:0005938", "HGNC SYMBOL:LAMC2", "GENE ONTOLOGY:GO:0008544", "GENPEPT:1280520", "HGNC:HGNC:6493", "GENPEPT:157419138", "reactome:REACT_118779", "GENPEPT:121945634", "reactome:REACT_111155", "interpro:IPR018031", "interpro:IPR002049", "GENE ONTOLOGY:GO:0005610", "interpro:IPR000034", "GENPEPT:119611552", "ENSEMBL:ENST00000264144", "GENE ONTOLOGY:GO:0008201", "GENPEPT:119611553", "GENPEPT:109730447", "GENE ONTOLOGY:GO:0005615", "ENSEMBL:ENSP00000264144", "ENSEMBL:ENSG00000058085" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1047,
+    "n" : "name",
+    "v" : "LAMC2"
+  }, {
+    "s" : 994,
+    "po" : 1047,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1046,
+    "n" : "LAMC1"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1046,
+    "n" : "alias",
+    "v" : [ "LAMC1_HUMAN", "UniProt Knowledgebase:Q5VYE7", "UniProt Knowledgebase:P11047" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1046,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0005604", "GENE ONTOLOGY:GO:0070062", "nucleotide genbank identifier:33201016", "nucleotide genbank identifier:22028045", "nucleotide genbank identifier:186923", "nucleotide genbank identifier:186916", "nucleotide genbank identifier:47376239", "nucleotide genbank identifier:45709409", "GENE ONTOLOGY:GO:0043208", "GENE ONTOLOGY:GO:0005201", "GENE ONTOLOGY:GO:0043260", "GENE ONTOLOGY:GO:0034446", "vega:OTTHUMG00000035418", "refseq:NP_002284.3", "omim:150290", "nucleotide genbank identifier:80827746", "nucleotide genbank identifier:11590692", "GENE ONTOLOGY:GO:0016477", "hprd:01030", "UNIPROT KNOWLEDGEBASE:P11047", "REFSEQ:NP_002284", "PANTHER Family:PTHR10574:SF228", "NCBI GENE:3915", "ensembl:ENSG00000135862", "biogrid:110109", "nucleotide genbank identifier:34237", "nucleotide genbank identifier:33874571", "hgnc:6492", "genbank indentifier:9845498", "genbank indentifier:145309326", "ensembl:ENST00000258341", "nucleotide genbank identifier:15760190", "nucleotide genbank identifier:145309325", "GENPEPT:74731237", "HGNC:HGNC:6492", "GENPEPT:145309326", "GENPEPT:74736888", "GENPEPT:119611550", "GENPEPT:186924", "GENPEPT:307107", "GENPEPT:119611551", "UNIPROT:LAMC1_HUMAN", "UNIPROT KNOWLEDGEBASE:Q6NVY8", "GENPEPT:55960176", "GENPEPT:55663093", "GENPEPT:34238", "GENE ONTOLOGY:GO:0050679", "HGNC SYMBOL:LAMC1", "GENPEPT:45709410", "ENSEMBL:ENST00000258341", "GENE ONTOLOGY:GO:0022617", "ENSEMBL:ENSP00000258341", "interpro:IPR008979", "GENE ONTOLOGY:GO:0007411", "GENE ONTOLOGY:GO:0043259", "reactome:REACT_111045", "GENPEPT:33874572", "interpro:IPR008211", "GENPEPT:224471885", "GENPEPT:186964", "interpro:IPR013032", "ENSEMBL:ENSG00000135862", "GENE ONTOLOGY:GO:0005576", "GENE ONTOLOGY:GO:0007492", "GENE ONTOLOGY:GO:0006461", "GENE ONTOLOGY:GO:0031581", "GENE ONTOLOGY:GO:0030198", "GENE ONTOLOGY:GO:0007155", "reactome:REACT_118779", "interpro:IPR018031", "interpro:IPR002049", "interpro:IPR000034", "GENE ONTOLOGY:GO:0005606", "GENE ONTOLOGY:GO:0005615" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1046,
+    "n" : "name",
+    "v" : "LAMC1"
+  }, {
+    "s" : 994,
+    "po" : 1046,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1037,
+    "n" : "IL1A"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1037,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:P01583", "UniProt Knowledgebase:Q7RU02", "IL1A_HUMAN", "UniProt Knowledgebase:Q53QF9" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1037,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0006955", "GENE ONTOLOGY:GO:0005507", "GENE ONTOLOGY:GO:0045086", "GENE ONTOLOGY:GO:0008283", "GENE ONTOLOGY:GO:0045766", "GENE ONTOLOGY:GO:0008285", "GENE ONTOLOGY:GO:0035234", "GENE ONTOLOGY:GO:0034605", "GENE ONTOLOGY:GO:0050715", "GENE ONTOLOGY:GO:0046688", "GENPEPT:15341913", "GENPEPT:124297", "GENPEPT:123994361", "GENPEPT:123979544", "GENE ONTOLOGY:GO:0019221", "GENE ONTOLOGY:GO:0010575", "GENE ONTOLOGY:GO:0001660", "ENSEMBL:ENSG00000115008", "ENSEMBL:ENSP00000263339", "GENE ONTOLOGY:GO:0005125", "ENSEMBL:ENST00000263339", "GENE ONTOLOGY:GO:0005829", "GENE ONTOLOGY:GO:0006915", "GENE ONTOLOGY:GO:0005515", "GENE ONTOLOGY:GO:0005576", "refseq:NP_000566.3", "nucleotide genbank identifier:48146944", "nucleotide genbank identifier:27894329", "vega:OTTHUMG00000131315", "nucleotide genbank identifier:186277", "nucleotide genbank identifier:30582866", "nucleotide genbank identifier:34782847", "nucleotide genbank identifier:24470256", "GENE ONTOLOGY:GO:0097192", "GENE ONTOLOGY:GO:2001240", "omim:147760", "reactome:REACT_6900", "nucleotide genbank identifier:35660", "reactome:REACT_120956", "interpro:IPR020877", "nucleotide genbank identifier:164693055", "GENE ONTOLOGY:GO:0045840", "nucleotide genbank identifier:123979543", "ensembl:ENST00000263339", "ensembl:ENSG00000115008", "biogrid:109768", "UNIPROT:IL1A_HUMAN", "nucleotide genbank identifier:33787", "nucleotide genbank identifier:34783474", "interpro:IPR003502", "nucleotide genbank identifier:33794", "interpro:IPR003294", "interpro:IPR008996", "nucleotide genbank identifier:123994360", "interpro:IPR003295", "UNIPROT KNOWLEDGEBASE:Q53QF9", "UNIPROT KNOWLEDGEBASE:P01583", "REFSEQ:NP_000566", "PROTEIN DATA BANK:2L5X", "GENPEPT:74740635", "GENPEPT:62702127", "GENPEPT:48146945", "GENPEPT:35661", "interpro:IPR000975", "hprd:00988", "hgnc:5991", "genbank indentifier:27894330", "PROTEIN DATA BANK:2KKI", "PROTEIN DATA BANK:2ILA", "PROTEIN DATA BANK:1ITA", "PANTHER Family:PTHR11420:SF0", "GENPEPT:33786", "GENPEPT:189054725", "GENE ONTOLOGY:GO:0045944", "GENPEPT:33795", "GENPEPT:30582867", "GENPEPT:28317371", "GENPEPT:119594010", "GENE ONTOLOGY:GO:0051781", "HGNC:HGNC:5991", "GENE ONTOLOGY:GO:0006954", "GENPEPT:755744", "NCBI GENE:3552", "GENPEPT:22385324", "GENE ONTOLOGY:GO:0005615", "HGNC SYMBOL:IL1A", "GENPEPT:186278", "GENPEPT:27894330" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1037,
+    "n" : "name",
+    "v" : "IL1A"
+  }, {
+    "s" : 994,
+    "po" : 1037,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1027,
+    "n" : "COL17A1"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1027,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:Q9UC14", "UniProt Knowledgebase:Q5JV36", "UniProt Knowledgebase:Q9UMD9", "UniProt Knowledgebase:Q9NQK9", "UniProt Knowledgebase:Q02802", "UniProt Knowledgebase:Q99018", "COHA1_HUMAN" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1027,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0005604", "nucleotide genbank identifier:7438870", "omim:113811", "refseq:NP_000485.3", "vega:OTTHUMG00000018998", "ensembl:ENSG00000065618", "ensembl:ENST00000353479", "ensembl:ENST00000369733", "hgnc:2194", "hprd:00223", "interpro:IPR008160", "nucleotide genbank identifier:119829186", "nucleotide genbank identifier:164690812", "nucleotide genbank identifier:179516", "nucleotide genbank identifier:179520", "nucleotide genbank identifier:18641355", "nucleotide genbank identifier:195934736", "nucleotide genbank identifier:2911134", "nucleotide genbank identifier:33872846", "nucleotide genbank identifier:6625654", "nucleotide genbank identifier:6625655", "GENPEPT:179521", "GENE ONTOLOGY:GO:0022617", "GENPEPT:1877435", "GENE ONTOLOGY:GO:0030056", "GENE ONTOLOGY:GO:0005887", "GENPEPT:195934737", "GENPEPT:33872847", "GENPEPT:55957393", "GENPEPT:55957394", "HGNC SYMBOL:COL17A1", "HGNC:HGNC:2194", "NCBI GENE:1308", "PANTHER Family:PTHR24023:SF455", "GENE ONTOLOGY:GO:0005515", "REFSEQ:NP_000485", "UNIPROT KNOWLEDGEBASE:Q9UMD9", "GENE ONTOLOGY:GO:0005576", "UNIPROT:COHA1_HUMAN", "biogrid:107704", "GENPEPT:179517", "GENPEPT:119829187", "ENSEMBL:ENSP00000358748", "GENE ONTOLOGY:GO:0031581", "GENPEPT:146345399", "ENSEMBL:ENST00000369733", "GENE ONTOLOGY:GO:0030198", "ENSEMBL:ENSP00000340937", "GENE ONTOLOGY:GO:0034329", "GENE ONTOLOGY:GO:0005788", "ENSEMBL:ENST00000353479", "GENPEPT:74742377", "GENPEPT:9588138", "GENE ONTOLOGY:GO:0030574", "GENPEPT:119569997", "GENPEPT:119569998", "GENPEPT:119569999", "GENE ONTOLOGY:GO:0007160", "GENPEPT:122889126", "GENE ONTOLOGY:GO:0005911", "GENE ONTOLOGY:GO:0005581", "GENE ONTOLOGY:GO:0005886", "ENSEMBL:ENSG00000065618", "GENE ONTOLOGY:GO:0008544", "reactome:REACT_118779", "reactome:REACT_111155" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1027,
+    "n" : "name",
+    "v" : "COL17A1"
+  }, {
+    "s" : 994,
+    "po" : 1027,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1023,
+    "n" : "ITGB1"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1023,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:Q13090", "UniProt Knowledgebase:Q13091", "UniProt Knowledgebase:Q13212", "UniProt Knowledgebase:Q14622", "UniProt Knowledgebase:Q14647", "UniProt Knowledgebase:Q29RW2", "UniProt Isoform:D3DRY4", "UniProt Isoform:D3DRY5", "UniProt Knowledgebase:P05556", "UniProt Knowledgebase:P78466", "UniProt Knowledgebase:Q7Z3V1", "UniProt Knowledgebase:Q8WUM6", "UniProt Knowledgebase:P78467", "UniProt Knowledgebase:Q13089", "ITB1_HUMAN", "UniProt Isoform:A8K6N2", "UniProt Isoform:D3DRX9", "UniProt Isoform:D3DRY3" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1023,
+    "n" : "relatedTo",
+    "v" : [ "nucleotide genbank identifier:123980331", "GENE ONTOLOGY:GO:0050776", "nucleotide genbank identifier:158256825", "nucleotide genbank identifier:18042959", "intact:EBI-8610683", "intact:EBI-8610721", "intact:EBI-8610873", "intact:EBI-8611331", "GENE ONTOLOGY:GO:0016032", "GENE ONTOLOGY:GO:0071479", "interpro:IPR014836", "interpro:IPR027071", "nucleotide genbank identifier:1002536", "nucleotide genbank identifier:117645217", "nucleotide genbank identifier:123995150", "GENE ONTOLOGY:GO:0050839", "intact:EBI-4289597", "GENE ONTOLOGY:GO:0016477", "GENE ONTOLOGY:GO:0043235", "reactome:REACT_604", "hprd:00628", "GENE ONTOLOGY:GO:0000082", "GENE ONTOLOGY:GO:0046982", "intact:EBI-8610426", "UNIPROT:ITB1_HUMAN", "intact:EBI-703066", "intact:EBI-8611781", "intact:EBI-8612236", "intact:MINT-140124", "intact:MINT-140140", "genbank indentifier:124963", "genbank indentifier:19743813", "genbank indentifier:218563324", "hgnc:6153", "UNIPROT KNOWLEDGEBASE:P05556", "REFSEQ:NP_391988", "GENE ONTOLOGY:GO:0009986", "REFSEQ:XP_005252505", "GENE ONTOLOGY:GO:0005925", "GENE ONTOLOGY:GO:0042493", "GENE ONTOLOGY:GO:0007156", "UNIPROT:D3DRX9", "GENE ONTOLOGY:GO:0005737", "UNIPROT:D3DRY4", "UNIPROT:A8K6N2", "ensembl:ENSG00000150093", "UNIPROT:D3DRY5", "ensembl:ENST00000374956", "biogrid:109894", "ensembl:ENST00000423113", "ensembl:ENST00000302278", "REFSEQ:NP_596867", "ensembl:ENST00000396033", "GENPEPT:74744748", "PROTEIN DATA BANK:4DX9", "GENPEPT:89243632", "GENPEPT:74744747", "HGNC:HGNC:6153", "GENPEPT:74744749", "PANTHER Family:PTHR10082:SF28", "HGNC SYMBOL:ITGB1", "PROTEIN DATA BANK:1LHA", "UNIPROT:D3DRY3", "PROTEIN DATA BANK:3T9K", "PROTEIN DATA BANK:1K11", "GENE ONTOLOGY:GO:0005515", "PROTEIN DATA BANK:3VI4", "PROTEIN DATA BANK:3G9W", "REFSEQ:NP_002202", "PROTEIN DATA BANK:3VI3", "GENPEPT:158256826", "GENPEPT:55959576", "GENPEPT:186222", "GENPEPT:123995151", "GENPEPT:19743813", "GENPEPT:18042960", "GENPEPT:19743823", "GENPEPT:186223", "GENPEPT:31442", "NCBI GENE:3688", "GENPEPT:386832", "GENPEPT:218563324", "GENPEPT:55959575", "GENPEPT:31873316", "GENPEPT:55959577", "GENPEPT:55959574", "GENPEPT:117645218", "GENPEPT:119606366", "GENPEPT:1036735", "interpro:IPR012896", "interpro:IPR013111", "GENPEPT:119606355", "GENPEPT:119606357", "GENPEPT:119606354", "GENPEPT:119606361", "GENPEPT:19743819", "GENPEPT:119606363", "GENPEPT:119606360", "GENPEPT:119606365", "GENPEPT:119606362", "GENPEPT:123980332", "GENPEPT:119606364", "GENPEPT:1036732", "GENE ONTOLOGY:GO:0071559", "GENPEPT:1002537", "interpro:IPR002369", "GENPEPT:1036734", "interpro:IPR002035", "GENE ONTOLOGY:GO:0045807", "GENPEPT:1036733", "GENPEPT:119606356", "interpro:IPR015812", "GENPEPT:119606358", "GENPEPT:119606359", "GENE ONTOLOGY:GO:0071305", "interpro:IPR016201", "GENE ONTOLOGY:GO:2000811", "GENE ONTOLOGY:GO:0071260", "GENE ONTOLOGY:GO:0042383", "GENE ONTOLOGY:GO:0034679", "GENE ONTOLOGY:GO:0045121", "GENE ONTOLOGY:GO:0035748", "GENE ONTOLOGY:GO:0045665", "GENE ONTOLOGY:GO:0043065", "GENE ONTOLOGY:GO:0031594", "GENE ONTOLOGY:GO:0045214", "GENE ONTOLOGY:GO:0050731", "GENE ONTOLOGY:GO:0045666", "GENE ONTOLOGY:GO:0055007", "GENE ONTOLOGY:GO:0046872", "GENE ONTOLOGY:GO:0060135", "GENE ONTOLOGY:GO:0051726", "GENE ONTOLOGY:GO:0034698", "GENE ONTOLOGY:GO:0055037", "GENE ONTOLOGY:GO:0008285", "GENE ONTOLOGY:GO:0030056", "GENE ONTOLOGY:GO:0007160", "GENE ONTOLOGY:GO:0005886", "GENE ONTOLOGY:GO:0006968", "GENE ONTOLOGY:GO:0007159", "GENE ONTOLOGY:GO:0007161", "GENE ONTOLOGY:GO:0008277", "GENE ONTOLOGY:GO:0008354", "GENE ONTOLOGY:GO:0009897", "ENSEMBL:ENST00000423113", "GENE ONTOLOGY:GO:0001618", "GENE ONTOLOGY:GO:0003779", "GENE ONTOLOGY:GO:0006874", "ENSEMBL:ENSP00000379350", "ENSEMBL:ENSP00000388694", "ENSEMBL:ENST00000302278", "ENSEMBL:ENST00000396033", "GENE ONTOLOGY:GO:0007229", "GENE ONTOLOGY:GO:0042470", "GENE ONTOLOGY:GO:0007596", "GENE ONTOLOGY:GO:0008305", "GENE ONTOLOGY:GO:0001669", "GENE ONTOLOGY:GO:0001701", "GENE ONTOLOGY:GO:0001708", "GENE ONTOLOGY:GO:0001726", "GENE ONTOLOGY:GO:0001894", "GENE ONTOLOGY:GO:0002042", "ENSEMBL:ENSG00000150093", "ENSEMBL:ENSP00000303351", "GENE ONTOLOGY:GO:0005604", "GENE ONTOLOGY:GO:0070062", "GENE ONTOLOGY:GO:0007411", "reactome:REACT_111045", "reactome:REACT_6900", "GENE ONTOLOGY:GO:0014823", "GENE ONTOLOGY:GO:0010811", "GENE ONTOLOGY:GO:0030027", "GENE ONTOLOGY:GO:0014704", "GENE ONTOLOGY:GO:0030183", "GENE ONTOLOGY:GO:0021943", "GENE ONTOLOGY:GO:0050900", "GENE ONTOLOGY:GO:0030175", "GENE ONTOLOGY:GO:0032594", "GENE ONTOLOGY:GO:0031345", "GENE ONTOLOGY:GO:0034667", "GENE ONTOLOGY:GO:0032154", "GENE ONTOLOGY:GO:0034678", "GENE ONTOLOGY:GO:0033631", "GENE ONTOLOGY:GO:0010976", "GENE ONTOLOGY:GO:0034677", "refseq:NP_002202.2", "nucleotide genbank identifier:83481604", "refseq:NP_596867.1", "omim:135630", "nucleotide genbank identifier:19591024", "refseq:NP_391988.1", "nucleotide genbank identifier:31441", "nucleotide genbank identifier:19139823", "GENE ONTOLOGY:GO:0030335", "GENE ONTOLOGY:GO:0043410", "vega:OTTHUMG00000017928", "GENE ONTOLOGY:GO:0008284", "nucleotide genbank identifier:83481323", "refseq:XP_005252505.1", "nucleotide genbank identifier:89243631", "nucleotide genbank identifier:80906595", "nucleotide genbank identifier:182507162", "GENE ONTOLOGY:GO:0042277", "GENE ONTOLOGY:GO:0070830", "nucleotide genbank identifier:182519231", "nucleotide genbank identifier:182519232", "nucleotide genbank identifier:186221", "nucleotide genbank identifier:186500", "nucleotide genbank identifier:3869646", "nucleotide genbank identifier:19694157", "nucleotide genbank identifier:58555060", "nucleotide genbank identifier:31873315", "nucleotide genbank identifier:182507161", "nucleotide genbank identifier:58551548", "nucleotide genbank identifier:182519230", "nucleotide genbank identifier:182507160", "GENE ONTOLOGY:GO:0030198", "GENE ONTOLOGY:GO:0034329", "reactome:REACT_118779", "reactome:REACT_111155" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1023,
+    "n" : "name",
+    "v" : "ITGB1"
+  }, {
+    "s" : 994,
+    "po" : 1023,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1022,
+    "n" : "CD9"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1022,
+    "n" : "alias",
+    "v" : [ "UniProt Isoform:D3DUQ9", "UniProt Knowledgebase:P21926", "UniProt Knowledgebase:Q5J7W6", "UniProt Knowledgebase:Q96ES4", "CD9_HUMAN" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1022,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0070062", "GENPEPT:306502", "GENE ONTOLOGY:GO:0008285", "GENPEPT:194382930", "GENPEPT:4502693", "GENPEPT:194391068", "GENPEPT:15080490", "GENPEPT:300115", "GENPEPT:194384586", "GENPEPT:306504", "GENPEPT:231724", "reactome:REACT_604", "GENPEPT:123995645", "GENPEPT:119609218", "GENE ONTOLOGY:GO:0002576", "GENE ONTOLOGY:GO:0005887", "GENPEPT:123980822", "GENE ONTOLOGY:GO:0007338", "ENSEMBL:ENST00000382518", "GENE ONTOLOGY:GO:0007420", "GENE ONTOLOGY:GO:0006928", "GENE ONTOLOGY:GO:0031092", "GENE ONTOLOGY:GO:0005515", "GENPEPT:1048989", "GENE ONTOLOGY:GO:0030913", "GENPEPT:119609219", "GENE ONTOLOGY:GO:0032504", "nucleotide genbank identifier:508495", "GENE ONTOLOGY:GO:0030168", "nucleotide genbank identifier:84369984", "nucleotide genbank identifier:41350390", "reactome:REACT_163848", "nucleotide genbank identifier:62255495", "vega:OTTHUMG00000044400", "omim:143030", "GENE ONTOLOGY:GO:0014003", "GENE ONTOLOGY:GO:0007342", "ENSEMBL:ENSP00000009180", "GENE ONTOLOGY:GO:0009414", "ENSEMBL:ENST00000009180", "ENSEMBL:ENSG00000010278", "GENE ONTOLOGY:GO:0016324", "ENSEMBL:ENSP00000371958", "nucleotide genbank identifier:123995644", "nucleotide genbank identifier:3203915", "nucleotide genbank identifier:15080489", "nucleotide genbank identifier:123980821", "nucleotide genbank identifier:164694021", "nucleotide genbank identifier:13049237", "nucleotide genbank identifier:164696620", "nucleotide genbank identifier:164689712", "nucleotide genbank identifier:194382929", "refseq:NP_001760.1", "GENE ONTOLOGY:GO:0007155", "GENE ONTOLOGY:GO:0005886", "nucleotide genbank identifier:194391067", "nucleotide genbank identifier:19092681", "nucleotide genbank identifier:319738657", "nucleotide genbank identifier:194384585", "nucleotide genbank identifier:34768", "nucleotide genbank identifier:297179227", "UNIPROT:CD9_HUMAN", "interpro:IPR028977", "biogrid:107366", "UNIPROT KNOWLEDGEBASE:P21926", "ensembl:ENST00000009180", "GENE ONTOLOGY:GO:0009897", "UNIPROT:D3DUQ9", "genbank indentifier:4502693", "ensembl:ENSG00000010278", "hprd:00880", "nucleotide genbank identifier:164694596", "interpro:IPR008952", "hgnc:1709", "interpro:IPR018503", "interpro:IPR000301", "nucleotide genbank identifier:1048988", "interpro:IPR018499", "GENPEPT:306506", "NCBI GENE:928", "GENPEPT:34769", "GENPEPT:306505", "GENPEPT:41350391", "GENPEPT:306507", "GENE ONTOLOGY:GO:0007596", "GENPEPT:508496", "GENPEPT:36968288", "GENPEPT:62255496", "ensembl:ENST00000382518", "GENPEPT:84369985", "GENPEPT:553218", "HGNC:HGNC:1709", "GENPEPT:74721589", "REFSEQ:NP_001760", "HGNC SYMBOL:CD9" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1022,
+    "n" : "name",
+    "v" : "CD9"
+  }, {
+    "s" : 994,
+    "po" : 1022,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1021,
+    "n" : "CASP7"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1021,
+    "n" : "alias",
+    "v" : [ "CASP7_HUMAN", "UniProt Isoform:B4DQU7", "UniProt Isoform:B5BU45", "UniProt Isoform:D3DRB8", "UniProt Knowledgebase:P55210", "UniProt Knowledgebase:Q13364", "UniProt Knowledgebase:Q53YD5", "UniProt Knowledgebase:Q5SVL0", "UniProt Knowledgebase:Q5SVL3", "UniProt Knowledgebase:Q96BA0" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1021,
+    "n" : "relatedTo",
+    "v" : [ "biogrid:107290", "ensembl:ENSG00000165806", "ensembl:ENST00000345633", "ensembl:ENST00000369315", "REFSEQ:NP_001218", "REFSEQ:NP_001253985", "REFSEQ:NP_001253986", "REFSEQ:NP_001253987", "GENE ONTOLOGY:GO:0097194", "UNIPROT:B4DQU7", "UNIPROT:B5BU45", "UNIPROT:CASP7_HUMAN", "UNIPROT:D3DRB8", "PROTEIN DATA BANK:4JB8", "PROTEIN DATA BANK:4JJ8", "PROTEIN DATA BANK:4JR1", "PROTEIN DATA BANK:4JR2", "PROTEIN DATA BANK:2QLB", "PROTEIN DATA BANK:2QLF", "GENE ONTOLOGY:GO:0005737", "PROTEIN DATA BANK:2QLJ", "PROTEIN DATA BANK:3EDR", "REFSEQ:NP_203124", "REFSEQ:NP_203125", "REFSEQ:NP_203126", "UNIPROT KNOWLEDGEBASE:P55210", "PROTEIN DATA BANK:4FDL", "PROTEIN DATA BANK:4FEA", "PROTEIN DATA BANK:4HQ0", "PROTEIN DATA BANK:4HQR", "GENE ONTOLOGY:GO:0007568", "PROTEIN DATA BANK:1SHL", "PROTEIN DATA BANK:2QL5", "GENE ONTOLOGY:GO:0097193", "PROTEIN DATA BANK:2QL9", "NCBI GENE:840", "PROTEIN DATA BANK:2QL7", "PROTEIN DATA BANK:1F1J", "HGNC:HGNC:1508", "PROTEIN DATA BANK:3H1P", "GENE ONTOLOGY:GO:0005829", "PROTEIN DATA BANK:3IBC", "GENE ONTOLOGY:GO:0006915", "PROTEIN DATA BANK:3IBF", "PROTEIN DATA BANK:3R5K", "GENE ONTOLOGY:GO:0005515", "PROTEIN DATA BANK:1K88", "PROTEIN DATA BANK:1KMC", "PROTEIN DATA BANK:1MIA", "GENE ONTOLOGY:GO:0005634", "PROTEIN DATA BANK:1SHJ", "GENPEPT:6649573", "GENPEPT:55962065", "HGNC SYMBOL:CASP7", "GENPEPT:55962067", "GENPEPT:194386498", "GENPEPT:74743882", "GENPEPT:194376410", "GENE ONTOLOGY:GO:0005654", "PROTEIN DATA BANK:1I4O", "PANTHER Family:PTHR10454:SF31", "PROTEIN DATA BANK:1K86", "PROTEIN DATA BANK:1GQF", "GENPEPT:55960762", "PROTEIN DATA BANK:1I51", "GENPEPT:55962066", "GENPEPT:55960761", "GENPEPT:16041819", "GENPEPT:1730092", "GENPEPT:1894915", "GENPEPT:190689843", "GENPEPT:190691211", "GENPEPT:194373929", "GENPEPT:119569879", "GENPEPT:119569880", "GENPEPT:197692263", "GENPEPT:197692527", "GENPEPT:218377108", "GENPEPT:30582205", "GENPEPT:4502581", "GENPEPT:55960760", "GENPEPT:15718700", "GENPEPT:15718702", "GENE ONTOLOGY:GO:0043525", "GENE ONTOLOGY:GO:0097153", "GENPEPT:1117847", "GENPEPT:1117849", "GENPEPT:1125073", "GENPEPT:1167555", "ENSEMBL:ENST00000452490", "ENSEMBL:ENST00000614447", "GENPEPT:119569881", "GENPEPT:119569882", "GENPEPT:119569883", "GENPEPT:123994187", "GENPEPT:124126917", "GENPEPT:15718698", "GENE ONTOLOGY:GO:0008635", "GENE ONTOLOGY:GO:0009411", "ENSEMBL:ENSP00000478999", "ENSEMBL:ENSP00000480584", "ENSEMBL:ENST00000345633", "ENSEMBL:ENST00000369315", "ENSEMBL:ENST00000369318", "ENSEMBL:ENST00000369331", "ENSEMBL:ENSP00000358321", "ENSEMBL:ENSG00000165806", "ENSEMBL:ENST00000621345", "ENSEMBL:ENST00000621607", "GENE ONTOLOGY:GO:0004190", "GENE ONTOLOGY:GO:0004197", "GENE ONTOLOGY:GO:0006508", "GENE ONTOLOGY:GO:0008234", "ENSEMBL:ENSP00000398107", "ENSEMBL:ENSP00000478285", "omim:601761", "refseq:NP_203126.1", "refseq:NP_001253985.1", "nucleotide genbank identifier:73623017", "refseq:NP_001253987.1", "refseq:NP_001218.1", "refseq:NP_203125.1", "refseq:NP_001253986.1", "ENSEMBL:ENSP00000358337", "ENSEMBL:ENSP00000298701", "GENE ONTOLOGY:GO:0001836", "ENSEMBL:ENSP00000358324", "GENE ONTOLOGY:GO:0006921", "reactome:REACT_578", "vega:OTTHUMG00000019076", "GENE ONTOLOGY:GO:0007507", "nucleotide genbank identifier:194373928", "nucleotide genbank identifier:73623015", "nucleotide genbank identifier:194386497", "nucleotide genbank identifier:190691210", "nucleotide genbank identifier:197692262", "nucleotide genbank identifier:194376409", "nucleotide genbank identifier:30582204", "nucleotide genbank identifier:19732079", "nucleotide genbank identifier:34367132", "refseq:NP_203124.1", "nucleotide genbank identifier:62898709", "nucleotide genbank identifier:31951687", "nucleotide genbank identifier:73623014", "nucleotide genbank identifier:34552345", "nucleotide genbank identifier:73623016", "nucleotide genbank identifier:6649572", "interpro:IPR002138", "nucleotide genbank identifier:1894914", "interpro:IPR015917", "interpro:IPR001309", "interpro:IPR029030", "interpro:IPR011600", "nucleotide genbank identifier:1117846", "interpro:IPR016129", "nucleotide genbank identifier:1125072", "nucleotide genbank identifier:197692526", "nucleotide genbank identifier:123994186", "nucleotide genbank identifier:1117848", "nucleotide genbank identifier:16041818", "nucleotide genbank identifier:1167554", "nucleotide genbank identifier:190689842", "nucleotide genbank identifier:124126916", "hgnc:1508", "ensembl:ENST00000369321", "nucleotide genbank identifier:10990578", "ensembl:ENST00000452490", "ensembl:ENST00000369318", "genbank indentifier:4502581", "ensembl:ENST00000369331", "hprd:03457", "genbank indentifier:15718700" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1021,
+    "n" : "name",
+    "v" : "CASP7"
+  }, {
+    "s" : 994,
+    "po" : 1021,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1009,
+    "n" : "AKT1"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1009,
+    "n" : "alias",
+    "v" : [ "UniProt Isoform:B2RAM5", "UniProt Knowledgebase:P31749", "AKT1_HUMAN", "UniProt Knowledgebase:Q9BWB6", "UniProt Isoform:B7Z5R1" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1009,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0006417", "GENE ONTOLOGY:GO:0015630", "GENE ONTOLOGY:GO:0006412", "GENE ONTOLOGY:GO:0048011", "GENE ONTOLOGY:GO:0006464", "GENE ONTOLOGY:GO:0006809", "GENE ONTOLOGY:GO:0006924", "GENE ONTOLOGY:GO:0051146", "GENE ONTOLOGY:GO:0010748", "GENE ONTOLOGY:GO:0030163", "GENE ONTOLOGY:GO:0010907", "GENE ONTOLOGY:GO:0010507", "GENE ONTOLOGY:GO:0010975", "GENE ONTOLOGY:GO:0010765", "GENE ONTOLOGY:GO:0015758", "GENE ONTOLOGY:GO:0010951", "GENE ONTOLOGY:GO:0005819", "GENE ONTOLOGY:GO:0045087", "reactome:REACT_604", "GENE ONTOLOGY:GO:0005979", "GENE ONTOLOGY:GO:0006006", "ENSEMBL:ENST00000402615", "ENSEMBL:ENST00000407796", "ENSEMBL:ENST00000544168", "GENE ONTOLOGY:GO:0006468", "ENSEMBL:ENST00000554581", "GENE ONTOLOGY:GO:0007186", "GENE ONTOLOGY:GO:0008637", "GENE ONTOLOGY:GO:0038095", "GENE ONTOLOGY:GO:0009408", "GENE ONTOLOGY:GO:0001938", "GENE ONTOLOGY:GO:0005547", "GENE ONTOLOGY:GO:0001893", "GENE ONTOLOGY:GO:0005978", "GENE ONTOLOGY:GO:0004674", "ENSEMBL:ENSP00000450688", "ENSEMBL:ENSP00000451166", "GENE ONTOLOGY:GO:0008543", "ENSEMBL:ENST00000349310", "GENE ONTOLOGY:GO:0007173", "ENSEMBL:ENSP00000451828", "GENE ONTOLOGY:GO:0005737", "GENE ONTOLOGY:GO:0001934", "GENE ONTOLOGY:GO:0043066", "ENSEMBL:ENSG00000142208", "ENSEMBL:ENST00000554848", "ENSEMBL:ENST00000555528", "GENE ONTOLOGY:GO:0000060", "GENE ONTOLOGY:GO:0007281", "GENE ONTOLOGY:GO:0001649", "ENSEMBL:ENSP00000270202", "ENSEMBL:ENSP00000384293", "ENSEMBL:ENSP00000385326", "ENSEMBL:ENSP00000443897", "GENE ONTOLOGY:GO:0007568", "nucleotide genbank identifier:39645326", "interpro:IPR000719", "vega:OTTHUMG00000170795", "nucleotide genbank identifier:47401845", "GENE ONTOLOGY:GO:0008286", "nucleotide genbank identifier:35480", "nucleotide genbank identifier:62241010", "reactome:REACT_111102", "nucleotide genbank identifier:47077444", "nucleotide genbank identifier:62241014", "nucleotide genbank identifier:54038760", "GENE ONTOLOGY:GO:0006469", "GENE ONTOLOGY:GO:0005829", "GENE ONTOLOGY:GO:0043154", "GENE ONTOLOGY:GO:0006915", "omim:164730", "GENE ONTOLOGY:GO:0007165", "reactome:REACT_111217", "GENE ONTOLOGY:GO:0005515", "refseq:NP_001014431.1", "interpro:IPR011009", "refseq:NP_001014432.1", "GENE ONTOLOGY:GO:0048015", "refseq:NP_005154.2", "GENE ONTOLOGY:GO:0005634", "refseq:XP_005267458.1", "interpro:IPR011993", "nucleotide genbank identifier:34528338", "nucleotide genbank identifier:164697601", "GENE ONTOLOGY:GO:0004672", "interpro:IPR001849", "GENE ONTOLOGY:GO:0005524", "nucleotide genbank identifier:190691776", "nucleotide genbank identifier:12804626", "nucleotide genbank identifier:197692184", "nucleotide genbank identifier:190690396", "nucleotide genbank identifier:21753316", "nucleotide genbank identifier:62241012", "nucleotide genbank identifier:33875493", "nucleotide genbank identifier:197692434", "nucleotide genbank identifier:34367364", "nucleotide genbank identifier:221042639", "nucleotide genbank identifier:34534005", "nucleotide genbank identifier:34366879", "biogrid:106710", "hgnc:391", "ensembl:ENST00000349310", "interpro:IPR017441", "UNIPROT:B7Z5R1", "ensembl:ENST00000407796", "ensembl:ENSG00000142208", "ensembl:ENST00000554848", "ensembl:ENST00000402615", "genbank indentifier:224514933", "nucleotide genbank identifier:190827", "genbank indentifier:51493278", "ensembl:ENST00000555528", "genbank indentifier:62241013", "interpro:IPR017892", "genbank indentifier:4885061", "hprd:01261", "genbank indentifier:62241011", "PROTEIN DATA BANK:3QKL", "UNIPROT:AKT1_HUMAN", "PROTEIN DATA BANK:4EJN", "PROTEIN DATA BANK:3QKK", "PROTEIN DATA BANK:4EKL", "PROTEIN DATA BANK:3QKM", "REFSEQ:NP_001014431", "PROTEIN DATA BANK:4EKK", "interpro:IPR000961", "REFSEQ:NP_005154", "interpro:IPR002290", "ensembl:ENST00000554581", "interpro:IPR008271", "UNIPROT KNOWLEDGEBASE:B0LPE5", "REFSEQ:NP_001014432", "UNIPROT KNOWLEDGEBASE:P31749", "REFSEQ:XP_005267458", "UNIPROT:B2RAM5", "GENE ONTOLOGY:GO:0071260", "UNIPROT KNOWLEDGEBASE:B3KVH4", "PANTHER Family:PTHR24352:SF30", "PROTEIN DATA BANK:3OCB", "PROTEIN DATA BANK:1UNP", "NCBI GENE:207", "PROTEIN DATA BANK:1UNR", "GENE ONTOLOGY:GO:0043065", "PROTEIN DATA BANK:1H10", "PROTEIN DATA BANK:2UZR", "PROTEIN DATA BANK:1UNQ", "PROTEIN DATA BANK:3CQU", "PROTEIN DATA BANK:4GV1", "PROTEIN DATA BANK:3MV5", "PROTEIN DATA BANK:2UZS", "PROTEIN DATA BANK:3O96", "PROTEIN DATA BANK:3CQW", "PROTEIN DATA BANK:3OW4", "PROTEIN DATA BANK:3MVH", "GENE ONTOLOGY:GO:0008283", "reactome:REACT_578", "GENE ONTOLOGY:GO:1900740", "GENE ONTOLOGY:GO:0061024", "reactome:REACT_71", "reactome:REACT_21257", "GENE ONTOLOGY:GO:1902176", "GENE ONTOLOGY:GO:0090201", "GENPEPT:119602287", "GENE ONTOLOGY:GO:1901976", "GENPEPT:119602289", "GENE ONTOLOGY:GO:0030307", "GENE ONTOLOGY:GO:0010467", "GENE ONTOLOGY:GO:0042802", "GENE ONTOLOGY:GO:0016071", "GENE ONTOLOGY:GO:0016070", "GENE ONTOLOGY:GO:0031295", "GENE ONTOLOGY:GO:0030154", "reactome:REACT_11123", "reactome:REACT_116125", "GENE ONTOLOGY:GO:0046326", "GENE ONTOLOGY:GO:0071889", "GENE ONTOLOGY:GO:0046889", "GENE ONTOLOGY:GO:0046209", "GENE ONTOLOGY:GO:0050999", "GENE ONTOLOGY:GO:0046329", "GENE ONTOLOGY:GO:0051091", "GENE ONTOLOGY:GO:0048009", "GENE ONTOLOGY:GO:0060709", "GENPEPT:119602288", "GENE ONTOLOGY:GO:0005886", "GENE ONTOLOGY:GO:0070141", "GENE ONTOLOGY:GO:0060644", "GENE ONTOLOGY:GO:0071456", "GENE ONTOLOGY:GO:0060716", "GENE ONTOLOGY:GO:0090004", "GENE ONTOLOGY:GO:0071364", "GENE ONTOLOGY:GO:0032869", "GENE ONTOLOGY:GO:0045861", "GENE ONTOLOGY:GO:0034405", "GENE ONTOLOGY:GO:0032436", "GENE ONTOLOGY:GO:0042593", "GENE ONTOLOGY:GO:0033138", "GENE ONTOLOGY:GO:0043325", "GENE ONTOLOGY:GO:0035556", "GENE ONTOLOGY:GO:0044281", "GENE ONTOLOGY:GO:0051000", "GENE ONTOLOGY:GO:0045600", "GENE ONTOLOGY:GO:0043536", "GENE ONTOLOGY:GO:0045792", "GENE ONTOLOGY:GO:0045429", "GENE ONTOLOGY:GO:0045907", "GENE ONTOLOGY:GO:0045725", "GENE ONTOLOGY:GO:0016310", "GENE ONTOLOGY:GO:0032270", "GENE ONTOLOGY:GO:0018105", "GENE ONTOLOGY:GO:0016301", "GENE ONTOLOGY:GO:0030030", "GENE ONTOLOGY:GO:0016567", "GENE ONTOLOGY:GO:0007596", "GENE ONTOLOGY:GO:0030212", "GENE ONTOLOGY:GO:0019899", "GENE ONTOLOGY:GO:0030334", "GENE ONTOLOGY:GO:0042640", "GENE ONTOLOGY:GO:0031659", "GENE ONTOLOGY:GO:0030235", "GENE ONTOLOGY:GO:0032094", "GENE ONTOLOGY:GO:0031018", "GENE ONTOLOGY:GO:0032287", "GENE ONTOLOGY:GO:0031999", "GENE ONTOLOGY:GO:0097194", "GENE ONTOLOGY:GO:0097193", "reactome:REACT_111045", "GENE ONTOLOGY:GO:0005654", "GENE ONTOLOGY:GO:2001240", "reactome:REACT_6900", "GENE ONTOLOGY:GO:0045944", "GENE ONTOLOGY:GO:0006954", "GENE ONTOLOGY:GO:0046777", "HGNC SYMBOL:AKT1", "GENPEPT:193783804", "GENPEPT:193785296", "GENPEPT:197692185", "GENPEPT:197692435", "GENPEPT:221042640", "GENPEPT:35481", "GENPEPT:60391226", "PROTEIN DATA BANK:2UVM", "GENPEPT:62241013", "GENPEPT:54038761", "GENPEPT:74724882", "GENPEPT:62241011", "HGNC:HGNC:391", "GENPEPT:62241015", "GENPEPT:190691777", "GENPEPT:190828", "GENE ONTOLOGY:GO:0043491", "GENPEPT:3716606", "GENPEPT:3717081", "GENPEPT:12653417", "GENPEPT:12804627", "GENPEPT:166706753", "GENPEPT:18027298", "GENPEPT:189054393", "GENPEPT:190690397", "GENE ONTOLOGY:GO:0030168" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1009,
+    "n" : "name",
+    "v" : "AKT1"
+  }, {
+    "s" : 994,
+    "po" : 1009,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1008,
+    "n" : "RXRG"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1008,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:Q6IBU7", "RXRG_HUMAN", "UniProt Knowledgebase:P48443", "UniProt Isoform:A6NIP1" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1008,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0007507", "interpro:IPR001628", "interpro:IPR000536", "nucleotide genbank identifier:326205169", "nucleotide genbank identifier:48145526", "nucleotide genbank identifier:9261101", "nucleotide genbank identifier:34531611", "nucleotide genbank identifier:58331206", "omim:180247", "nucleotide genbank identifier:78449730", "GENE ONTOLOGY:GO:0007422", "interpro:IPR013088", "interpro:IPR000003", "interpro:IPR008946", "interpro:IPR001723", "refseq:NP_001243500.1", "vega:OTTHUMG00000034626", "nucleotide genbank identifier:45714075", "refseq:NP_008848.1", "nucleotide genbank identifier:1053068", "hprd:01579", "hgnc:10479", "genbank indentifier:5902068", "nucleotide genbank identifier:19049348", "nucleotide genbank identifier:18994426", "nucleotide genbank identifier:164691726", "nucleotide genbank identifier:15082314", "nucleotide genbank identifier:27841163", "nucleotide genbank identifier:216409719", "nucleotide genbank identifier:190691284", "nucleotide genbank identifier:190689912", "GENE ONTOLOGY:GO:0005515", "nucleotide genbank identifier:326205167", "nucleotide genbank identifier:325495500", "nucleotide genbank identifier:299758434", "nucleotide genbank identifier:299758433", "reactome:REACT_71", "HGNC:HGNC:10479", "HGNC SYMBOL:RXRG", "GENPEPT:9588167", "GENPEPT:5902068", "REFSEQ:NP_008848", "REFSEQ:NP_001243500", "PROTEIN DATA BANK:2GL8", "GENE ONTOLOGY:GO:0005654", "NCBI GENE:6258", "GENE ONTOLOGY:GO:0010467", "UNIPROT:A6NIP1", "UNIPROT KNOWLEDGEBASE:P48443", "UNIPROT KNOWLEDGEBASE:F1D8Q7", "UNIPROT KNOWLEDGEBASE:A6NNL4", "ensembl:ENST00000359842", "ensembl:ENSG00000143171", "biogrid:112170", "UNIPROT:RXRG_HUMAN", "GENPEPT:325495501", "GENPEPT:48145527", "GENE ONTOLOGY:GO:0030182", "GENPEPT:326205168", "ENSEMBL:ENSP00000352900", "GENE ONTOLOGY:GO:0031641", "ENSEMBL:ENST00000359842", "GENE ONTOLOGY:GO:0007519", "GENPEPT:190691285", "GENE ONTOLOGY:GO:0043565", "GENE ONTOLOGY:GO:0004886", "GENPEPT:216409720", "GENE ONTOLOGY:GO:0006367", "GENPEPT:189066517", "GENPEPT:326205170", "GENPEPT:190689913", "interpro:IPR021780", "GENPEPT:15082315", "GENPEPT:1350913", "GENE ONTOLOGY:GO:0003707", "GENPEPT:1053069", "ENSEMBL:ENSG00000143171", "GENPEPT:119611151", "GENE ONTOLOGY:GO:0008270", "GENE ONTOLOGY:GO:0032526", "GENE ONTOLOGY:GO:0045944" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1008,
+    "n" : "name",
+    "v" : "RXRG"
+  }, {
+    "s" : 994,
+    "po" : 1008,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1007,
+    "n" : "RXRB"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1007,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:P28703", "RXRB_HUMAN", "UniProt Knowledgebase:Q59G65", "UniProt Knowledgebase:Q5JP92", "UniProt Knowledgebase:P28702", "UniProt Knowledgebase:Q5STQ1" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1007,
+    "n" : "relatedTo",
+    "v" : [ "genbank indentifier:11415052", "ensembl:ENST00000456244", "ensembl:ENST00000383216", "ensembl:ENST00000374685", "ensembl:ENST00000374680", "ensembl:ENSG00000204231", "ensembl:ENST00000431161", "ensembl:ENST00000415909", "nucleotide genbank identifier:110624278", "hprd:01578", "ensembl:ENST00000455462", "ensembl:ENST00000443603", "ensembl:ENST00000436753", "ensembl:ENST00000431820", "hgnc:10478", "genbank indentifier:27436942", "UNIPROT KNOWLEDGEBASE:Q5STP9", "UNIPROT KNOWLEDGEBASE:P28702", "GENPEPT:74743812", "GENPEPT:74741637", "GENPEPT:74741262", "GENPEPT:74722291", "NCBI GENE:6257", "HGNC:HGNC:10478", "ensembl:ENST00000415157", "ensembl:ENST00000383217", "REFSEQ:NP_068811", "REFSEQ:NP_001257330", "PROTEIN DATA BANK:1UHL", "GENE ONTOLOGY:GO:0001893", "PROTEIN DATA BANK:1H9U", "biogrid:112169", "UNIPROT:RXRB_HUMAN", "GENPEPT:57209740", "GENPEPT:4249766", "GENPEPT:221043202", "GENPEPT:221041006", "GENPEPT:168985545", "GENPEPT:168985544", "GENPEPT:30583399", "GENPEPT:30448", "HGNC SYMBOL:RXRB", "GENPEPT:74756081", "GENPEPT:3820986", "GENPEPT:35311", "GENPEPT:337720", "GENPEPT:3172498", "GENPEPT:66347234", "GENPEPT:62088068", "GENPEPT:168983810", "GENPEPT:168983809", "GENE ONTOLOGY:GO:0071300", "GENE ONTOLOGY:GO:0044212", "GENE ONTOLOGY:GO:0055012", "GENPEPT:11415052", "ENSEMBL:ENST00000455462", "GENE ONTOLOGY:GO:0060038", "GENPEPT:221043908", "GENPEPT:221043464", "GENPEPT:1350911", "GENPEPT:12654659", "GENE ONTOLOGY:GO:0005515", "GENPEPT:123857745", "GENPEPT:119624084", "GENPEPT:168984932", "GENE ONTOLOGY:GO:0005634", "GENPEPT:168984931", "ENSEMBL:ENST00000374685", "ENSEMBL:ENST00000374680", "ENSEMBL:ENST00000431820", "ENSEMBL:ENST00000431161", "ENSEMBL:ENST00000415909", "ENSEMBL:ENST00000415157", "ENSEMBL:ENSP00000402506", "GENE ONTOLOGY:GO:0005654", "ENSEMBL:ENSP00000400104", "ENSEMBL:ENST00000436753", "ENSEMBL:ENST00000456244", "GENE ONTOLOGY:GO:0003713", "ENSEMBL:ENST00000443603", "GENE ONTOLOGY:GO:0003700", "GENE ONTOLOGY:GO:0004879", "ENSEMBL:ENST00000383217", "ENSEMBL:ENST00000383216", "ENSEMBL:ENSG00000228333", "ENSEMBL:ENSG00000227322", "ENSEMBL:ENSP00000372704", "ENSEMBL:ENSP00000372703", "ENSEMBL:ENSP00000363817", "ENSEMBL:ENSP00000363812", "ENSEMBL:ENSG00000206289", "ENSEMBL:ENSG00000204231", "ENSEMBL:ENSP00000393870", "ENSEMBL:ENSP00000393286", "ENSEMBL:ENSP00000415199", "ENSEMBL:ENSP00000411238", "ENSEMBL:ENSP00000410468", "ENSEMBL:ENSP00000402590", "ENSEMBL:ENSG00000235712", "ENSEMBL:ENSG00000231321", "GENE ONTOLOGY:GO:0045944", "interpro:IPR001628", "interpro:IPR000536", "interpro:IPR013088", "interpro:IPR000003", "interpro:IPR008946", "interpro:IPR001723", "reactome:REACT_71", "GENE ONTOLOGY:GO:0010467", "GENE ONTOLOGY:GO:0043565", "GENE ONTOLOGY:GO:0004886", "GENE ONTOLOGY:GO:0006367", "vega:OTTHUMG00000031298", "GENE ONTOLOGY:GO:0003707", "GENE ONTOLOGY:GO:0008270", "nucleotide genbank identifier:221043201", "nucleotide genbank identifier:221041005", "nucleotide genbank identifier:19606824", "nucleotide genbank identifier:12654658", "nucleotide genbank identifier:30447", "nucleotide genbank identifier:27436942", "nucleotide genbank identifier:221043907", "nucleotide genbank identifier:221043463", "nucleotide genbank identifier:35310", "GENE ONTOLOGY:GO:0001701", "nucleotide genbank identifier:337719", "nucleotide genbank identifier:312689", "nucleotide genbank identifier:30583398", "refseq:NP_068811.1", "refseq:NP_001257330.1", "omim:180246", "nucleotide genbank identifier:62088067" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1007,
+    "n" : "name",
+    "v" : "RXRB"
+  }, {
+    "s" : 994,
+    "po" : 1007,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1006,
+    "n" : "RXRA"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1006,
+    "n" : "alias",
+    "v" : [ "UniProt Knowledgebase:P19793", "UniProt Isoform:B3KY83", "UniProt Knowledgebase:Q2NL52", "RXRA_HUMAN", "UniProt Knowledgebase:Q2V504" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1006,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0046982", "GENE ONTOLOGY:GO:0001893", "GENE ONTOLOGY:GO:0055012", "reactome:REACT_111045", "GENE ONTOLOGY:GO:0060038", "reactome:REACT_111217", "GENE ONTOLOGY:GO:0005515", "GENE ONTOLOGY:GO:0005634", "GENE ONTOLOGY:GO:0005654", "GENE ONTOLOGY:GO:0003713", "GENE ONTOLOGY:GO:0003700", "GENE ONTOLOGY:GO:0004879", "genbank indentifier:4506755", "UNIPROT:RXRA_HUMAN", "GENE ONTOLOGY:GO:0007566", "hgnc:10477", "ensembl:ENST00000594882", "ensembl:ENST00000481739", "REFSEQ:NP_002948", "REFSEQ:NP_001278850", "biogrid:112168", "UNIPROT:B3KY83", "ensembl:ENSG00000186350", "PROTEIN DATA BANK:4J5W", "PROTEIN DATA BANK:3UVV", "GENE ONTOLOGY:GO:0045944", "PROTEIN DATA BANK:4N5G", "PROTEIN DATA BANK:4M8H", "PROTEIN DATA BANK:4M8E", "PROTEIN DATA BANK:4K6I", "PROTEIN DATA BANK:3OZJ", "PROTEIN DATA BANK:3OAP", "PROTEIN DATA BANK:4NQA", "PROTEIN DATA BANK:4N8R", "UNIPROT KNOWLEDGEBASE:Q6P3U7", "UNIPROT KNOWLEDGEBASE:Q2NL52", "UNIPROT KNOWLEDGEBASE:P19793", "UNIPROT KNOWLEDGEBASE:F1D8Q5", "PROTEIN DATA BANK:4K4J", "PROTEIN DATA BANK:4J5X", "PROTEIN DATA BANK:3E00", "PROTEIN DATA BANK:3DZY", "PROTEIN DATA BANK:3KWY", "PROTEIN DATA BANK:3H0A", "PROTEIN DATA BANK:3FUG", "PROTEIN DATA BANK:3FC6", "PROTEIN DATA BANK:2P1U", "PROTEIN DATA BANK:2P1T", "PROTEIN DATA BANK:3NSQ", "PROTEIN DATA BANK:3NSP", "PROTEIN DATA BANK:3R5M", "PROTEIN DATA BANK:3R2A", "PROTEIN DATA BANK:3R29", "PROTEIN DATA BANK:3PCU", "PROTEIN DATA BANK:3FAL", "PROTEIN DATA BANK:3E94", "PROTEIN DATA BANK:1R0N", "PROTEIN DATA BANK:1MZN", "PROTEIN DATA BANK:1YNW", "PROTEIN DATA BANK:1XVP", "PROTEIN DATA BANK:1XV9", "PROTEIN DATA BANK:1XLS", "interpro:IPR001628", "PROTEIN DATA BANK:1G5Y", "interpro:IPR000536", "PROTEIN DATA BANK:1G1U", "PROTEIN DATA BANK:2NLL", "PROTEIN DATA BANK:2ACL", "PROTEIN DATA BANK:3DZU", "PROTEIN DATA BANK:2ZY0", "PROTEIN DATA BANK:2ZXZ", "PROTEIN DATA BANK:2P1V", "PROTEIN DATA BANK:1RXR", "PROTEIN DATA BANK:1RDT", "GENPEPT:84201602", "GENPEPT:83026436", "PROTEIN DATA BANK:1FBY", "PROTEIN DATA BANK:1DSZ", "PROTEIN DATA BANK:1BY4", "NCBI GENE:6256", "GENPEPT:55663362", "GENPEPT:4506755", "interpro:IPR013088", "PROTEIN DATA BANK:1FM9", "interpro:IPR000003", "PROTEIN DATA BANK:1FM6", "interpro:IPR008946", "PROTEIN DATA BANK:1MVC", "interpro:IPR001723", "PROTEIN DATA BANK:1MV9", "PROTEIN DATA BANK:1LBD", "PROTEIN DATA BANK:1K74", "HGNC:HGNC:10477", "HGNC SYMBOL:RXRA", "GENPEPT:193785958", "GENPEPT:167773495", "GENPEPT:34526507", "GENPEPT:3411009", "GENPEPT:325495497", "GENPEPT:311643880", "GENPEPT:119608529", "GENPEPT:119608528", "GENPEPT:39645799", "GENPEPT:35885", "GENPEPT:74749092", "GENPEPT:74715501", "GENPEPT:74710702", "GENPEPT:74705870", "GENPEPT:21748520", "GENPEPT:216409718", "reactome:REACT_71", "GENE ONTOLOGY:GO:0048384", "GENE ONTOLOGY:GO:0031490", "GENE ONTOLOGY:GO:0044255", "GENE ONTOLOGY:GO:0055010", "GENE ONTOLOGY:GO:0000790", "GENE ONTOLOGY:GO:0044323", "ENSEMBL:ENST00000481739", "GENE ONTOLOGY:GO:0003677", "GENE ONTOLOGY:GO:0010467", "GENE ONTOLOGY:GO:0060687", "GENE ONTOLOGY:GO:0060528", "GENPEPT:133701", "GENPEPT:126540889", "GENPEPT:119608531", "GENPEPT:119608530", "GENE ONTOLOGY:GO:0042809", "GENE ONTOLOGY:GO:0035357", "nucleotide genbank identifier:47076891", "omim:180245", "refseq:NP_002948.1", "nucleotide genbank identifier:47077539", "nucleotide genbank identifier:3360398", "vega:OTTHUMG00000020887", "nucleotide genbank identifier:22749567", "nucleotide genbank identifier:33874785", "GENE ONTOLOGY:GO:0008203", "GENE ONTOLOGY:GO:0043565", "GENE ONTOLOGY:GO:0000122", "GENE ONTOLOGY:GO:0004886", "GENE ONTOLOGY:GO:0003708", "GENE ONTOLOGY:GO:0019048", "GENE ONTOLOGY:GO:0006367", "ENSEMBL:ENSG00000186350", "GENE ONTOLOGY:GO:0006766", "nucleotide genbank identifier:84201601", "ENSEMBL:ENSP00000419692", "nucleotide genbank identifier:21748519", "interpro:IPR021780", "nucleotide genbank identifier:216409717", "nucleotide genbank identifier:207028087", "nucleotide genbank identifier:167773494", "GENE ONTOLOGY:GO:0044281", "nucleotide genbank identifier:35884", "nucleotide genbank identifier:325495496", "GENE ONTOLOGY:GO:0003707", "nucleotide genbank identifier:3411007", "nucleotide genbank identifier:39645798", "nucleotide genbank identifier:14043985", "nucleotide genbank identifier:34526506", "GENE ONTOLOGY:GO:0008270", "hprd:01577", "GENE ONTOLOGY:GO:0032526", "nucleotide genbank identifier:146147406", "GENE ONTOLOGY:GO:0019899", "GENE ONTOLOGY:GO:0001701" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1006,
+    "n" : "name",
+    "v" : "RXRA"
+  }, {
+    "s" : 994,
+    "po" : 1006,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1005,
+    "n" : "ITGA6"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1005,
+    "n" : "alias",
+    "v" : [ "UniProt Isoform:B4DKB8", "UniProt Isoform:B4DG69", "UniProt Isoform:B2RMU9", "ITA6_HUMAN", "UniProt Knowledgebase:Q53RX7", "UniProt Knowledgebase:Q16508", "UniProt Knowledgebase:Q14646", "UniProt Knowledgebase:Q0MRC7", "UniProt Knowledgebase:Q9UN03", "UniProt Knowledgebase:Q9UCT1", "UniProt Knowledgebase:Q86VL6", "UniProt Knowledgebase:Q59HB7", "UniProt Knowledgebase:Q08443", "UniProt Knowledgebase:P23229", "UniProt Isoform:G5E9H1", "UniProt Isoform:C4AM96" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1005,
+    "n" : "relatedTo",
+    "v" : [ "GENE ONTOLOGY:GO:0005604", "UNIPROT KNOWLEDGEBASE:P23229", "REFSEQ:NP_001073286", "REFSEQ:NP_000201", "NCBI GENE:3655", "GENPEPT:263064", "GENPEPT:239160", "GENPEPT:239158", "GENPEPT:223590260", "ensembl:ENSG00000091409", "biogrid:109864", "UNIPROT:ITA6_HUMAN", "UNIPROT:G5E9H1", "HGNC:HGNC:6142", "HGNC SYMBOL:ITGA6", "GENPEPT:62702207", "GENPEPT:62087264", "GENPEPT:194383148", "GENPEPT:194377464", "reactome:REACT_604", "GENPEPT:187953255", "GENPEPT:187950353", "GENE ONTOLOGY:GO:0033627", "GENE ONTOLOGY:GO:0009925", "GENE ONTOLOGY:GO:0022409", "GENE ONTOLOGY:GO:0034676", "GENPEPT:5726563", "GENPEPT:33944", "GENPEPT:33942", "GENPEPT:30046796", "GENPEPT:119631582", "GENPEPT:119631581", "GENPEPT:119631580", "GENPEPT:119395742", "ENSEMBL:ENSP00000406694", "ENSEMBL:ENSP00000394169", "GENE ONTOLOGY:GO:0007044", "ENSEMBL:ENST00000458358", "ENSEMBL:ENST00000442250", "ENSEMBL:ENST00000409532", "ENSEMBL:ENSP00000386896", "ENSEMBL:ENSP00000386614", "GENPEPT:111610293", "GENE ONTOLOGY:GO:0031668", "GENE ONTOLOGY:GO:0042475", "GENPEPT:119395740", "GENE ONTOLOGY:GO:0071407", "GENE ONTOLOGY:GO:0046847", "ENSEMBL:ENST00000409080", "ENSEMBL:ENST00000264107", "refseq:NP_001073286.1", "nucleotide genbank identifier:33943", "omim:147556", "vega:OTTHUMG00000132277", "nucleotide genbank identifier:194377463", "refseq:NP_000201.2", "nucleotide genbank identifier:187950352", "nucleotide genbank identifier:194383147", "ENSEMBL:ENSP00000264107", "ENSEMBL:ENSG00000091409", "GENE ONTOLOGY:GO:0005913", "GENE ONTOLOGY:GO:0016337", "GENE ONTOLOGY:GO:0005515", "nucleotide genbank identifier:62087263", "GENE ONTOLOGY:GO:0042327", "nucleotide genbank identifier:33941", "nucleotide genbank identifier:82380461", "nucleotide genbank identifier:164693340", "interpro:IPR018184", "nucleotide genbank identifier:119395741", "nucleotide genbank identifier:164697428", "genbank indentifier:4557674", "nucleotide genbank identifier:14711951", "genbank indentifier:119395741", "genbank indentifier:4557675", "nucleotide genbank identifier:30046795", "nucleotide genbank identifier:187953254", "nucleotide genbank identifier:239157", "nucleotide genbank identifier:31873409", "nucleotide genbank identifier:111610292", "nucleotide genbank identifier:239159", "interpro:IPR013649", "nucleotide genbank identifier:119395739", "ensembl:ENST00000264107", "ensembl:ENST00000264106", "ensembl:ENST00000458358", "ensembl:ENST00000442250", "ensembl:ENST00000409532", "ensembl:ENST00000409080", "interpro:IPR000413", "genbank indentifier:119395742", "interpro:IPR013519", "GENE ONTOLOGY:GO:0050873", "hprd:00945", "hgnc:6142", "ensembl:ENST00000375221", "ensembl:ENST00000343713", "GENE ONTOLOGY:GO:0045944", "GENE ONTOLOGY:GO:0043065", "GENE ONTOLOGY:GO:0046872", "GENE ONTOLOGY:GO:0010811", "GENE ONTOLOGY:GO:0050900", "GENE ONTOLOGY:GO:0030175", "GENE ONTOLOGY:GO:2001237", "GENE ONTOLOGY:GO:0030056", "GENE ONTOLOGY:GO:0031581", "GENE ONTOLOGY:GO:0030198", "GENE ONTOLOGY:GO:0034329", "GENE ONTOLOGY:GO:0007160", "GENE ONTOLOGY:GO:0005886", "GENE ONTOLOGY:GO:0009897", "reactome:REACT_118779", "reactome:REACT_111155", "GENE ONTOLOGY:GO:0007229", "UNIPROT:C4AM96", "UNIPROT:B4DKB8", "GENE ONTOLOGY:GO:0007596", "UNIPROT:B4DG69", "UNIPROT:B2RMU9" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1005,
+    "n" : "name",
+    "v" : "ITGA6"
+  }, {
+    "s" : 994,
+    "po" : 1005,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 1004,
+    "n" : "9-cis-retinoic acid"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1004,
+    "n" : "alias",
+    "v" : [ "9-cis-retinoic acid", "ChEBI:CHEBI:50648", "ChEBI:CHEBI:63793" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "po" : 1004,
+    "n" : "relatedTo",
+    "v" : [ "CAS:5300-03-8", "InChIKey:SHGAZHPCJJPHSC-ZVCIMWCZSA-N", "CHEBI:CHEBI:25212", "CHEBI:CHEBI:35610", "KEGG DRUG:D02815", "PUBCHEM-COMPOUND:449171", "WIKIPEDIA:Alitretinoin", "CHEBI:CHEBI:63794", "CHEMBL:CHEMBL705", "CHEBI:CHEBI:50176", "DRUGBANK:DB00523", "CHEBI:CHEBI:78630", "KEGG COMPOUND:C15493", "CHEMICAL NAME:9-cis-retinoic acid" ],
+    "d" : "list_of_string"
+  } ]
+}, {
+  "nodeAttributes" : [ {
+    "s" : 994,
+    "po" : 1004,
+    "n" : "name",
+    "v" : "9-cis-retinoic acid"
+  }, {
+    "s" : 994,
+    "po" : 1004,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1302,
+    "s" : 1046,
+    "t" : 1047,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1302,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1140,
+    "s" : 1037,
+    "t" : 1005,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1140,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1139,
+    "s" : 1037,
+    "t" : 1005,
+    "i" : "controls-expression-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1139,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1089,
+    "s" : 1027,
+    "t" : 1005,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1089,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1202,
+    "s" : 1023,
+    "t" : 1050,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1202,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1201,
+    "s" : 1023,
+    "t" : 1050,
+    "i" : "controls-state-change-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1201,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1200,
+    "s" : 1023,
+    "t" : 1047,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1200,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1199,
+    "s" : 1023,
+    "t" : 1046,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1199,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1084,
+    "s" : 1022,
+    "t" : 1023,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1084,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1083,
+    "s" : 1022,
+    "t" : 1023,
+    "i" : "in-complex-with"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1083,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1082,
+    "s" : 1022,
+    "t" : 1005,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1082,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1081,
+    "s" : 1022,
+    "t" : 1005,
+    "i" : "in-complex-with"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1081,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1078,
+    "s" : 1021,
+    "t" : 1005,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1078,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1077,
+    "s" : 1021,
+    "t" : 1005,
+    "i" : "controls-state-change-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1077,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1056,
+    "s" : 1009,
+    "t" : 1005,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1056,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1367,
+    "s" : 1008,
+    "t" : 1005,
+    "i" : "controls-expression-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1367,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1366,
+    "s" : 1007,
+    "t" : 1008,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1366,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1365,
+    "s" : 1007,
+    "t" : 1005,
+    "i" : "controls-expression-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1365,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1364,
+    "s" : 1006,
+    "t" : 1008,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1364,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1363,
+    "s" : 1006,
+    "t" : 1007,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1363,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1362,
+    "s" : 1006,
+    "t" : 1005,
+    "i" : "controls-expression-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1362,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1173,
+    "s" : 1005,
+    "t" : 1008,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1173,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1172,
+    "s" : 1005,
+    "t" : 1007,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1172,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1171,
+    "s" : 1005,
+    "t" : 1006,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1171,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1170,
+    "s" : 1005,
+    "t" : 1050,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1170,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1169,
+    "s" : 1005,
+    "t" : 1050,
+    "i" : "controls-state-change-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1169,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1158,
+    "s" : 1005,
+    "t" : 1047,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1158,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1157,
+    "s" : 1005,
+    "t" : 1046,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1157,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1146,
+    "s" : 1005,
+    "t" : 1023,
+    "i" : "neighbor-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1146,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1145,
+    "s" : 1005,
+    "t" : 1023,
+    "i" : "in-complex-with"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1145,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1143,
+    "s" : 1005,
+    "t" : 1009,
+    "i" : "controls-transport-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1143,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1142,
+    "s" : 1005,
+    "t" : 1009,
+    "i" : "controls-state-change-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1142,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1141,
+    "s" : 1005,
+    "t" : 1009,
+    "i" : "controls-phosphorylation-of"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1141,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1054,
+    "s" : 1004,
+    "t" : 1008,
+    "i" : "chemical-affects"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1054,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1053,
+    "s" : 1004,
+    "t" : 1007,
+    "i" : "chemical-affects"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1053,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1052,
+    "s" : 1004,
+    "t" : 1006,
+    "i" : "chemical-affects"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1052,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 1051,
+    "s" : 1004,
+    "t" : 1005,
+    "i" : "chemical-affects"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "s" : 994,
+    "po" : 1051,
+    "n" : "selected",
+    "v" : "false",
+    "d" : "boolean"
+  } ]
+}, {
+  "cyTableColumn" : [ {
+    "s" : 994,
+    "applies_to" : "node_table",
+    "n" : "shared name"
+  }, {
+    "s" : 994,
+    "applies_to" : "node_table",
+    "n" : "name"
+  }, {
+    "s" : 994,
+    "applies_to" : "node_table",
+    "n" : "selected",
+    "d" : "boolean"
+  }, {
+    "s" : 994,
+    "applies_to" : "node_table",
+    "n" : "alias",
+    "d" : "list_of_string"
+  }, {
+    "s" : 994,
+    "applies_to" : "node_table",
+    "n" : "relatedTo",
+    "d" : "list_of_string"
+  }, {
+    "s" : 994,
+    "applies_to" : "edge_table",
+    "n" : "shared name"
+  }, {
+    "s" : 994,
+    "applies_to" : "edge_table",
+    "n" : "shared interaction"
+  }, {
+    "s" : 994,
+    "applies_to" : "edge_table",
+    "n" : "name"
+  }, {
+    "s" : 994,
+    "applies_to" : "edge_table",
+    "n" : "selected",
+    "d" : "boolean"
+  }, {
+    "s" : 994,
+    "applies_to" : "edge_table",
+    "n" : "interaction"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "shared name"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "name"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "selected",
+    "d" : "boolean"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "description"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "ORGANISM"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "URI"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "Source"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "ndex:provenance"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "ndex:uuid"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "ndex:modificationTime"
+  }, {
+    "s" : 994,
+    "applies_to" : "network_table",
+    "n" : "__Annotations",
+    "d" : "list_of_string"
+  } ]
+}, {
+  "cartesianLayout" : [ {
+    "node" : 1050,
+    "view" : 1389,
+    "x" : 271.7791819146311,
+    "y" : 24.832265554459013
+  }, {
+    "node" : 1047,
+    "view" : 1389,
+    "x" : 243.58811332141562,
+    "y" : 116.225465241513
+  }, {
+    "node" : 1046,
+    "view" : 1389,
+    "x" : 219.61048711674488,
+    "y" : 157.7559320728975
+  }, {
+    "node" : 1037,
+    "view" : 1389,
+    "x" : 409.16115382084575,
+    "y" : 134.88440116560514
+  }, {
+    "node" : 1027,
+    "view" : 1389,
+    "x" : 243.58811332141596,
+    "y" : -162.20325372735059
+  }, {
+    "node" : 1023,
+    "view" : 1389,
+    "x" : 261.10813436039365,
+    "y" : 71.58517966405049
+  }, {
+    "node" : 1022,
+    "view" : 1389,
+    "x" : 261.10813436039376,
+    "y" : -117.5629681498879
+  }, {
+    "node" : 1021,
+    "view" : 1389,
+    "x" : 271.77918191463124,
+    "y" : -70.81005404029628
+  }, {
+    "node" : 1009,
+    "view" : 1389,
+    "x" : 219.61048711674533,
+    "y" : -203.7337205587352
+  }, {
+    "node" : 1008,
+    "view" : 1389,
+    "x" : 351.29750078909063,
+    "y" : 249.39269719289814
+  }, {
+    "node" : 1007,
+    "view" : 1389,
+    "x" : 368.60450223705374,
+    "y" : 222.28172119428893
+  }, {
+    "node" : 1006,
+    "view" : 1389,
+    "x" : 384.0620415597663,
+    "y" : 194.07530708678917
+  }, {
+    "node" : 1005,
+    "view" : 1389,
+    "x" : 275.3628824151419,
+    "y" : -22.98889424291906
+  }, {
+    "node" : 1004,
+    "view" : 1389,
+    "x" : 397.6010816342386,
+    "y" : 164.89943156301433
+  } ]
+}, {
+  "subNetworks" : [ {
+    "@id" : 994,
+    "nodes" : [ 1050, 1047, 1046, 1037, 1027, 1023, 1022, 1021, 1009, 1008, 1007, 1006, 1005, 1004 ],
+    "edges" : [ 1302, 1140, 1139, 1089, 1202, 1201, 1200, 1199, 1084, 1083, 1082, 1081, 1078, 1077, 1056, 1367, 1366, 1365, 1364, 1363, 1362, 1173, 1172, 1171, 1170, 1169, 1158, 1157, 1146, 1145, 1143, 1142, 1141, 1054, 1053, 1052, 1051 ]
+  } ]
+}, {
+  "cyViews" : [ {
+    "@id" : 1389,
+    "s" : 994
+  } ]
+}, {
+  "networkRelations" : [ {
+    "p" : 994,
+    "c" : 1389,
+    "r" : "view",
+    "name" : "a6b1 and a6b4 Integrin signaling small test view"
+  }, {
+    "p" : 978,
+    "c" : 994,
+    "r" : "subnetwork",
+    "name" : "a6b1 and a6b4 Integrin signaling small test"
+  } ]
+}, {
+  "visualProperties" : [ {
+    "properties_of" : "network",
+    "applies_to" : 1389,
+    "view" : 1389,
+    "properties" : {
+      "NETWORK_BACKGROUND_PAINT" : "#FFFFFF",
+      "NETWORK_CENTER_X_LOCATION" : "0.0",
+      "NETWORK_CENTER_Y_LOCATION" : "0.0",
+      "NETWORK_CENTER_Z_LOCATION" : "0.0",
+      "NETWORK_DEPTH" : "0.0",
+      "NETWORK_EDGE_SELECTION" : "true",
+      "NETWORK_HEIGHT" : "400.0",
+      "NETWORK_NODE_SELECTION" : "true",
+      "NETWORK_SCALE_FACTOR" : "1.0",
+      "NETWORK_SIZE" : "550.0",
+      "NETWORK_WIDTH" : "550.0"
+    }
+  }, {
+    "properties_of" : "nodes:default",
+    "applies_to" : 1389,
+    "view" : 1389,
+    "properties" : {
+      "COMPOUND_NODE_PADDING" : "10.0",
+      "COMPOUND_NODE_SHAPE" : "ROUND_RECTANGLE",
+      "NODE_BORDER_PAINT" : "green",
+      "NODE_BORDER_STROKE" : "SOLID",
+      "NODE_BORDER_TRANSPARENCY" : "255",
+      "NODE_BORDER_WIDTH" : "5.0",
+      "NODE_CUSTOMGRAPHICS_1" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_2" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_3" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_4" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_5" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_6" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_7" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_8" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_9" : "org.cytoscape.ding.customgraphics.NullCustomGraphics,0,[ Remove Graphics ],",
+      "NODE_CUSTOMGRAPHICS_POSITION_1" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_2" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_3" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_4" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_5" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_6" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_7" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_8" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_POSITION_9" : "C,C,c,0.00,0.00",
+      "NODE_CUSTOMGRAPHICS_SIZE_1" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_2" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_3" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_4" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_5" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_6" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_7" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_8" : "50.0",
+      "NODE_CUSTOMGRAPHICS_SIZE_9" : "50.0",
+      "NODE_CUSTOMPAINT_1" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_1, name=Node Custom Paint 1)",
+      "NODE_CUSTOMPAINT_2" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_2, name=Node Custom Paint 2)",
+      "NODE_CUSTOMPAINT_3" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_3, name=Node Custom Paint 3)",
+      "NODE_CUSTOMPAINT_4" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_4, name=Node Custom Paint 4)",
+      "NODE_CUSTOMPAINT_5" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_5, name=Node Custom Paint 5)",
+      "NODE_CUSTOMPAINT_6" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_6, name=Node Custom Paint 6)",
+      "NODE_CUSTOMPAINT_7" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_7, name=Node Custom Paint 7)",
+      "NODE_CUSTOMPAINT_8" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_8, name=Node Custom Paint 8)",
+      "NODE_CUSTOMPAINT_9" : "DefaultVisualizableVisualProperty(id=NODE_CUSTOMPAINT_9, name=Node Custom Paint 9)",
+      "NODE_DEPTH" : "0.0",
+      "NODE_FILL_COLOR" : "#7FCDBB",
+      "NODE_HEIGHT" : "30.0",
+      "NODE_LABEL_COLOR" : "#333333",
+      "NODE_LABEL_FONT_FACE" : "Dialog,plain,12",
+      "NODE_LABEL_FONT_SIZE" : "10",
+      "NODE_LABEL_POSITION" : "C,C,c,0.00,0.00",
+      "NODE_LABEL_TRANSPARENCY" : "55",
+      "NODE_LABEL_WIDTH" : "200.0",
+      "NODE_NESTED_NETWORK_IMAGE_VISIBLE" : "true",
+      "NODE_PAINT" : "#787878",
+      "NODE_SELECTED" : "false",
+      "NODE_SELECTED_PAINT" : "#FFFF00",
+      "NODE_SHAPE" : "ELLIPSE",
+      "NODE_SIZE" : "25.0",
+      "NODE_TRANSPARENCY" : "0",
+      "NODE_VISIBLE" : "true",
+      "NODE_WIDTH" : "70.0",
+      "NODE_X_LOCATION" : "0.0",
+      "NODE_Y_LOCATION" : "0.0",
+      "NODE_Z_LOCATION" : "0.0"
+    },
+    "dependencies" : {
+      "nodeCustomGraphicsSizeSync" : "true",
+      "nodeSizeLocked" : "true"
+    },
+    "mappings" : {
+      "NODE_FILL_COLOR" : {
+        "type" : "DISCRETE",
+        "definition" : "COL=name,T=string,K=0=AKT1,V=0=#66FF00,K=1=ITGA6,V=1=#FF0066"
+      },
+      "NODE_LABEL" : {
+        "type" : "PASSTHROUGH",
+        "definition" : "COL=name,T=string"
+      }
+    }
+  }, {
+    "properties_of" : "edges:default",
+    "applies_to" : 1389,
+    "view" : 1389,
+    "properties" : {
+      "EDGE_CURVED" : "true",
+      "EDGE_LABEL_COLOR" : "red",
+      "EDGE_LABEL_FONT_FACE" : "Dialog,plain,10",
+      "EDGE_LABEL_FONT_SIZE" : "10",
+      "EDGE_LABEL_TRANSPARENCY" : "255",
+      "EDGE_LABEL_WIDTH" : "200.0",
+      "EDGE_LINE_TYPE" : "SOLID",
+      "EDGE_PAINT" : "#323232",
+      "EDGE_SELECTED" : "false",
+      "EDGE_SELECTED_PAINT" : "#FF0000",
+      "EDGE_SOURCE_ARROW_SELECTED_PAINT" : "#FFFF00",
+      "EDGE_SOURCE_ARROW_SHAPE" : "T",
+      "EDGE_SOURCE_ARROW_UNSELECTED_PAINT" : "#000000",
+      "EDGE_STROKE_SELECTED_PAINT" : "#FF0000",
+      "EDGE_STROKE_UNSELECTED_PAINT" : "#999999",
+      "EDGE_TARGET_ARROW_SELECTED_PAINT" : "#FFFF00",
+      "EDGE_TARGET_ARROW_SHAPE" : "ARROW",
+      "EDGE_TARGET_ARROW_UNSELECTED_PAINT" : "#000000",
+      "EDGE_TRANSPARENCY" : "255",
+      "EDGE_UNSELECTED_PAINT" : "#404040",
+      "EDGE_VISIBLE" : "true",
+      "EDGE_WIDTH" : "2.0"
+    },
+    "dependencies" : {
+      "arrowColorMatchesEdge" : "false"
+    },
+    "mappings" : {
+      "EDGE_LABEL" : {
+        "type" : "PASSTHROUGH",
+        "definition" : "COL=interaction,T=string"
+      },
+      "EDGE_LINE_TYPE" : {
+        "type" : "DISCRETE",
+        "definition" : "COL=interaction,T=string,K=0=pp,V=0=SOLID,K=1=pd,V=1=LONG_DASH"
+      }
+    }
+  } ]
+}, {
+  "hiddenAttributes" : [ {
+    "s" : 994,
+    "n" : "layoutAlgorithm",
+    "v" : "Circular Layout"
+  } ]
+}, {
+  "status" : [ {
+    "error" : "",
+    "success" : true
+  } ]
+} ]

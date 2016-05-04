@@ -8,9 +8,9 @@ import (
 )
 
 const (
-	network      string = "network"
-	cxNodes      string = "nodes"
-	cxEdges      string = "edges"
+	network string = "network"
+	cxNodes string = "nodes"
+	cxEdges string = "edges"
 	nodesDefault string = "nodes:default"
 	edgesDefault string = "edges:default"
 
@@ -25,6 +25,18 @@ const (
 	arrowColorMatchesEdge string = "arrowColorMatchesEdge"
 )
 
+var lockRelated = make(map[string]bool)
+
+func init() {
+	lockRelated["NODE_SIZE"] = true
+	lockRelated["NODE_HEIGHT"] = true
+	lockRelated["NODE_WIDTH"] = true
+	lockRelated["EDGE_TARGET_ARROW_UNSELECTED_PAINT"] = true
+	lockRelated["EDGE_SOURCE_ARROW_UNSELECTED_PAINT"] = true
+	lockRelated["EDGE_STROKE_UNSELECTED_PAINT"] = true
+}
+
+
 type VisualStyleHandler struct {
 	conversionTable        map[string]string
 
@@ -36,7 +48,8 @@ type VisualStyleHandler struct {
 func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[string]interface{} {
 
 	// Type converter
-//	vpConverter := VisualPropConverter{typeTable: vsHandler.typeTable}
+	//	vpConverter := VisualPropConverter{typeTable: vsHandler.typeTable}
+	var converter cyjs.VisualPropConverter = vsHandler.visualMappingGenerator.VpConverter
 
 	// This is the number of elements in a VP section.
 	vpCount := len(aspect)
@@ -83,38 +96,13 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 
 		css := make(map[string]interface{})
 
-		// Handle Size:
-		sizeLocked := false
-
-		if depList != nil {
-			_, exist := depList[nodeSizeLocked]
-			if exist {
-
-				sizeLockedStr := depList[nodeSizeLocked].(string)
-				sizeLocked, _ = strconv.ParseBool(sizeLockedStr)
-
-				log.Println("LOCK:")
-				log.Println(sizeLocked)
-
-				if sizeLocked {
-					log.Println("THIS IS LOCKED:")
-					value := cxProps["NODE_SIZE"]
-					convertedValue := vsHandler.visualMappingGenerator.VpConverter.GetCyjsPropertyValue("NODE_SIZE", value.(string))
-					css["height"] = convertedValue
-					css["width"] = convertedValue
-				} else {
-					w := cxProps["NODE_WIDTH"]
-					h := cxProps["NODE_HEIGHT"]
-					wValue := vsHandler.visualMappingGenerator.VpConverter.GetCyjsPropertyValue("width", w.(string))
-					hValue := vsHandler.visualMappingGenerator.VpConverter.GetCyjsPropertyValue("height", h.(string))
-					css["height"] = hValue
-					css["width"] = wValue
-				}
-			}
-		}
+		// Handle special cases: VP Locks
+		handleDependencies(depList, css, cxProps, converter)
 
 		for key, value := range cxProps {
-			if key == "NODE_WIDTH" || key == "NODE_HEIGHT" || key == "NODE_SIZE" {
+			_, isLockKey := lockRelated[key]
+
+			if isLockKey {
 				continue
 			}
 
@@ -123,10 +111,8 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 			if !exists {
 				continue
 			}
-
 			convertedValue := vsHandler.visualMappingGenerator.VpConverter.GetCyjsPropertyValue(key, value.(string))
 			css[ag] = convertedValue
-
 		}
 		entry.CSS = css
 
@@ -158,10 +144,49 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 	return vpMap
 }
 
+func handleDependencies(depList map[string]interface{},
+	css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 
+	// Check VP dependency list actually exists or not.
+	if depList == nil {
+		return
+	}
+
+	sizeDep, exist := depList[nodeSizeLocked]
+	if exist {
+		processNodeSizeLocked(sizeDep.(string), css, cxProps, converter)
+	}
+}
+
+func processNodeSizeLocked(sizeLockedStr string,
+	css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
+	sizeLocked, _ := strconv.ParseBool(sizeLockedStr)
+
+	log.Println("Size LOCK:")
+	log.Println(sizeLocked)
+
+	if sizeLocked {
+		log.Println("THIS IS LOCKED:")
+		value := cxProps["NODE_SIZE"]
+		convertedValue := converter.GetCyjsPropertyValue("NODE_SIZE", value.(string))
+		css["height"] = convertedValue
+		css["width"] = convertedValue
+	} else {
+		w := cxProps["NODE_WIDTH"]
+		h := cxProps["NODE_HEIGHT"]
+		wValue := converter.GetCyjsPropertyValue("width", w.(string))
+		hValue := converter.GetCyjsPropertyValue("height", h.(string))
+		css["height"] = hValue
+		css["width"] = wValue
+	}
+}
+
+func processEdgeArrowColor() {
+
+}
 
 func (vsHandler VisualStyleHandler) createMappings(selectorTag string,
-mappings map[string]interface{}, entry *cyjs.SelectorEntry)(newSelectors []cyjs.SelectorEntry){
+mappings map[string]interface{}, entry *cyjs.SelectorEntry) (newSelectors []cyjs.SelectorEntry) {
 
 	var newMaps []cyjs.SelectorEntry
 

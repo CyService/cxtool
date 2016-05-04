@@ -24,7 +24,7 @@ func NewLineStyleConverter() *LineStyleConverter {
 }
 
 
-func (conv LineStyleConverter) Convert(value string) string {
+func (conv LineStyleConverter) Convert(value string) interface{} {
 
 	cyjsLineStyle, exists := conv.lineStyleMap[value]
 

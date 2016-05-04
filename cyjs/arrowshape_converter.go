@@ -26,7 +26,7 @@ func NewArrowShapeConverter() *ArrowShapeConverter {
 	return &converter
 }
 
-func (conv ArrowShapeConverter) Convert(value string) string {
+func (conv ArrowShapeConverter) Convert(value string) interface{} {
 
 	cyjsArrowShape, exists := conv.arrowMap[value]
 

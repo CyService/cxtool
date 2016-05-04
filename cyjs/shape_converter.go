@@ -28,7 +28,7 @@ func NewShapeConverter() *ShapeConverter {
 }
 
 
-func (conv ShapeConverter) Convert(value string) string {
+func (conv ShapeConverter) Convert(value string) interface{} {
 
 	cyjsNodeShape, exists := conv.shapeMap[value]
 
