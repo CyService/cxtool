@@ -34,8 +34,8 @@ func init() {
 	lockRelated["EDGE_TARGET_ARROW_UNSELECTED_PAINT"] = true
 	lockRelated["EDGE_SOURCE_ARROW_UNSELECTED_PAINT"] = true
 	lockRelated["EDGE_STROKE_UNSELECTED_PAINT"] = true
+	lockRelated["EDGE_UNSELECTED_PAINT"] = true
 }
-
 
 type VisualStyleHandler struct {
 	conversionTable        map[string]string
@@ -111,6 +111,13 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 			if !exists {
 				continue
 			}
+
+			// Handle special Visual Props
+			if key == "NODE_LABEL_POSITION" {
+				translateLabelPosition(css, cxProps, converter)
+				continue
+			}
+
 			convertedValue := vsHandler.visualMappingGenerator.VpConverter.GetCyjsPropertyValue(key, value.(string))
 			css[ag] = convertedValue
 		}
@@ -145,21 +152,27 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 }
 
 func handleDependencies(depList map[string]interface{},
-	css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
+css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 
 	// Check VP dependency list actually exists or not.
 	if depList == nil {
 		return
 	}
 
+	// Node size dependency
 	sizeDep, exist := depList[nodeSizeLocked]
 	if exist {
 		processNodeSizeLocked(sizeDep.(string), css, cxProps, converter)
 	}
+
+	arrowDep, exist := depList[arrowColorMatchesEdge]
+	if exist {
+		processEdgeArrowColor(arrowDep.(string), css, cxProps, converter)
+	}
 }
 
 func processNodeSizeLocked(sizeLockedStr string,
-	css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
+css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 	sizeLocked, _ := strconv.ParseBool(sizeLockedStr)
 
 	log.Println("Size LOCK:")
@@ -174,14 +187,50 @@ func processNodeSizeLocked(sizeLockedStr string,
 	} else {
 		w := cxProps["NODE_WIDTH"]
 		h := cxProps["NODE_HEIGHT"]
-		wValue := converter.GetCyjsPropertyValue("width", w.(string))
-		hValue := converter.GetCyjsPropertyValue("height", h.(string))
+		wValue := converter.GetCyjsPropertyValue("NODE_WIDTH", w.(string))
+		hValue := converter.GetCyjsPropertyValue("NODE_HEIGHT", h.(string))
 		css["height"] = hValue
 		css["width"] = wValue
 	}
 }
 
-func processEdgeArrowColor() {
+func processEdgeArrowColor(arrowLockedStr string,
+css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
+	arrowLocked, _ := strconv.ParseBool(arrowLockedStr)
+
+	log.Println("ARROW LOCK:")
+	log.Println(arrowLocked)
+
+	if arrowLocked {
+		// Need to use EDGE_UNSELECTED_PAINT if locked.
+		value := cxProps["EDGE_UNSELECTED_PAINT"]
+		convertedValue := converter.GetCyjsPropertyValue("EDGE_UNSELECTED_PAINT", value.(string))
+		css["target-arrow-color"] = convertedValue
+		css["source-arrow-color"] = convertedValue
+		css["line-color"] = convertedValue
+	} else {
+		l := cxProps["EDGE_STROKE_UNSELECTED_PAINT"]
+		s := cxProps["EDGE_SOURCE_ARROW_UNSELECTED_PAINT"]
+		t := cxProps["EDGE_TARGET_ARROW_UNSELECTED_PAINT"]
+		lColor := converter.GetCyjsPropertyValue("EDGE_STROKE_UNSELECTED_PAINT", l.(string))
+		sColor := converter.GetCyjsPropertyValue("EDGE_STROKE_UNSELECTED_PAINT", s.(string))
+		tColor := converter.GetCyjsPropertyValue("EDGE_STROKE_UNSELECTED_PAINT", t.(string))
+		css["line-color"] = lColor
+		css["source-arrow-color"] = sColor
+		css["target-arrow-color"] = tColor
+	}
+
+}
+
+func translateLabelPosition(css map[string]interface{},
+cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
+
+	log.Println("LABEL POS: ")
+
+	value := cxProps["NODE_LABEL_POSITION"]
+	pos := converter.GetCyjsPropertyValue("NODE_LABEL_POSITION", value.(string)).([2]string)
+	css["text-valign"] = pos[0]
+	css["text-halign"] = pos[1]
 
 }
 

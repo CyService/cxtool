@@ -16,6 +16,7 @@ func NewVisualPropConverter(typeTable map[string]string) *VisualPropConverter {
 	sc := NewShapeConverter()
 	lsc := NewLineStyleConverter()
 	tpc := NewTransparencyConverter()
+	pc := NewPositionConverter()
 
 	// Mapper for special data types.  They should be translated into special
 	// Cytoscape.js readable string.
@@ -24,6 +25,7 @@ func NewVisualPropConverter(typeTable map[string]string) *VisualPropConverter {
 		"shape": sc,
 		"line": lsc,
 		"transparency": tpc,
+		"position": pc,
 	}
 
 	vpc := VisualPropConverter{typeTable:typeTable, valueConverters:valueConverterMap}

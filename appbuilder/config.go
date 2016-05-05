@@ -2,9 +2,9 @@ package appbuilder
 
 const (
 	Name = "cxtool"
-	Version = "0.3.1"
+	Version = "0.4.0"
 
 	Usage = "Utility for CX files"
-	Author = "idekerlab"
+	Author = "Keiichiro Ono"
 	Email = "kono@ucsd.edu"
 )
