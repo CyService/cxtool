@@ -4,10 +4,10 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LISENSE)
 
 ## Introduction
-This is a command line tool for [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing) 
-files.  Its main function is file conversion from/to SIF, Cytoscape.js JSON and may others.
+This is a file conversion utility for [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing).  Main function of this tool is data format conversion from/to SIF, Cytoscape.js JSON and many others.
 
 ## Status
+* 5/5/2016: Repository moved to cyService.
 * 11/20/2015: Pre alpha.  Simply converts CX to basic Cytoscpae.js JSON.
 
 ## Build 
