@@ -1,6 +1,6 @@
 package fromcyjs
 import (
-	"github.com/cytoscape-ci/cxtool/cx"
+	"github.com/cyService/cxtool/cx"
 	"errors"
 )
 

@@ -1,8 +1,8 @@
 package converter_test
 
 import (
-	"github.com/cytoscape-ci/cxtool/converter"
-	cyjs "github.com/cytoscape-ci/cxtool/cyjs"
+	"github.com/cyService/cxtool/converter"
+	cyjs "github.com/cyService/cxtool/cyjs"
 	"testing"
 	"bytes"
 	"io"

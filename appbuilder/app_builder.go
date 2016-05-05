@@ -8,12 +8,12 @@ package appbuilder
 import (
 	"os"
 	"github.com/codegangsta/cli"
-	"github.com/cytoscape-ci/cxtool/converter"
-	"github.com/cytoscape-ci/cxtool/converter/fromcyjs"
+	"github.com/cyService/cxtool/converter"
+	"github.com/cyService/cxtool/converter/fromcyjs"
 	"bufio"
 	"io"
 	"log"
-	"github.com/cytoscape-ci/cxtool/converter/filter"
+	"github.com/cyService/cxtool/converter/filter"
 )
 
 

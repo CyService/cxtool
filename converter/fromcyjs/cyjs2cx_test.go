@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"io"
 	"encoding/json"
-	"github.com/cytoscape-ci/cxtool/converter/fromcyjs"
+	"github.com/cyService/cxtool/converter/fromcyjs"
 	"os"
 	"bufio"
 )

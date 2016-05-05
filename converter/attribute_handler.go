@@ -1,7 +1,7 @@
 package converter
 
 import (
-	cx "github.com/cytoscape-ci/cxtool/cx"
+	cx "github.com/cyService/cxtool/cx"
 	"strconv"
 	"reflect"
 	"regexp"

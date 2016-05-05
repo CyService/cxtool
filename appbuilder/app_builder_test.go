@@ -3,7 +3,7 @@ package appbuilder
 import (
 	"testing"
 	"reflect"
-	"github.com/cytoscape-ci/cxtool/converter"
+	"github.com/cyService/cxtool/converter"
 	"bytes"
 	"strings"
 )

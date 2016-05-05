@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"github.com/cytoscape-ci/cxtool/cyjs"
+	"github.com/cyService/cxtool/cyjs"
 	"io"
 	"io/ioutil"
 )

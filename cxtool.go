@@ -12,7 +12,7 @@
 package main
 
 import (
-	builder "github.com/cytoscape-ci/cxtool/appbuilder"
+	builder "github.com/cyService/cxtool/appbuilder"
 	"os"
 )
 

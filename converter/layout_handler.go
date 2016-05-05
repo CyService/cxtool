@@ -1,8 +1,8 @@
 package converter
 
 import (
-	cx "github.com/cytoscape-ci/cxtool/cx"
-	cyjs "github.com/cytoscape-ci/cxtool/cyjs"
+	cx "github.com/cyService/cxtool/cx"
+	cyjs "github.com/cyService/cxtool/cyjs"
 	"strconv"
 )
 
