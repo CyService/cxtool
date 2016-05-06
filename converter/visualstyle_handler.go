@@ -250,7 +250,8 @@ mappings map[string]interface{}, entry *cyjs.SelectorEntry) (newSelectors []cyjs
 				definition, entry)
 		case cx.Discrete:
 			ag := vsHandler.conversionTable[vp]
-			newMappings := vsHandler.visualMappingGenerator.CreateDiscreteMappings(ag,
+			newMappings := vsHandler.visualMappingGenerator.CreateDiscreteMappings(
+				ag, vp,
 				definition, selectorTag)
 			newMaps = append(newMaps, newMappings...)
 		case cx.Continuous:

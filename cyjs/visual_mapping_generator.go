@@ -11,7 +11,22 @@ import (
 const (
 	entrySeparator = ","
 	kvSeparator = "="
+
+	// Cytoscape tags
+	bgImg = "background-image"
+	bgFit = "background-fit"
+
+	// Supported by Passthrough Mapping
+	nLabel = "NODE_LABEL"
+	eLabel = "EDGE_LABEL"
+	nWidth = "NODE_WIDTH"
+	nHeight = "NODE_HEIGHT"
+	eWidth = "EDGE_WIDTH"
+	nFSize = "NODE_LABEL_FONT_SIZE"
+	eFSize = "EDGE_LABEL_FONT_SIZE"
+	cgPrefix = "NODE_CUSTOMGRAPHICS_"
 )
+
 
 type VisualMappingGenerator struct {
 	VpConverter VisualPropConverter
@@ -19,7 +34,9 @@ type VisualMappingGenerator struct {
 
 var replaceInvalid = regexp.MustCompile(`^[^a-zA-Z_]+|[^a-zA-Z_0-9]+`)
 
-
+/*
+	Passthrough Mapping converter.
+ */
 func (vmGenerator VisualMappingGenerator) CreatePassthroughMapping(
 vpName string, definition string, entry *SelectorEntry) {
 
@@ -34,18 +51,28 @@ vpName string, definition string, entry *SelectorEntry) {
 		return
 	}
 
-	// This mapping is valid only for Labels (at least for now...)
-	if vpName == "NODE_LABEL" || vpName == "EDGE_LABEL" {
+	switch {
+	case vpName == nLabel ||  vpName == eLabel:
 		entry.CSS["content"] = "data(" + tagAndValue[1] + ")"
+	case vpName == nWidth || vpName == eWidth:
+		entry.CSS["width"] = "data(" + tagAndValue[1] + ")"
+	case vpName == nHeight:
+		entry.CSS["height"] = "data(" + tagAndValue[1] + ")"
+	case vpName == nFSize || vpName == eFSize:
+		entry.CSS["font-size"] = "data(" + tagAndValue[1] + ")"
+	case strings.HasPrefix(vpName, cgPrefix):
+		// Custom Graphics Mapping
+		entry.CSS[bgImg] = "data(" + tagAndValue[1] + ")"
+		entry.CSS[bgFit] = "cover"  // TODO: Support for other types
 	}
 }
 
 
-//
-// Create selectors for each key-value pair of discrete mapping.
-//
+/*
+	Create selectors for each key-value pair of discrete mapping.
+ */
 func (vmGenerator VisualMappingGenerator) CreateDiscreteMappings(
-vpName string, definition string, selectorType string) []SelectorEntry {
+vpName string, vpCytoscape string, definition string, selectorType string) []SelectorEntry {
 
 	var mappings []SelectorEntry
 
@@ -90,7 +117,19 @@ vpName string, definition string, selectorType string) []SelectorEntry {
 		}
 
 		css := make(map[string]interface{})
-		css[vpName] = vpVal
+		log.Println("#######################")
+		log.Println( vpCytoscape + " = " + vpVal)
+
+		mappedVal := vmGenerator.VpConverter.GetCyjsPropertyValue(vpCytoscape, vpVal)
+		log.Println("Converted = " + mappedVal.(string))
+
+		css[vpName] = mappedVal
+		
+		// This only happens when arrow color is locked.
+		if vpCytoscape == "EDGE_UNSELECTED_PAINT" {
+			css["source-arrow-color"] = mappedVal
+			css["target-arrow-color"] = mappedVal
+		}
 
 		newSelector := SelectorEntry{Selector:selectorStr, CSS:css}
 		mappings = append(mappings, newSelector)
@@ -98,7 +137,14 @@ vpName string, definition string, selectorType string) []SelectorEntry {
 	return mappings
 }
 
+func arrowColorSync() {
 
+}
+
+
+/*
+	Continuous Mapping Converter
+ */
 func (vmGenerator VisualMappingGenerator) CreateContinuousMappings(
 vpName string, vpCytoscape string, vpDataType string, definition string, selectorType string) []SelectorEntry {
 
@@ -157,7 +203,6 @@ vpName string, vpCytoscape string, vpDataType string, definition string, selecto
 		keys = append(keys, k)
 	}
 	sort.Float64s(keys)
-
 
 	numPoints := len(points)
 	if numPoints <= 0 {

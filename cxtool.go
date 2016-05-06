@@ -4,7 +4,7 @@
 
 	by Keiichiro Ono (kono at ucsd edu)
 
-	(c) 2015 The Cytoscape Consortium
+	(c) 2015 - 2016 The Cytoscape Consortium
 
 	MIT License
 
