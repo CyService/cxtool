@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"sort"
 	"regexp"
-	"log"
 )
 
 const (
@@ -26,7 +25,6 @@ const (
 	eFSize = "EDGE_LABEL_FONT_SIZE"
 	cgPrefix = "NODE_CUSTOMGRAPHICS_"
 )
-
 
 type VisualMappingGenerator struct {
 	VpConverter VisualPropConverter
@@ -52,7 +50,7 @@ vpName string, definition string, entry *SelectorEntry) {
 	}
 
 	switch {
-	case vpName == nLabel ||  vpName == eLabel:
+	case vpName == nLabel || vpName == eLabel:
 		entry.CSS["content"] = "data(" + tagAndValue[1] + ")"
 	case vpName == nWidth || vpName == eWidth:
 		entry.CSS["width"] = "data(" + tagAndValue[1] + ")"
@@ -106,8 +104,6 @@ vpName string, vpCytoscape string, definition string, selectorType string) []Sel
 
 		// Replace invalid char
 		colN := replaceInvalid.ReplaceAllString(colName[1], "_")
-		log.Println(colN)
-
 
 		if isNumberType(typeName[1]) {
 			// ' is not necessary for numbers.
@@ -117,19 +113,12 @@ vpName string, vpCytoscape string, definition string, selectorType string) []Sel
 		}
 
 		css := make(map[string]interface{})
-		log.Println("#######################")
-		log.Println( vpCytoscape + " = " + vpVal)
 
 		mappedVal := vmGenerator.VpConverter.GetCyjsPropertyValue(vpCytoscape, vpVal)
-		log.Println("Converted = " + mappedVal.(string))
 
 		css[vpName] = mappedVal
-		
-		// This only happens when arrow color is locked.
-		if vpCytoscape == "EDGE_UNSELECTED_PAINT" {
-			css["source-arrow-color"] = mappedVal
-			css["target-arrow-color"] = mappedVal
-		}
+		// Special case handler: Locks
+		handleDiscreteLockedValues(css, vpCytoscape, mappedVal)
 
 		newSelector := SelectorEntry{Selector:selectorStr, CSS:css}
 		mappings = append(mappings, newSelector)
@@ -137,8 +126,16 @@ vpName string, vpCytoscape string, definition string, selectorType string) []Sel
 	return mappings
 }
 
-func arrowColorSync() {
-
+func handleDiscreteLockedValues(css map[string]interface{}, vpCytoscape string, value interface{}) {
+	switch vpCytoscape {
+	case "EDGE_UNSELECTED_PAINT":
+		// Use same color for other two VPs.
+		css["source-arrow-color"] = value
+		css["target-arrow-color"] = value
+	case "NODE_SIZE":
+		css["width"] = value
+		css["height"] = value
+	}
 }
 
 
@@ -146,7 +143,8 @@ func arrowColorSync() {
 	Continuous Mapping Converter
  */
 func (vmGenerator VisualMappingGenerator) CreateContinuousMappings(
-vpName string, vpCytoscape string, vpDataType string, definition string, selectorType string) []SelectorEntry {
+vpName string, vpCytoscape string, vpDataType string,
+definition string, selectorType string, depList map[string]interface{}) []SelectorEntry {
 
 	var selectors []SelectorEntry
 
@@ -209,19 +207,36 @@ vpName string, vpCytoscape string, vpDataType string, definition string, selecto
 		return selectors
 	}
 
-
 	if numPoints == 1 {
 		// Case 1: only one point
 	} else {
 		// Special case: Size is not supported in Cytoscape.js.
 		// Create two mappings instead.
 		if vpCytoscape == "NODE_SIZE" {
-			selectorsW := vmGenerator.multiplePointsMapping(points, keys,
-				selectorType, columnName, vpDataType, "width", "NODE_WIDTH")
-			selectorsH := vmGenerator.multiplePointsMapping(points, keys,
-				selectorType, columnName, vpDataType, "height", "NODE_HEIGHT")
-			selectors = append(selectors, selectorsW...)
-			selectors = append(selectors, selectorsH...)
+			lock, _ := depList["nodeSizeLocked"]
+			sizeLocked, _ := strconv.ParseBool(lock.(string))
+			if sizeLocked {
+				selectorsW := vmGenerator.multiplePointsMapping(points, keys,
+					selectorType, columnName, vpDataType, "width", "NODE_WIDTH")
+				selectorsH := vmGenerator.multiplePointsMapping(points, keys,
+					selectorType, columnName, vpDataType, "height", "NODE_HEIGHT")
+				selectors = append(selectors, selectorsW...)
+				selectors = append(selectors, selectorsH...)
+			}
+		} else if vpCytoscape == "EDGE_UNSELECTED_PAINT" {
+			lock, _ := depList["arrowColorMatchesEdge"]
+			colorLocked, _ := strconv.ParseBool(lock.(string))
+			if colorLocked {
+				selectorsSA := vmGenerator.multiplePointsMapping(points, keys,
+					selectorType, columnName, vpDataType, "source-arrow-color", "EDGE_UNSELECTED_PAINT")
+				selectorsTA := vmGenerator.multiplePointsMapping(points, keys,
+					selectorType, columnName, vpDataType, "target-arrow-color", "EDGE_UNSELECTED_PAINT")
+				selectorsL := vmGenerator.multiplePointsMapping(points, keys,
+					selectorType, columnName, vpDataType, "line-color", "EDGE_UNSELECTED_PAINT")
+				selectors = append(selectors, selectorsSA...)
+				selectors = append(selectors, selectorsTA...)
+				selectors = append(selectors, selectorsL...)
+			}
 		} else {
 			selectors = vmGenerator.multiplePointsMapping(points, keys,
 				selectorType, columnName, vpDataType, vpName, vpCytoscape)
@@ -300,7 +315,6 @@ columnName string, vpDataType string, vp string, vpCytoscape string) []SelectorE
 	}
 	return selectors
 }
-
 
 func isNumberType(colType string) bool {
 	switch colType{

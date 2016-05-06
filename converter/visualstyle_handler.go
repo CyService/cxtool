@@ -3,7 +3,6 @@ package converter
 import (
 	cx "github.com/cyService/cxtool/cx"
 	cyjs "github.com/cyService/cxtool/cyjs"
-	"log"
 	"strconv"
 )
 
@@ -77,8 +76,6 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 			depList = deps.(map[string]interface{})
 		}
 
-		log.Println(depList)
-
 		// Check valid graph object (node/edge/net) ot not
 		selectorTag, isDefaults := isValidProperty(targetProperty)
 
@@ -127,7 +124,7 @@ func (vsHandler VisualStyleHandler) HandleAspect(aspect []interface{}) map[strin
 		if exists {
 			// Parse mapping entries
 			visualMappings := vsHandler.createMappings(
-				selectorTag, mappings.(map[string]interface{}), &entry)
+				selectorTag, mappings.(map[string]interface{}), &entry, depList)
 
 			selectors = append(selectors, visualMappings...)
 		}
@@ -175,11 +172,7 @@ func processNodeSizeLocked(sizeLockedStr string,
 css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 	sizeLocked, _ := strconv.ParseBool(sizeLockedStr)
 
-	log.Println("Size LOCK:")
-	log.Println(sizeLocked)
-
 	if sizeLocked {
-		log.Println("THIS IS LOCKED:")
 		value := cxProps["NODE_SIZE"]
 		convertedValue := converter.GetCyjsPropertyValue("NODE_SIZE", value.(string))
 		css["height"] = convertedValue
@@ -197,9 +190,6 @@ css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.Visua
 func processEdgeArrowColor(arrowLockedStr string,
 css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 	arrowLocked, _ := strconv.ParseBool(arrowLockedStr)
-
-	log.Println("ARROW LOCK:")
-	log.Println(arrowLocked)
 
 	if arrowLocked {
 		// Need to use EDGE_UNSELECTED_PAINT if locked.
@@ -225,8 +215,6 @@ css map[string]interface{}, cxProps map[string]interface{}, converter cyjs.Visua
 func translateLabelPosition(css map[string]interface{},
 cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 
-	log.Println("LABEL POS: ")
-
 	value := cxProps["NODE_LABEL_POSITION"]
 	pos := converter.GetCyjsPropertyValue("NODE_LABEL_POSITION", value.(string)).([2]string)
 	css["text-valign"] = pos[0]
@@ -235,7 +223,7 @@ cxProps map[string]interface{}, converter cyjs.VisualPropConverter) {
 }
 
 func (vsHandler VisualStyleHandler) createMappings(selectorTag string,
-mappings map[string]interface{}, entry *cyjs.SelectorEntry) (newSelectors []cyjs.SelectorEntry) {
+mappings map[string]interface{}, entry *cyjs.SelectorEntry, depList map[string]interface{}) (newSelectors []cyjs.SelectorEntry) {
 
 	var newMaps []cyjs.SelectorEntry
 
@@ -257,7 +245,8 @@ mappings map[string]interface{}, entry *cyjs.SelectorEntry) (newSelectors []cyjs
 		case cx.Continuous:
 			ag := vsHandler.conversionTable[vp]
 			vpDataType := vsHandler.typeTable[vp]
-			newMappings := vsHandler.visualMappingGenerator.CreateContinuousMappings(ag, vp, vpDataType, definition, selectorTag)
+			newMappings := vsHandler.visualMappingGenerator.
+				CreateContinuousMappings(ag, vp, vpDataType, definition, selectorTag, depList)
 			newMaps = append(newMaps, newMappings...)
 		default:
 		}
