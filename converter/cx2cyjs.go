@@ -272,7 +272,7 @@ func decodeEdges(edges []interface{}, cyjsNetwork *cyjs.CyJS) {
 		newEdge.Data = make(map[string]interface{})
 
 		// Required fields
-		newEdge.Data["id"] = strconv.FormatInt(int64(edge[cx.Id].(float64)), 10)
+		newEdge.Data["id"] = "edge:" + strconv.FormatInt(int64(edge[cx.Id].(float64)), 10)
 		newEdge.Data["source"] = strconv.FormatInt(int64(edge[cx.S].(float64)),
 			10)
 		newEdge.Data["target"] = strconv.FormatInt(int64(edge[cx.T].(float64)),
