@@ -251,9 +251,10 @@ func createNodes(nodes []interface{}, cyjsNetwork *cyjs.CyJS) {
 		newNode.Data["id"] = strconv.FormatInt(int64(node[cx.Id].(float64)),
 			10)
 
-		name, exists := newNode.Data["n"]
+		// name, exists := newNode.Data["n"]
+		name, exists := node[cx.N].(string)
 		if exists {
-			newNode.Data["n"] = name.(string)
+			newNode.Data["name"] = name
 		}
 		*cyjsNodes = append(*cyjsNodes, newNode)
 	}
