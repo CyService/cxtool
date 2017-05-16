@@ -272,7 +272,7 @@ func decodeEdges(edges []interface{}, cyjsNetwork *cyjs.CyJS) {
 		newEdge.Data = make(map[string]interface{})
 
 		// Required fields
-		newEdge.Data["id"] = "edge:" + strconv.FormatInt(int64(edge[cx.Id].(float64)), 10)
+		newEdge.Data["id"] = strconv.FormatInt(int64(edge[cx.Id].(float64)), 10)
 		newEdge.Data["source"] = strconv.FormatInt(int64(edge[cx.S].(float64)),
 			10)
 		newEdge.Data["target"] = strconv.FormatInt(int64(edge[cx.T].(float64)),
@@ -315,19 +315,22 @@ func assignNodeAttr(
 
 func assignEdgeAttr(
 	edges []cyjs.CyJSEdge,
-	nodeAttrs map[string]interface{}) {
+	attrs map[string]interface{}) {
 
 	edgeCount := len(edges)
 	for i := 0; i < edgeCount; i++ {
 		e := edges[i]
-		nodeId := e.Data["id"].(string)
+		id := e.Data["id"].(string)
 
-		val, exists := nodeAttrs[nodeId]
+		val, exists := attrs[id]
 		if exists {
 			valueMap := val.(map[string]interface{})
 			for key, value := range valueMap {
 				e.Data[key] = value
 			}
+
+			// Overwrite ID with prefix
+			e.Data["id"] = "E:" + id
 		}
 	}
 }
