@@ -4,7 +4,7 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LISENSE)
 
 ## Introduction
-This is a file conversion utility for [CX](https://docs.google.com/document/d/1kAUzVj6X86YCWHnTyZtybh1lt4zO-M6anCMJBD_PyG0/edit?usp=sharing).  Main function of this tool is data format conversion from/to SIF, Cytoscape.js JSON and many others.
+This is a file conversion utility for [CX](http://www.home.ndexbio.org/data-model/).  Main function of this tool is data format conversion from/to SIF, Cytoscape.js JSON and many others.
 
 ## Status
 * 5/5/2016: Repository moved to cyService.
